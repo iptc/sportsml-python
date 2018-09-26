@@ -3,7 +3,7 @@
 import xml.etree.ElementTree as etree
 import json
 
-from .core import NEWSMLG2_NS, BaseObject
+from .core import NEWSMLG2_NS, BaseObject, GenericArray
 from .sports_metadata import SportsMetadata
 from .base_metadata import (
     CommonAttributes, CoverageAttributes,
@@ -12,31 +12,6 @@ from .base_metadata import (
 from .newsmlg2 import ConceptNameType, FlexLocationPropType
 from .statistics import TeamStatsSet, PlayerStatsSet, WageringStatsSet, OfficialStats
 
-
-class Teams(BaseObject):
-    """
-    Array of Team objects.
-    """
-    teams = None
-
-    def __init__(self, xmlarray=None, **kwargs):
-        self.teams = []
-        super(Teams, self).__init__(**kwargs)
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                team = Team(xmlelement=xmlelement)
-                self.teams.append(team)
-
-    def __str__(self):
-        return (
-            '<set of '+len(teams)+' Teams>'
-        )
-
-    def as_dict(self):
-        return [ team.as_dict() for team in self.teams ]
-
-    def to_json(self):
-        return json.dumps(self.as_dict(), indent=4)
 
 
 class Team(CommonAttributes):
@@ -58,22 +33,22 @@ class Team(CommonAttributes):
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.team_metadata = TeamMetadata(
-                xmlelement.find(NEWSMLG2_NS+'team-metadata')
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'team-metadata')
             )
             self.team_stats_set = TeamStatsSet(
-                xmlelement.findall(NEWSMLG2_NS+'team-stats')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'team-stats')
             )
             self.players = Players(
-                xmlelement.findall(NEWSMLG2_NS+'player')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'player')
             )
             self.wagering_stats_set = WageringStatsSet(
-                xmlelement.findall(NEWSMLG2_NS+'wagering-stats')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'wagering-stats')
             )
             self.associates = Associates(
-                xmlelement.findall(NEWSMLG2_NS+'associate')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'associate')
             )
             self.affiliations = Affiliations(
-                xmlelement.findall(NEWSMLG2_NS+'affiliation')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'affiliation')
             )
 
     def as_dict(self):
@@ -105,6 +80,13 @@ class Team(CommonAttributes):
         return self.dict
 
 
+class Teams(GenericArray):
+    """
+    Array of Team objects.
+    """
+    element_class = Team
+
+
 class BaseEntityMetadata(CommonAttributes):
     """
     Base metadata for different entities.
@@ -123,13 +105,13 @@ class BaseEntityMetadata(CommonAttributes):
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.names = Names(
-                xmlarray=xmlelement.findall(NEWSMLG2_NS+'name')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'name')
             )
             self.home_location = FlexLocationPropType(
-                xmlelement=xmlelement.find(NEWSMLG2_NS+'home-location')
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'home-location')
             )
             self.sports_properties = SportsProperties(
-                xmlarray=xmlelement.findall(NEWSMLG2_NS+'sports-property')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-property')
             )
             self.key = xmlelement.get('key')
             self.nationality = xmlelement.get('nationality')
@@ -335,18 +317,6 @@ class TeamMetadataMotorRacing(CommonAttributes):
     # TODO
 
 
-class MotorRacingVehicles(BaseObject):
-    def __init__(self, xmlarray=None, **kwargs):
-        self.motor_racing_vehicles = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                vehicle = MotorRacingVehicle(xmlelement)
-                self.motor_racing_vehicles.append(vehicle)
-
-    def as_dict(self):
-        return [mrv.as_dict() for mrv in self.motor_racing_vehicles]
-
-
 class MotorRacingVehicle(BaseObject):
     pass
 
@@ -355,21 +325,12 @@ class MotorRacingVehicle(BaseObject):
         return None
 
 
-class Players(BaseObject):
-    players = None
+class MotorRacingVehicles(GenericArray):
+    """
+    Array of MotorRacingVehicle objects.
+    """
+    element_class = MotorRacingVehicle
 
-    def __init__(self, xmlarray=None, **kwargs):
-        self.players = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                player = Player(xmlelement=xmlelement)
-                self.players.append(player)
-
-    def as_dict(self):
-        return [p.as_dict() for p in self.players]
-
-    def __bool__(self):
-        return len(self.players) != 0
 
 class Player(CommonAttributes):
     """
@@ -413,6 +374,13 @@ class Player(CommonAttributes):
         if self.affiliations:
             self.dict.update({'affiliations': self.affiliations.as_dict() })
         return self.dict
+
+
+class Players(GenericArray):
+    """
+    Array of Player objects.
+    """
+    element_class= Player
 
 
 class BasePersonMetadata(BaseEntityMetadata):
@@ -610,21 +578,6 @@ class PlayerMetadata(BasePlayerMetadata):
         return self.dict
 
 
-class Associates(BaseObject):
-    def __init__(self, xmlarray=None, **kwargs):
-        self.associates = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                associate = Associate(xmlelement)
-                self.associates.append(associate)
-
-    def as_dict(self):
-        return [a.as_dict() for a in self.associates]
-
-    def __bool__(self):
-        return len(self.associates) != 0
-
-
 class Associate(BaseObject):
     # TODO
     pass
@@ -634,19 +587,11 @@ class Associate(BaseObject):
         return None
 
 
-class Affiliations(BaseObject):
-    def __init__(self, xmlarray=None, **kwargs):
-        self.affiliations = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                affiliation = Affiliation(xmlelement)
-                self.affiliations.append(affiliation)
-
-    def as_dict(self):
-        return [a.as_dict() for a in self.affiliations]
-
-    def __bool__(self):
-        return len(self.affiliations) != 0
+class Associates(GenericArray):
+    """
+    Array of Associate objects.
+    """
+    element_class = Associate
 
 
 class Affiliation(BaseObject):
@@ -658,23 +603,11 @@ class Affiliation(BaseObject):
         return None
 
 
-
-class Officials(BaseObject):
+class Affiliations(GenericArray):
     """
-    XML wrapper element for Offical elements.
+    Array of Affiliation objects.
     """
-    def __init__(self, xmlelement=None, **kwargs):
-        self.officials = []
-        if type(xmlelement) == etree.Element:
-            for childelem in xmlelement:
-                official = Official(xmlelement=childelem)
-                self.officials.append(official)
-
-    def as_dict(self):
-        return [o.as_dict() for o in self.officials]
-
-    def __bool__(self):
-        return len(self.officials) != 0
+    element_class= Affiliation
 
 
 class BaseOfficialMetadata(BasePersonMetadata):
@@ -738,6 +671,13 @@ class Official(CommonAttributes):
         return self.dict
 
 
+class Officials(GenericArray):
+    """
+    Array of Official objects.
+    """
+    element_class= Official
+
+
 class Affiliation(CommonAttributes, CoverageAttributes):
     """
     A mechanism for assigning the membership of a player, team, or
@@ -776,40 +716,12 @@ class Affiliation(CommonAttributes, CoverageAttributes):
         return self.dict
 
 
-class Names(BaseObject):
-    names = None
+class Names(GenericArray):
+    """
+    Array of ConceptNameType objects.
+    """
+    element_class = ConceptNameType
 
-    def __init__(self, xmlarray=None, **kwargs):
-        self.names = []  # clear list for this instance
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                name = ConceptNameType(xmlelement=xmlelement)
-                self.names.append(name)
-
-    def as_dict(self):
-        return [n.as_dict() for n in self.names]
-
-    def __bool__(self):
-        return len(self.names) != 0
-
-
-class Sites(BaseObject):
-    sites = []
-    def __init__(self, xmlarray=None, **kwargs):
-        super(Sites, self).__init__(**kwargs)
-        self.sites = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                site = ConceptNameType(
-                    xmlelement = xmlelement
-                )
-                self.sites.append(site)
-
-    def as_dict(self):
-        return [s.as_dict() for s in self.sites]
-
-    def __bool__(self):
-        return len(self.sites) != 0
 
 class SiteMetadata(BaseEntityMetadata):
     """
@@ -889,6 +801,19 @@ class SiteMetadata(BaseEntityMetadata):
             self.dict.update({'ceasedToExist': self.ceasedToExist })
         return self.dict
 
+
+class SiteStats(BaseObject):
+    # TODO
+    pass
+
+
+class SiteStatsSet(GenericArray):
+    """
+    Array of SiteStats objects.
+    """
+    element_class = SiteStats
+
+
 class Site(CommonAttributes):
     """
     An element housing data having to do with a venue, stadium, arena, field, etc.
@@ -916,3 +841,13 @@ class Site(CommonAttributes):
         if self.site_stats_set:
             self.dict.update({'siteStats': self.site_stats_set.as_dict() })
         return self.dict
+
+
+class Sites(GenericArray):
+    """
+    Array of Site objects.
+    """
+    element_class = Site
+
+
+

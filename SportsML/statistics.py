@@ -3,30 +3,20 @@
 import xml.etree.ElementTree as etree
 import json
 
-from .core import NEWSMLG2_NS, BaseObject
+from .core import NEWSMLG2_NS, BaseObject, GenericArray
 from .base_metadata import CommonAttributes, CoverageAttributes
-# from .sports_events import Awards
-
-
-class Statistics(BaseObject):
-    statistics = []
-    def __init__(self, xmlarray=None, **kwargs):
-        self.statistics = []
-        super(Statistics, self).__init__(**kwargs)
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                statistic = Statistic(xmlelement)
-                self.statistics.append(statistic)
-
-    def as_dict(self):
-        return [ stat.as_dict() for stat in self.statistics ]
-
-    def __bool__(self):
-        return len(self.statistics) != 0
 
 
 class Statistic(BaseObject):
+    # TODO
     pass
+
+
+class Statistics(GenericArray):
+    """
+    Array of Statistic objects.
+    """
+    element_class = Statistic
 
 
 class BaseStats(CommonAttributes):
@@ -66,25 +56,8 @@ class BaseStats(CommonAttributes):
         return self.dict
         
     def __bool__(self):
-        # TODO: this doesn't handle CommonAttributes
+        # FIXME return super(BaseStats, self).__bool__() or (self.ratings or self.sports_properties or self.stats) is not None
         return (self.ratings or self.sports_properties or self.stats) is not None
-
-
-class GenericStats(BaseObject):
-    generic_stats = None
-
-    def __init__(self, xmlarray=None, **kwargs):
-        self.generic_stats = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                generic_stat = GenericStat(xmlelement=xmlelement)
-                self.generic_stats.append(generic_stat)
-
-    def as_dict(self):
-        return [ts.as_dict() for ts in self.generic_stats]
-
-    def __bool__(self):
-        return len(self.generic_stats) != 0
 
 
 class GenericStatAttributes(BaseObject):
@@ -126,6 +99,7 @@ class GenericStatAttributes(BaseObject):
             self.dict.update({ 'value': self.value })
         return self.dict
 
+
 class GenericStat(GenericStatAttributes, CoverageAttributes):
     """
     A generic stat element that can be used together with or instead of
@@ -161,26 +135,16 @@ class GenericStat(GenericStatAttributes, CoverageAttributes):
             self.dict.update({ 'stats-GENERICSTAT': self.stats.as_dict() })
         return self.dict
 
+class GenericStats(GenericArray):
+    """
+    Array of GenericStat objects.
+    """
+    element_class = GenericStat
+
 
 class OfficialStats(BaseStats):
     # inherits everything from BaseStats
     pass
-
-class TeamStatsSet(BaseObject):
-    team_stats_set = None
-
-    def __init__(self, xmlarray=None, **kwargs):
-        self.team_stats_set = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                team_stats = TeamStats(xmlelement)
-                self.team_stats_set.append(team_stats)
-
-    def as_dict(self):
-        return [ts.as_dict() for ts in self.team_stats_set]
-
-    def __bool__(self):
-        return len(self.team_stats_set) != 0
 
 
 class TeamStats(BaseObject):
@@ -194,21 +158,12 @@ class TeamStats(BaseObject):
         return None
 
 
-class PlayerStatsSet(BaseObject):
-    player_stats_set = None
+class TeamStatsSet(GenericArray):
+    """
+    Array of TeamStats objects.
+    """
+    element_class = TeamStats
 
-    def __init__(self, xmlarray=None, **kwargs):
-        self.player_stats_set = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                player_stats = PlayerStats(xmlelement = xmlelement)
-                self.player_stats_set.append(player_stats)
-
-    def as_dict(self):
-        return [ps.as_dict() for ps in self.player_stats_set]
-
-    def __bool__(self):
-        return len(self.player_stats_set) != 0
 
 class SubScores(BaseObject):
     # TODO
@@ -271,13 +226,22 @@ class Base2Stats(BaseStats):
         return self.dict
 
 
-class PenaltyStatsSet(BaseObject):
+class PenaltyStats(BaseObject):
     # TODO
     pass
+
+
+class PenaltyStatsSet(GenericArray):
+    """
+    Array of PenaltyStatsobjects.
+    """
+    element_class= PenaltyStats
+
 
 class Ranks(BaseObject):
     # TODO
     pass
+
 
 class StatAttributes(BaseObject):
     # TODO
@@ -601,21 +565,11 @@ class PlayerStats(BasePlayerStats):
         return self.dict
 
 
-class WageringStatsSet(BaseObject):
-    wagering_stats_set = None
-
-    def __init__(self, xmlarray=None, **kwargs):
-        self.wagering_stats_set = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                wagering_stats = WageringStats(xmlelement)
-                self.wagering_stats_set.append(wagering_stats)
-
-    def as_dict(self):
-        return [wss.as_dict() for wss in self.wagering_stats_set]
-
-    def __bool__(self):
-        return len(self.wagering_stats_set) != 0
+class PlayerStatsSet(GenericArray):
+    """
+    Array of PlayerStats objects.
+    """
+    element_class = PlayerStats
 
 
 class WageringStats(BaseObject):
@@ -627,5 +581,13 @@ class WageringStats(BaseObject):
     def as_dict(self):
         # TODO
         return None
+
+
+class WageringStatsSet(GenericArray):
+    """
+    Array of WageringStats objects.
+    """
+    element_class = WageringStats
+
 
 

@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
 import xml.etree.ElementTree as etree
-from .core import NEWSMLG2_NS, BaseObject
+from .core import NEWSMLG2_NS, BaseObject, GenericArray
 from .base_metadata import Base2Metadata
+
 
 class BaseEventState(BaseObject):
     """
@@ -98,10 +99,10 @@ class BaseEventMetadata(Base2Metadata, BaseEventState):
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.event_sponsors = EventSponsors(
-                xmlelement.findall(NEWSMLG2_NS+'event-sponsor')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'event-sponsor')
             )
             self.event_recurring_names = EventRecurringNames(
-                xmlelement.findall(NEWSMLG2_NS+'event-recurring-name')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'event-recurring-name')
             )
             self.event_recurring_key = xmlelement.get('event-recurring-key')
             self.event_style = xmlelement.get('event-style')
@@ -196,47 +197,27 @@ class EventMetadata(BaseEventMetadata):
     """
 
 
-class EventSponsors(BaseObject):
-    event_sponsors = []
-
-    def __init__(self, xmlarray=None, **kwargs):
-        self.event_sponsors = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                es = EventSponsor(xmlelement=xmlelement)
-                self.event_sponsors.append(es)
-
-    def as_dict(self):
-        return [ es.as_dict() for es in self.event_sponsors ]
-
-    def __bool__(self):
-        return len(self.event_sponsors) != 0
-
-
 class EventSponsor(BaseObject):
     # TODO
     def __init__(self, xmlelement=None, **kwargs):
         super(EventSponsor, self).__init__(**kwargs)
 
 
-class EventRecurringNames(BaseObject):
-    event_recurring_names = []
-
-    def __init__(self, xmlarray=None, **kwargs):
-        self.event_recurring_names = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                es = EventRecurringName(xmlelement=xmlelement)
-                self.event_recurring_names.append(es)
-
-    def as_dict(self):
-        return [ es.as_dict() for es in self.event_recurring_names ]
-
-    def __bool__(self):
-        return len(self.event_recurring_names) != 0
+class EventSponsors(GenericArray):
+    """
+    Array of EventSponsor objects.
+    """
+    element_class= EventSponsor
 
 
 class EventRecurringName(BaseObject):
     # TODO
     def __init__(self, xmlelement=None, **kwargs):
         super(EventRecurringName, self).__init__(**kwargs)
+
+
+class EventRecurringNames(GenericArray):
+    """
+    Array of EventRecurringName objects.
+    """
+    element_class= EventRecurringName

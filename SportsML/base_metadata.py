@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 
 import xml.etree.ElementTree as etree
-from .core import NEWSMLG2_NS, BaseObject
-# from .entities import Names, Sites
-#from .sports_events import Awards
+from .core import NEWSMLG2_NS, BaseObject, GenericArray
+
 
 class CommonAttributes(BaseObject):
     # An XML-specific identifier for the element.
@@ -228,10 +227,10 @@ class BaseMetadata(CommonAttributes, CoverageAttributes):
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.sports_content_codes = SportsContentCodes(
-                xmlelement.findall(NEWSMLG2_NS+'sports-content-codes')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-content-codes')
             )
             self.sports_properties = SportsProperties(
-                xmlelement.findall(NEWSMLG2_NS+'sports-property')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-property')
             )
         elif kwargs:
             if 'sports_content_codes' in kwargs:
@@ -269,14 +268,14 @@ class Base2Metadata(BaseMetadata):
         if type(xmlelement) == etree.Element:
             from .entities import Names, Sites
             self.names = Names(
-                xmlelement.findall(NEWSMLG2_NS+'name')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'name')
             )
             self.sites = Sites(
-                xmlelement.findall(NEWSMLG2_NS+'site')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'site')
             )
             from .sports_events import Awards
             self.awards = Awards(
-                xmlelement.findall(NEWSMLG2_NS+'award')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'award')
             )
             self.key = xmlelement.get('key')
         elif kwargs:
@@ -309,47 +308,27 @@ class Base2Metadata(BaseMetadata):
         return self.dict
 
 
-class SportsContentCodes(BaseObject):
-    sports_content_codes = []
-
-    def __init__(self, xmlarray=None, **kwargs):
-        super(SportsContentCodes, self).__init__(**kwargs)
-        self.sports_content_codes = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                scc = SportsContentCode(
-                    xmlelement = xmlelement
-                )
-                self.sports_content_codes.append(scc)
-
-    def as_dict(self):
-        return [scc.as_dict() for scc in self.sports_content_codes]
-
-    def __bool__(self):
-        return len(self.sports_content_codes) != 0
+class SportsContentCodes(GenericArray):
+    """
+    Array of SportsContentCodes objects.
+    """
+    element_module_name = __name__
+    element_class_name = 'SportsContentCode'
 
 
 class SportsContentCode(BaseObject):
     # TODO
-    pass
     def as_dict(self):
         return { "SportsContentCode": "TODO" }
 
 
-class SportsProperties(BaseObject):
-    def __init__(self, xmlarray=None, **kwargs):
-        super(SportsProperties, self).__init__(**kwargs)
-        self.sports_properties = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                scc = SportsProperty(xmlelement)
-                self.sports_properties.append(scc)
+class SportsProperties(GenericArray):
+    """
+    Array of SportsProperty objects.
+    """
+    element_module_name = __name__
+    element_class_name = 'SportsProperty'
 
-    def as_dict(self):
-        return [sp.as_dict() for sp in self.sports_properties]
-
-    def __bool__(self):
-        return len(self.sports_properties) != 0
 
 class SportsProperty(BaseObject):
     # TODO

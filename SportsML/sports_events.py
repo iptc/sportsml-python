@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
 import xml.etree.ElementTree as etree
+import importlib
 import json
 
-from .core import NEWSMLG2_NS, BaseObject
+from .core import NEWSMLG2_NS, BaseObject, GenericArray
 from .sports_metadata import SportsMetadata
 from .event_metadata import EventMetadata
 from .base_metadata import CommonAttributes, CoverageAttributes
@@ -11,32 +12,8 @@ from .entities import Teams, Players, Officials
 from .actions import Actions
 from .statistics import WageringStatsSet
 
-class SportsEvents(BaseObject):
-    """
-    Array of SportsEvent objects.
-    """
-    sports_events = []
-
-    def __init__(self, xmlarray=None, **kwargs):
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                sports_event = SportsEvent(xmlelement)
-                self.sports_events.append(sports_event)
-
-    def __str__(self):
-        return (
-            '<SportsContent>'
-        )
-
-    def as_dict(self):
-        return [ se.as_dict() for se in self.sports_events ]
-
-    def to_json(self):
-        return json.dumps(self.as_dict(), indent=4)
-
 
 class SportsEvent(BaseObject):
-# class SportsEvent(json.JSONEncoder):
     event_metadata = None
     event_stats_set = None
     teams = None
@@ -67,11 +44,11 @@ class SportsEvent(BaseObject):
             )
             # officials, maxOccurs 1
             self.officials = Officials(
-                xmlelement = xmlelement.find(NEWSMLG2_NS+'officials')
+                xmlarray = xmlelement.find(NEWSMLG2_NS+'officials')
             )
             # actions, maxOccurs 1
             self.actions = Actions(
-                xmlelement = xmlelement.find(NEWSMLG2_NS+'actions')
+                xmlarray = xmlelement.find(NEWSMLG2_NS+'actions')
             )
             # highlights, maxOccurs unbounded
             self.highlights = Highlights(
@@ -164,17 +141,11 @@ class SportsEvent(BaseObject):
         return json.dumps(self.as_dict(), indent=4)
 
 
-class EventStatsSet(BaseObject):
-    event_stats_set = []
-
-    def __init__(self, xmlarray=None, **kwargs):
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                event_stats = EventStats(xmlelement)
-                self.event_stats_set.append(event_stats)
-
-    def as_dict(self):
-        return [es.as_dict() for es in event_stats_set]
+class SportsEvents(GenericArray):
+    """
+    Array of SportsEvent objects.
+    """
+    element_class = SportsEvent
 
 
 class EventStats(CommonAttributes, CoverageAttributes):
@@ -193,20 +164,11 @@ class EventStats(CommonAttributes, CoverageAttributes):
             )
 
 
-class Highlights(BaseObject):
-    highlights = []
-
-    def __init__(self, xmlarray=None, **kwargs):
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                highlight = Highlight(xmlelement)
-                self.highlights.append(highlight)
-
-    def as_dict(self):
-        return [h.as_dict() for h in self.highlights]
-
-    def __bool__(self):
-        return len(self.highlights) != 0
+class EventStatsSet(GenericArray):
+    """
+    Array of EventStats objects.
+    """
+    element_class= EventStats
 
 
 class Highlight(BaseObject):
@@ -218,19 +180,11 @@ class Highlight(BaseObject):
         return None
 
 
-class Awards(BaseObject):
-    awards = []
-    def __init__(self, xmlarray=None, **kwargs):
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                award = Award(xmlelement)
-                self.awards.append(award)
-
-    def as_dict(self):
-        return self.awards
-
-    def __bool__(self):
-        return len(self.awards) != 0
+class Highlights(GenericArray):
+    """
+    Array of Highlight objects.
+    """
+    element_class= Highlight
 
 
 class Award(BaseObject):
@@ -240,3 +194,10 @@ class Award(BaseObject):
     def as_dict(self):
         # TODO
         return None
+
+
+class Awards(GenericArray):
+    """
+    Array of Award objects.
+    """
+    element_class= Award

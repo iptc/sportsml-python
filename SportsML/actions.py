@@ -3,28 +3,10 @@
 import xml.etree.ElementTree as etree
 import json
 
-from .core import NEWSMLG2_NS, BaseObject
+from .core import NEWSMLG2_NS, BaseObject, GenericArray
 from .sports_metadata import SportsMetadata
 from .event_metadata import EventMetadata
 from .base_metadata import CommonAttributes
-
-
-class Actions(BaseObject):
-    actions = []
-
-    def __init__(self, xmlelement=None, **kwargs):
-        super(Actions, self).__init__(**kwargs)
-        self.actions = []
-        if type(xmlelement) == etree.Element:
-            for childelem in xmlelement:
-                action = Action(xmlelement=childelem)
-                self.actions.append(action)
-
-    def as_dict(self):
-        return [ a.as_dict() for a in self.actions ]
-
-    def __bool__(self):
-        return len(self.actions) != 0
 
 
 class BaseEventStateAttributeGroup(BaseObject):
@@ -232,7 +214,6 @@ class ActionAttributes(CommonAttributes, BaseEventStateAttributeGroup):
     # The reason for the substitution of a player
     substitution_reason = None
 
-    #def __init__(self, xmlelement=None, **kwargs):
     def __init__(self, **kwargs):
         super(ActionAttributes, self).__init__(**kwargs)
         xmlelement = kwargs.get('xmlelement')
@@ -449,16 +430,16 @@ class Action(ActionAttributes):
     sub_actions = None
     participants = None
 
-    #def __init__(self, xmlelement=None, **kwargs):
     def __init__(self, **kwargs):
         super(Action, self).__init__(**kwargs)
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
+            # sub-actions in another array
             self.sub_actions = Actions(
-                xmlelement.findall(NEWSMLG2_NS+'action')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'action')
             )
             self.participants = Participants(
-                xmlelement.findall(NEWSMLG2_NS+'participant')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'participant')
             )
 
     def as_dict(self):
@@ -471,18 +452,11 @@ class Action(ActionAttributes):
         return self.dict
 
 
-class Participants(BaseObject):
-    participants = []
-
-    def __init__(self, xmlarray=None, **kwargs):
-        self.participants = []
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                participant = Participant(xmlelement=xmlelement)
-                self.participants.append(participant)
-
-    def as_dict(self):
-        return [ p.as_dict() for p in self.participants ]
+class Actions(GenericArray):
+    """
+    Array of Action objects.
+    """
+    element_class = Action
 
 
 class CommonParticipantAttributes(BaseObject):
@@ -494,7 +468,6 @@ class CommonParticipantAttributes(BaseObject):
     # as opposed to their designated position on the team.
     role = None
 
-    # def __init__(self, xmlelement=None, **kwargs):
     def __init__(self, **kwargs):
         super(CommonParticipantAttributes, self).__init__(**kwargs)
         if 'xmlelement' in kwargs and type(kwargs['xmlelement']) == etree.Element:
@@ -574,3 +547,13 @@ class Participant(CommonAttributes, ParticipantAttributes):
         if self.score_credit:
             self.dict.update({ 'scoreCredit': self.score_credit })
         return self.dict
+
+
+class Participants(GenericArray):
+    """
+    Array of Participant objects.
+    """
+    element_class= Participant
+
+
+
