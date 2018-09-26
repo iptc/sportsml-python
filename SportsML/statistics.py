@@ -52,7 +52,7 @@ class BaseStats(CommonAttributes):
         if self.sports_properties:
             self.dict.update({ 'sportsProperties': self.sports_properties.as_dict() })
         if self.stats:
-            self.dict.update({ 'stats-BASESTATS': self.stats.as_dict() })
+            self.dict.update({ 'stats': self.stats.as_dict() })
         return self.dict
         
     def __bool__(self):
@@ -132,7 +132,7 @@ class GenericStat(GenericStatAttributes, CoverageAttributes):
         if self.names:
             self.dict.update({ 'names': self.names.as_dict() })
         if self.stats:
-            self.dict.update({ 'stats-GENERICSTAT': self.stats.as_dict() })
+            self.dict.update({ 'stats': self.stats.as_dict() })
         return self.dict
 
 class GenericStats(GenericArray):
@@ -226,9 +226,38 @@ class Base2Stats(BaseStats):
         return self.dict
 
 
-class PenaltyStats(BaseObject):
-    # TODO
-    pass
+class PenaltyStats(CommonAttributes):
+    """
+    Statistics that detail the number of each type of penalty.
+    Can be recorded for either a team or a player.
+    """
+    dict = {}
+    # Could be a numeric value like 2, 5 or 10 for ice hockey, or yellow-card or red-card for soccer etc.
+    type = None
+    # The number of that type of penalities for this team or player.
+    count = None
+    # Amount penalized. Eg. total minutes (ice-hockey, lacrosse, etc.) or yards (american-football).
+    value = None
+    
+    def __init__(self, **kwargs):
+        dict = {}
+        super(PenaltyStats, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
+        if type(xmlelement) == etree.Element:
+            self.type = xmlelement.get('type')
+            self.count = xmlelement.get('count')
+            self.value = xmlelement.get('value')
+
+    def as_dict(self):
+        super(PenaltyStats, self).as_dict()
+        if self.type:
+            self.dict.update({ 'type': self.type })
+        if self.count:
+            self.dict.update({ 'count': self.count })
+        if self.value:
+            self.dict.update({ 'value': self.value })
+        return self.dict
+
 
 
 class PenaltyStatsSet(GenericArray):

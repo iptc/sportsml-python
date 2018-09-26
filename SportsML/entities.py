@@ -762,7 +762,7 @@ class SiteMetadata(BaseEntityMetadata):
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.sports_content_codes = SportsContentCodes(
-                xmlelement = xmlelement.find(NEWSMLG2_NS+'sports-content-codes')
+                xmlarray = xmlelement.find(NEWSMLG2_NS+'sports-content-codes')
             )
             self.capacity = xmlelement.get('capacity')
             self.site_style= xmlelement.get('site-style')

@@ -227,7 +227,7 @@ class BaseMetadata(CommonAttributes, CoverageAttributes):
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.sports_content_codes = SportsContentCodes(
-                xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-content-codes')
+                xmlarray = xmlelement.find(NEWSMLG2_NS+'sports-content-codes')
             )
             self.sports_properties = SportsProperties(
                 xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-property')
@@ -308,18 +308,63 @@ class Base2Metadata(BaseMetadata):
         return self.dict
 
 
+class SportsContentQualifier(BaseObject):
+    pass
+
+class SportsContentQualifiers(GenericArray):
+    """
+    A container for content-codes.
+    Can hold as many codes as needed to describe all contents at this level and below.
+    """
+    element_class = SportsContentQualifier
+
+
+class SportsContentCode(CommonAttributes):
+    """
+    An individual code that describes an entity one may want to filter for.
+    Describes what sports, what teams, etc., are covered.
+    """
+    dict = {}
+    sports_content_qualifiers = None
+    # What type of item is being described.
+    # SportsML vocabulary uri: http://cv.iptc.org/newscodes/spct/
+    code_type = None
+    # The symbol for the identified content.
+    code_key = None
+    # A displayable name for the code.
+    code_name = None
+
+    def __init__(self, **kwargs):
+        self.dict = {}
+        super(SportsContentCode, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
+        if type(xmlelement) == etree.Element:
+            self.sports_content_qualifiers = SportsContentQualifiers(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-content-qualifier')
+            )
+            self.code_type = xmlelement.get('code-type')
+            self.code_key = xmlelement.get('code-key')
+            self.code_name = xmlelement.get('code-name')
+
+    def as_dict(self):
+        super(SportsContentCode, self).as_dict()
+        if self.sports_content_qualifiers:
+            self.dict.update({ 'sportsContentQualifiers': self.sports_content_qualifiers.as_dict() })
+        if self.code_type:
+            self.dict.update({ 'codeType': self.code_type })
+        if self.code_key:
+            self.dict.update({ 'codeKey': self.code_key })
+        if self.code_name:
+            self.dict.update({ 'codeName': self.code_name })
+        return self.dict
+
+
 class SportsContentCodes(GenericArray):
     """
-    Array of SportsContentCodes objects.
+    A container for content-codes.
+    Can hold as many codes as needed to describe all contents at this level and below.
     """
-    element_module_name = __name__
-    element_class_name = 'SportsContentCode'
-
-
-class SportsContentCode(BaseObject):
-    # TODO
-    def as_dict(self):
-        return { "SportsContentCode": "TODO" }
+    element_class = SportsContentCode
 
 
 class SportsProperties(GenericArray):
