@@ -3,15 +3,15 @@
 import xml.etree.ElementTree as etree
 import json
 
-from .core import NEWSMLG2_NS
+from .core import NEWSMLG2_NS, BaseObject
 from .sports_metadata import SportsMetadata
 from .event_metadata import EventMetadata
 from .base_metadata import CommonAttributes, CoverageAttributes
 from .entities import Teams, Players, Officials
 from .actions import Actions
-from .statistics import WageringStats
+from .statistics import WageringStatsSet
 
-class SportsEvents(object):
+class SportsEvents(BaseObject):
     """
     Array of SportsEvent objects.
     """
@@ -35,8 +35,8 @@ class SportsEvents(object):
         return json.dumps(self.as_dict(), indent=4)
 
 
-# class SportsEvent(object):
-class SportsEvent(json.JSONEncoder):
+class SportsEvent(BaseObject):
+# class SportsEvent(json.JSONEncoder):
     event_metadata = None
     event_stats_set = None
     teams = None
@@ -50,34 +50,39 @@ class SportsEvent(json.JSONEncoder):
     def __init__(self, xmlelement=None, **kwargs):
         if type(xmlelement) == etree.Element:
             self.event_metadata = EventMetadata(
-                xmlelement.find(NEWSMLG2_NS+'event-metadata')
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'event-metadata')
             )
             self.event_stats = EventStatsSet(
-                xmlelement.findall(NEWSMLG2_NS+'event-stats')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'event-stats')
             )
             self.teams = Teams(
-                xmlelement.findall(NEWSMLG2_NS+'team')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'team')
             )
             self.players = Players(
-                xmlelement.findall(NEWSMLG2_NS+'player')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'player')
             )
-            self.wagering_stats = WageringStats(
-                xmlelement.findall(NEWSMLG2_NS+'wagering-stats')
+            # wagering-stats, maxOccurs unbounded
+            self.wagering_stats_set = WageringStatsSet(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'wagering-stats')
             )
+            # officials, maxOccurs 1
             self.officials = Officials(
-                xmlelement.find(NEWSMLG2_NS+'officials')
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'officials')
             )
+            # actions, maxOccurs 1
             self.actions = Actions(
-                xmlelement.findall(NEWSMLG2_NS+'actions')
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'actions')
             )
+            # highlights, maxOccurs unbounded
             self.highlights = Highlights(
-                xmlelement.findall(NEWSMLG2_NS+'highlights')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'highlight')
             )
+            # award, maxOccurs unbounded
             self.awards = Awards(
-                xmlelement.findall(NEWSMLG2_NS+'awards')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'award')
             )
             self.sports_events = SportsEvents(
-                xmlelement.findall(NEWSMLG2_NS+'sports-event')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-event')
             )
         elif kwargs:
             if 'event_metadata' in kwargs:
@@ -88,7 +93,7 @@ class SportsEvent(json.JSONEncoder):
                 self.set_teams(kwargs['teams'])
             if 'players' in kwargs:
                 self.set_players(kwargs['players'])
-            if 'wagering_stats' in kwargs:
+            if 'wagering_stats_set' in kwargs:
                 self.set_wagering_stats(kwargs['wagering_stats'])
             if 'officials' in kwargs:
                 self.set_officials(kwargs['officials'])
@@ -124,13 +129,17 @@ class SportsEvent(json.JSONEncoder):
             dict.update({
                 'players': self.players.as_dict(),
             })
-        if self.wagering_stats:
+        if self.wagering_stats_set:
             dict.update({
-                'wageringStats': self.wagering_stats.as_dict(),
+                'wageringStats': self.wagering_stats_set.as_dict(),
             })
         if self.officials:
             dict.update({
                 'officials': self.officials.as_dict(),
+            })
+        if self.actions:
+            dict.update({
+                'actions': self.actions.as_dict(),
             })
         if self.highlights:
             dict.update({
@@ -155,7 +164,7 @@ class SportsEvent(json.JSONEncoder):
         return json.dumps(self.as_dict(), indent=4)
 
 
-class EventStatsSet(object):
+class EventStatsSet(BaseObject):
     event_stats_set = []
 
     def __init__(self, xmlarray=None, **kwargs):
@@ -166,6 +175,7 @@ class EventStatsSet(object):
 
     def as_dict(self):
         return [es.as_dict() for es in event_stats_set]
+
 
 class EventStats(CommonAttributes, CoverageAttributes):
     """
@@ -183,7 +193,7 @@ class EventStats(CommonAttributes, CoverageAttributes):
             )
 
 
-class Highlights(object):
+class Highlights(BaseObject):
     highlights = []
 
     def __init__(self, xmlarray=None, **kwargs):
@@ -199,7 +209,7 @@ class Highlights(object):
         return len(self.highlights) != 0
 
 
-class Highlight(object):
+class Highlight(BaseObject):
     # TODO
     pass
 
@@ -208,7 +218,7 @@ class Highlight(object):
         return None
 
 
-class Awards(object):
+class Awards(BaseObject):
     awards = []
     def __init__(self, xmlarray=None, **kwargs):
         if type(xmlarray) == list:
@@ -223,7 +233,7 @@ class Awards(object):
         return len(self.awards) != 0
 
 
-class Award(object):
+class Award(BaseObject):
     # TODO
     pass
 

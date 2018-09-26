@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 
 import xml.etree.ElementTree as etree
-from .core import NEWSMLG2_NS
+from .core import NEWSMLG2_NS, BaseObject
+# from .entities import Names, Sites
+#from .sports_events import Awards
 
-class CommonAttributes(object):
+class CommonAttributes(BaseObject):
     # An XML-specific identifier for the element.
     id = None
     # An open placeholder for categorization.
@@ -11,8 +13,9 @@ class CommonAttributes(object):
     # An open placeholder for reference by an external stylesheet.
     style = None
 
-    def __init__(self, xmlelement=None, **kwargs):
+    def __init__(self, **kwargs):
         super(CommonAttributes, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement', None)
         if type(xmlelement) == etree.Element:
             self.id = xmlelement.get('id')
             self.class_attr = xmlelement.get('class')
@@ -26,17 +29,17 @@ class CommonAttributes(object):
                 self.style = kwargs['style']
 
     def as_dict(self):
-        dict = {}
+        super(CommonAttributes, self).as_dict()
         if self.id:
-            dict.update({'id': self.id})
+            self.dict.update({'id': self.id})
         if self.class_attr:
-            dict.update({'class': self.class_attr})
+            self.dict.update({'class': self.class_attr})
         if self.style:
-            dict.update({'style': self.style})
-        return dict
+            self.dict.update({'style': self.style})
+        return self.dict
 
 
-class CoverageAttributes(object):
+class CoverageAttributes(BaseObject):
     # A relative indication of how many statistics are included in the item. SportsML vocab uri: http://cv.iptc.org/newscodes/spstatscoverage/</xs:documentation>
     stats_coverage = None
     # Indicates whether the item contains information about one team, or many teams.
@@ -143,9 +146,72 @@ class CoverageAttributes(object):
                 self.style = kwargs['style']
 
     def as_dict(self):
-        dict = super(CoverageAttributes, self).as_dict()
-        # TODO
-        return dict
+        super(CoverageAttributes, self).as_dict()
+        if self.stats_coverage:
+            self.dict.update({ 'statsCoverage': self.stats_coverage })
+        if self.team_coverage:
+            self.dict.update({ 'teamCoverage': self.team_coverage })
+        if self.duration_scope:
+            self.dict.update({ 'durationScope': self.duration_scope })
+        if self.stats_coverage:
+            self.dict.update({ 'statsCoverage': self.stats_coverage })
+        if self.team_coverage:
+            self.dict.update({ 'teamCoverage': self.team_coverage })
+        if self.record_making_scope:
+            self.dict.update({ 'recordMakingScope': self.record_making_scope })
+        if self.scoping_label:
+            self.dict.update({ 'scopingLabel': self.scoping_label })
+        if self.period_value:
+            self.dict.update({ 'periodValue': self.period_value })
+        if self.period_type:
+            self.dict.update({ 'periodType': self.period_type })
+        if self.start_date_time:
+            self.dict.update({ 'startDateTime': self.start_date_time })
+        if self.end_date_time:
+            self.dict.update({ 'endDateTime': self.end_date_time })
+        if self.period_start_date_time:
+            self.dict.update({ 'periodStartDateTime': self.period_start_date_time })
+        if self.period_end_date_time:
+            self.dict.update({ 'periodEndDateTime': self.period_end_date_time })
+        if self.temporal_unit_type:
+            self.dict.update({ 'temporalUnitType': self.temporal_unit_type })
+        if self.temporal_unit_value:
+            self.dict.update({ 'temporalUnitValue': self.temporal_unit_value })
+        if self.event_span:
+            self.dict.update({ 'eventSpan': self.event_span })
+        if self.opponent_value:
+            self.dict.update({ 'opponentValue': self.opponent_value })
+        if self.opponent_type:
+            self.dict.update({ 'opponentType': self.opponent_type })
+        if self.team:
+            self.dict.update({ 'team': self.team })
+        if self.competition:
+            self.dict.update({ 'competition': self.competition })
+        if self.unit_value:
+            self.dict.update({ 'unitValue': self.unit_value })
+        if self.unit_type:
+            self.dict.update({ 'unitType': self.unit_type })
+        if self.situation:
+            self.dict.update({ 'situation': self.situation })
+        if self.location_key:
+            self.dict.update({ 'locationKey': self.location_key })
+        if self.venue_type:
+            self.dict.update({ 'venueType': self.venue_type })
+        if self.surface_type:
+            self.dict.update({ 'surfaceType': self.surface_type })
+        if self.weather_type:
+            self.dict.update({ 'weatherType': self.weather_type })
+        if self.scope_value:
+            self.dict.update({ 'scopeValue': self.scope_value })
+        if self.distance:
+            self.dict.update({ 'distance': self.distance })
+        if self.distance_maximum:
+            self.dict.update({ 'distanceMaximum': self.distance_maximum })
+        if self.distance_minimum:
+            self.dict.update({ 'distanceMinimum': self.distance_minimum })
+        if self.measurement_units:
+            self.dict.update({ 'measurementUnits': self.measurement_units })
+        return self.dict
 
 
 class BaseMetadata(CommonAttributes, CoverageAttributes):
@@ -154,8 +220,12 @@ class BaseMetadata(CommonAttributes, CoverageAttributes):
     sports, standing, schedule and statistic and extended
     further by base2MetadataComplexType
     """
-    def __init__(self, xmlelement=None, **kwargs):
+    sports_content_codes = None
+    sports_properties = None
+
+    def __init__(self, **kwargs):
         super(BaseMetadata, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.sports_content_codes = SportsContentCodes(
                 xmlelement.findall(NEWSMLG2_NS+'sports-content-codes')
@@ -175,15 +245,13 @@ class BaseMetadata(CommonAttributes, CoverageAttributes):
     def set_sports_properties(self, sports_properties):
         self.sports_properties = sports_properties
 
-    def __str__(self):
-        return (
-            '<SportsContent>'
-        )
-
     def as_dict(self):
-        dict = super(BaseMetadata, self).as_dict()
-        # TODO
-        return dict
+        super(BaseMetadata, self).as_dict()
+        if self.sports_content_codes:
+            self.dict.update({ 'sportsContentCodes': self.sports_content_codes.as_dict() })
+        if self.sports_properties:
+            self.dict.update({ 'sportsProperties': self.sports_properties.as_dict() })
+        return self.dict
 
 
 class Base2Metadata(BaseMetadata):
@@ -195,15 +263,18 @@ class Base2Metadata(BaseMetadata):
     awards = None
     key = None
 
-    def __init__(self, xmlelement=None, **kwargs):
+    def __init__(self, **kwargs):
         super(Base2Metadata, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
+            from .entities import Names, Sites
             self.names = Names(
                 xmlelement.findall(NEWSMLG2_NS+'name')
             )
-            self.awards = Sites(
+            self.sites = Sites(
                 xmlelement.findall(NEWSMLG2_NS+'site')
             )
+            from .sports_events import Awards
             self.awards = Awards(
                 xmlelement.findall(NEWSMLG2_NS+'award')
             )
@@ -226,68 +297,49 @@ class Base2Metadata(BaseMetadata):
         self.awards = awards
 
     def as_dict(self):
-        dict = super(Base2Metadata, self).as_dict()
+        super(Base2Metadata, self).as_dict()
         if self.names:
-            dict.update({'names': names})
+            self.dict.update({'names': self.names.as_dict() })
         if self.sites:
-            dict.update({'sites': sites})
+            self.dict.update({'sites': self.sites.as_dict() })
         if self.awards:
-            dict.update({'awards': awards})
-        return dict
+            self.dict.update({'awards': self.awards.as_dict() })
+        if self.key:
+            self.dict.update({'key': self.key })
+        return self.dict
 
 
-class Sites(object):
-    def __init__(self, xmlarray=None, **kwargs):
-        self.sites = []
-        super(Sites, self).__init__(**kwargs)
-        if type(xmlarray) == list:
-            for xmlelement in xmlarray:
-                site = Name(xmlelement)
-                self.sites.append(site)
-
-    def as_dict(self):
-        return self.sites
-
-    def __bool__(self):
-        return len(self.sites) != 0
-
-class Site(object):
-    site = None
+class SportsContentCodes(BaseObject):
+    sports_content_codes = []
 
     def __init__(self, xmlarray=None, **kwargs):
-        super(Sites, self).__init__(**kwargs)
-        # TODO
-
-    def as_dict(self):
-        return self.site
-
-
-class SportsContentCodes(object):
-
-    def __init__(self, xmlarray=None, **kwargs):
-        self.sports_content_codes = []
         super(SportsContentCodes, self).__init__(**kwargs)
+        self.sports_content_codes = []
         if type(xmlarray) == list:
             for xmlelement in xmlarray:
-                scc = SportsContentCode(xmlelement)
+                scc = SportsContentCode(
+                    xmlelement = xmlelement
+                )
                 self.sports_content_codes.append(scc)
 
     def as_dict(self):
-        return self.sports_content_codes
+        return [scc.as_dict() for scc in self.sports_content_codes]
 
     def __bool__(self):
         return len(self.sports_content_codes) != 0
 
 
-class SportsContentCode(object):
+class SportsContentCode(BaseObject):
     # TODO
     pass
+    def as_dict(self):
+        return { "SportsContentCode": "TODO" }
 
 
-class SportsProperties(object):
+class SportsProperties(BaseObject):
     def __init__(self, xmlarray=None, **kwargs):
-        self.sports_properties = []
         super(SportsProperties, self).__init__(**kwargs)
+        self.sports_properties = []
         if type(xmlarray) == list:
             for xmlelement in xmlarray:
                 scc = SportsProperty(xmlelement)
@@ -299,7 +351,7 @@ class SportsProperties(object):
     def __bool__(self):
         return len(self.sports_properties) != 0
 
-class SportsProperty(object):
+class SportsProperty(BaseObject):
     # TODO
     pass
 

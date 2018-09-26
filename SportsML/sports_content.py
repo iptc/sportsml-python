@@ -27,25 +27,25 @@ class SportsContent(object):
     def __init__(self, xmlelement=None, **kwargs):
         if type(xmlelement) == etree.Element:
             self.sports_metadata = SportsMetadata(
-                xmlelement.find(NEWSMLG2_NS+'sports-metadata')
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'sports-metadata')
             )
             self.sports_events = SportsEvents(
-                xmlelement.findall(NEWSMLG2_NS+'sports-event')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-event')
             )
             self.tournaments = Tournaments(
-                xmlelement.findall(NEWSMLG2_NS+'tournament')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'tournament')
             )
             self.schedules = Schedules(
-                xmlelement.findall(NEWSMLG2_NS+'schedule')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'schedule')
             )
             self.standings = Standings(
-                xmlelement.findall(NEWSMLG2_NS+'standing')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'standing')
             )
             self.statistics = Statistics(
-                xmlelement.findall(NEWSMLG2_NS+'statistic')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'statistic')
             )
             self.articles = Articles(
-                xmlelement.findall(NEWSMLG2_NS+'article')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'article')
             )
         elif kwargs:
             if 'sports_metadata' in kwargs:

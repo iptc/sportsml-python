@@ -11,7 +11,7 @@ support.
 
 ## Installation
 
-Installing from PyPI::
+Installing from PyPI (doesn't work yet!):
 
     pip install sportsml
 

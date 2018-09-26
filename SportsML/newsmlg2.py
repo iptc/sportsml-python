@@ -3,21 +3,19 @@
 import xml.etree.ElementTree as etree
 import json
 
-from .core import NEWSMLG2_NS
-from .sports_metadata import SportsMetadata
-from .event_metadata import EventMetadata
-from .base_metadata import CommonAttributes, CoverageAttributes, Sites, SportsContentCodes
+from .core import BaseObject
 
 
-class TimeValidityAttributes(object):
+class TimeValidityAttributes(BaseObject):
     def __init__(self, xmlelement=None, **kwargs):
+        super(TimeValidityAttributes, self).__init__(**kwargs)
         # TODO
         pass
 
     def as_dict(self):
-        dict = {}
+        super(TimeValidityAttributes, self).as_dict()
         # TODO
-        return dict
+        return self.dict
 
 
 class ConceptNameType(TimeValidityAttributes):
@@ -26,6 +24,7 @@ class ConceptNameType(TimeValidityAttributes):
 
     TODO - extends IntlStringType
     """
+    dict = {}
     name = None
     # A refinement of the semantics of the name - expressed by a QCode
     role = None
@@ -36,8 +35,10 @@ class ConceptNameType(TimeValidityAttributes):
     # Specifies which part of a full name this property provides - expressed by a URI
     parturi = None
     
-    def __init__(self, xmlelement=None, **kwargs):
-        super(ConceptNameType, self).__init__(xmlelement, **kwargs)
+    def __init__(self, **kwargs):
+        self.dict = {}
+        super(ConceptNameType, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.name = xmlelement.text
             self.role = xmlelement.get('role')
@@ -46,18 +47,18 @@ class ConceptNameType(TimeValidityAttributes):
             self.parturi = xmlelement.get('parturi')
 
     def as_dict(self):
-        dict = super(ConceptNameType, self).as_dict()
+        super(ConceptNameType, self).as_dict()
         if self.name:
-            dict.update({'name': self.name})
+            self.dict.update({'name': self.name})
         if self.role:
-            dict.update({'role': self.role})
+            self.dict.update({'role': self.role})
         if self.roleuri:
-            dict.update({'roleuri': self.roleuri})
+            self.dict.update({'roleuri': self.roleuri})
         if self.part:
-            dict.update({'part': self.part})
+            self.dict.update({'part': self.part})
         if self.parturi:
-            dict.update({'parturi': self.parturi})
-        return dict
+            self.dict.update({'parturi': self.parturi})
+        return self.dict
 
 
 class FlexAttributes(object):

@@ -10,4 +10,5 @@ if __name__ == '__main__':
 
     parser = SportsMLParser(args.filename)
 
-    print(parser.getSportsContent().to_json())
+    sports_content = parser.getSportsContent()
+    print(sports_content.to_json())

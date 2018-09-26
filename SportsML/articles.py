@@ -6,7 +6,6 @@ import json
 from .core import NEWSMLG2_NS
 from .sports_metadata import SportsMetadata
 from .event_metadata import EventMetadata
-from .base_metadata import CommonAttributes, CoverageAttributes
 
 
 class Articles(object):
