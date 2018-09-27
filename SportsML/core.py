@@ -11,11 +11,42 @@ VERSION = 0.1
 class BaseObject():
     # required for multiple inheritance to work propertly.
     # probably helpful in the future for other objects too.
+    #def __init__(self, **kwargs):
+    #    pass
+
+    #def as_dict(self):
+    #    return
+
+    attr_values = {}
+    dict = {}
+
+    @classmethod
+    def get_attributes(cls):
+        all_attrs = {}
+        for X in reversed(cls.__mro__):
+            attrs = vars(X).get('attributes', {})
+            all_attrs.update(attrs)
+        return all_attrs
+
     def __init__(self, **kwargs):
-        pass
+        # super(BaseObject, self).__init__(**kwargs)
+        self.dict = {}
+        self.attr_values = {}
+        xmlelement = kwargs.get('xmlelement')
+        if type(xmlelement) == etree.Element:
+            attrs = self.get_attributes()
+            if attrs:
+                for xml_attribute, json_attribute in attrs.items():
+                    self.attr_values[xml_attribute] = xmlelement.get(xml_attribute)
 
     def as_dict(self):
-        return
+        # super(BaseObject, self).as_dict()
+        attrs = self.get_attributes()
+        if attrs:
+            for xml_attribute, json_property in attrs.items():
+                if xml_attribute in self.attr_values and self.attr_values[xml_attribute]:
+                    self.dict.update({ json_property: self.attr_values[xml_attribute] })
+        return self.dict
 
 
 class GenericArray(BaseObject):
