@@ -23,18 +23,33 @@ class SportsTitles(GenericArray):
 
 
 class Advisory(CommonAttributes):
-    # TODO
-    pass
+    advisory_text = None
+
+    def __init__(self, **kwargs):
+        super(Advisory, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
+        if type(xmlelement) == etree.Element:
+            self.advisory_text = xmlelement.text
+
+    def as_dict(self):
+        super(Advisory, self).as_dict()
+        self.dict.update({'advisory': self.advisory_text })
+        return self.dict
+
+ 
+class AdvisorySet(GenericArray):
+    """
+    A short textual message to editors receiving the document.
+    Not generally published through to end-users.
+    """
+    element_class = Advisory
 
 
 class FeatureNames(BaseObject):
-    # TODO
-    pass
-
-
-class FeatureName(BaseObject):
-    # TODO
-    pass
+    """
+    A displayable name for the resource identified by the fixture-key.
+    """
+    element_class = ConceptNameType
 
 
 class SportsMetadata(BaseMetadata):
@@ -79,7 +94,7 @@ class SportsMetadata(BaseMetadata):
             self.sports_titles = SportsTitles(
                 xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-title')
             )
-            self.advisory = Advisory(
+            self.advisory = AdvisorySet(
                 xmlarray = xmlelement.findall(NEWSMLG2_NS+'advisory')
             )
             self.feature_names = FeatureNames(
