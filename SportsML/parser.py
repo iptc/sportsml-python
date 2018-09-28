@@ -14,8 +14,20 @@ class SportsMLParser(object):
         if type(filename) == str:
             tree = etree.parse(filename)
             self._root_element = tree.getroot()
+            if self._root_element.tag == NEWSMLG2_NS+'newsItem':
+                # it's a NewsML-G2 item, look for SportsContent inside of it
+                sportsml_top_element = self._root_element.find(
+                    ".//"+NEWSMLG2_NS+"sports-content"
+                )
+            elif self._root_element.tag == NEWSMLG2_NS+'sports-content':
+                sportsml_top_element = self._root_element
+            else:
+                raise Exception(
+                    filename +
+                    " doesn't seem to be a valid NewsML-G2 or SportsML-G2 document."
+                )
             self.sports_content = SportsContent(
-                xmlelement = self._root_element
+                xmlelement = sportsml_top_element
             )
         else:
             raise Exception("filename should be a string")
