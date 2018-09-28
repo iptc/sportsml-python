@@ -1,33 +1,41 @@
 #!/usr/bin/env python
 
 import xml.etree.ElementTree as etree
-from .core import NEWSMLG2_NS, BaseObject
+from .core import NEWSMLG2_NS, BaseObject, GenericArray
 from .base_metadata import BaseMetadata, CommonAttributes
+from .newsmlg2 import CatalogRef, ConceptNameType
 
 
-class CatalogRefs(BaseObject):
-    # TODO
-    pass
+class CatalogRefs(GenericArray):
+    """
+    A reference to document(s) listing externally-supplied controlled vocabularies.
+    The catalog file can be in NewsML 1.
+    """
+    element_class = CatalogRef
 
-class SportsTitles(BaseObject):
-    # TODO
-    pass
 
-class SportsTitle(BaseObject):
-    # TODO
-    pass
+class SportsTitles(GenericArray):
+    """
+    A short textual description of the document.
+    Can  show up in search results.
+    """
+    element_class = ConceptNameType
+
 
 class Advisory(CommonAttributes):
     # TODO
     pass
 
+
 class FeatureNames(BaseObject):
     # TODO
     pass
 
+
 class FeatureName(BaseObject):
     # TODO
     pass
+
 
 class SportsMetadata(BaseMetadata):
     # A reference to document(s) listing externally-supplied controlled vocabularies.

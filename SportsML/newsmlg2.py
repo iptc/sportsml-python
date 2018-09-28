@@ -98,3 +98,16 @@ class FlexLocationPropType(object):
         </xs:sequence>
     </xs:complexType>
     """
+
+
+class CatalogRef(BaseObject):
+    """
+    A reference to a remote catalog. A hyperlink to a set of scheme alias declarations.
+    """
+    attributes = {
+        # A short natural language name for the catalog.
+        'title': 'title',
+        # A hyperlink to a remote Catalog.
+        'href': 'href'
+    }
+
