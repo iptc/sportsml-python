@@ -3,7 +3,7 @@
 import json
 import xml.etree.ElementTree as etree
 
-from .core import NEWSMLG2_NS
+from .core import NEWSMLG2_NS, BaseObject
 from .articles import Articles
 from .sports_metadata import SportsMetadata
 from .sports_events import SportsEvents
@@ -12,7 +12,7 @@ from .standings import Standings
 from .statistics import Statistics
 from .tournaments import Tournaments
 
-class SportsContent(object):
+class SportsContent(BaseObject):
     """
     The root element of all SportsML documents.
     """
@@ -24,7 +24,8 @@ class SportsContent(object):
     statistics = None
     articles = None
 
-    def __init__(self, xmlelement=None, **kwargs):
+    def __init__(self,  **kwargs):
+        xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.sports_metadata = SportsMetadata(
                 xmlelement = xmlelement.find(NEWSMLG2_NS+'sports-metadata')

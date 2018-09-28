@@ -15,4 +15,4 @@ class Tournaments(GenericArray):
     """
     Array of Tournament objects.
     """
-    element_class= Tournament
+    element_class = Tournament

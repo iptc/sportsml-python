@@ -24,7 +24,9 @@ class SportsEvent(BaseObject):
     awards = None
     sports_events = None
 
-    def __init__(self, xmlelement=None, **kwargs):
+    def __init__(self,  **kwargs):
+        super(SportsEvent, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.event_metadata = EventMetadata(
                 xmlelement = xmlelement.find(NEWSMLG2_NS+'event-metadata')
@@ -154,7 +156,9 @@ class EventStats(CommonAttributes, CoverageAttributes):
     """
     sports_properties = None
 
-    def __init__(self, xmlelement=None, **kwargs):
+    def __init__(self, **kwargs):
+        super(SportsEvent, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.sports_properties = SportsProperties(
                 xmlelement.findall(NEWSMLG2_NS+'sports-property')

@@ -7,7 +7,7 @@ from .core import BaseObject
 
 
 class TimeValidityAttributes(BaseObject):
-    def __init__(self, xmlelement=None, **kwargs):
+    def __init__(self, **kwargs):
         super(TimeValidityAttributes, self).__init__(**kwargs)
         # TODO
         pass
@@ -18,46 +18,36 @@ class TimeValidityAttributes(BaseObject):
         return self.dict
 
 
-class ConceptNameType(TimeValidityAttributes):
+class IntlStringType(BaseObject):
+    # TODO
+    pass
+
+class ConceptNameType(TimeValidityAttributes, IntlStringType):
     """
     The type of a natural language name for the concept (Type defined in this XML Schema only)
-
-    TODO - extends IntlStringType
     """
-    dict = {}
     name = None
-    # A refinement of the semantics of the name - expressed by a QCode
-    role = None
-    # A refinement of the semantics of the name - expressed by a URI
-    roleuri = None
-    # Specifies which part of a full name this property provides - expressed by a QCode
-    part = None
-    # Specifies which part of a full name this property provides - expressed by a URI
-    parturi = None
+    attributes = {
+        # A refinement of the semantics of the name - expressed by a QCode
+        'role': 'role',
+        # A refinement of the semantics of the name - expressed by a URI
+        'roleuri': 'roleuri',
+        # Specifies which part of a full name this property provides - expressed by a QCode
+        'part': 'part',
+        # Specifies which part of a full name this property provides - expressed by a URI
+        'parturi': 'parturi'
+    }
     
     def __init__(self, **kwargs):
-        self.dict = {}
         super(ConceptNameType, self).__init__(**kwargs)
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.name = xmlelement.text
-            self.role = xmlelement.get('role')
-            self.roleuri = xmlelement.get('roleuri')
-            self.part = xmlelement.get('part')
-            self.parturi = xmlelement.get('parturi')
 
     def as_dict(self):
         super(ConceptNameType, self).as_dict()
         if self.name:
             self.dict.update({'name': self.name})
-        if self.role:
-            self.dict.update({'role': self.role})
-        if self.roleuri:
-            self.dict.update({'roleuri': self.roleuri})
-        if self.part:
-            self.dict.update({'part': self.part})
-        if self.parturi:
-            self.dict.update({'parturi': self.parturi})
         return self.dict
 
 
@@ -77,8 +67,9 @@ class FlexLocationPropType(object):
     plus: <xs:anyAttribute namespace="##other" processContents="lax" />
     """
 
-    def __init__(self, xmlelement=None, **kwargs):
+    def __init__(self, **kwargs):
         # super(FlexLocationPropType, self).__init__(xmlelement, **kwargs)
+        xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             # TODO <xs:group ref="ConceptDefinitionGroup" minOccurs="0" />
             # TODO <xs:group ref="ConceptRelationshipsGroup" minOccurs="0" />

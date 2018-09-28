@@ -95,10 +95,12 @@ class BaseEntityMetadata(CommonAttributes):
     names = None
     home_location = None
     sports_properties = None
-    # The symbol or identifying key for the entity.
-    key = None
-    # The country of citizinship of the entity.
-    nationality = None
+    attributes = {
+        # The symbol or identifying key for the entity.
+        'key': 'key',
+        # The country of citizinship of the entity.
+        'nationality': 'nationality'
+    }
     
     def __init__(self, **kwargs):
         super(BaseEntityMetadata, self).__init__(**kwargs)
@@ -113,8 +115,6 @@ class BaseEntityMetadata(CommonAttributes):
             self.sports_properties = SportsProperties(
                 xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-property')
             )
-            self.key = xmlelement.get('key')
-            self.nationality = xmlelement.get('nationality')
 
     def as_dict(self):
         super(BaseEntityMetadata, self).as_dict()
@@ -130,14 +130,6 @@ class BaseEntityMetadata(CommonAttributes):
             self.dict.update({
                 'sportsProperties': self.sports_properties.as_dict()
             })
-        if self.key:
-            self.dict.update({
-                'key': self.key
-            })
-        if self.nationality:
-            self.dict.update({
-                'nationality': self.nationality
-            })
         return self.dict
 
 
@@ -148,24 +140,26 @@ class BaseTeamMetadata(BaseObject):
     """
     sites = None
     sports_content_codes = None
-    # Home or visiting. This is more information about the
-    # alignment of the team or player in the event regarding rules etc. It
-    # does not necessarily indicate that it is the geographical home-site of
-    # the team or player.
-    # enumeration: home, away, none
-    alignment = None
-    # Date (and time) when the team was established.
-    established = None
-    # Date (and time) when the team was dissolved. 
-    dissolved = None
-    # Optional reference to a team in which this team is a member. Example: The U.S. Davis Cup team consists of many sub-teams.
-    team_idref = None
-    # The fully-qualified URL for the official home page of the team.
-    home_page_url = None
-    # The seed or position in this particular round for which this team started. Useful for bracketed tournaments, such as tennis.
-    round_position = None
+    attributes = {
+        # Home or visiting. This is more information about the
+        # alignment of the team or player in the event regarding rules etc. It
+        # does not necessarily indicate that it is the geographical home-site of
+        # the team or player.
+        # enumeration: home, away, none
+        'alignment': 'alignment',
+        # Date (and time) when the team was established.
+        'established': 'established',
+        # Date (and time) when the team was dissolved. 
+        'dissolved': 'dissolved',
+        # Optional reference to a team in which this team is a member. Example: The U.S. Davis Cup team consists of many sub-teams.
+        'team-idref': 'teamIdref',
+        # The fully-qualified URL for the official home page of the team.
+        'home-page-url': 'homePageURL',
+        # The seed or position in this particular round for which this team started. Useful for bracketed tournaments, such as tennis.
+        'round-position': 'roundPosition'
+    }
 
-    def __init__(self, xmlelement=None, **kwargs):
+    def __init__(self, **kwargs):
         super(BaseTeamMetadata, self).__init__(**kwargs)
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
@@ -175,12 +169,6 @@ class BaseTeamMetadata(BaseObject):
             self.sports_content_codes = SportsContentCodes(
                 xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-content-code')
             )
-            self.alignment = xmlelement.get('alignment')
-            self.established = xmlelement.get('established')
-            self.dissolved = xmlelement.get('dissolved')
-            self.team_idref = xmlelement.get('team_idref')
-            self.home_page_url = xmlelement.get('home_page_url')
-            self.round_position = xmlelement.get('round-position')
 
     def as_dict(self):
         super(BaseTeamMetadata, self).as_dict()
@@ -192,53 +180,27 @@ class BaseTeamMetadata(BaseObject):
             self.dict.update({
                 'sportsContentCodes': self.sports_content_codes.as_dict()
             })
-        if self.alignment:
-            self.dict.update({
-                'alignment': self.alignment
-            })
-        if self.established:
-            self.dict.update({
-                'established': self.established
-            })
-        if self.dissolved:
-            self.dict.update({
-                'dissolved': self.dissolved
-            })
-        if self.team_idref:
-            self.dict.update({
-                'teamIdRef': self.team_idref
-            })
-        if self.home_page_url:
-            self.dict.update({
-                'homePageURL': self.home_page_url
-            })
-        if self.round_position:
-            self.dict.update({
-                'roundPosition': self.round_position
-            })
         return self.dict
 
 
 class TeamMetadata(BaseTeamMetadata):
-    dict = {}
     team_metadata_baseball = None
     # Holds metadata about a team (foursome perhaps) playing in the match. | Currently only holds the rank of the team.
     team_metadata_golf = None
     team_metadata_motor_racing = None
 
-    def __init__(self, xmlelement=None, **kwargs):
-        self.dict = {}
-        super(TeamMetadata, self).__init__(xmlelement, **kwargs)
+    def __init__(self, **kwargs):
+        super(TeamMetadata, self).__init__(**kwargs)
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.team_metadata_baseball = TeamMetadataBaseball(
-                xmlelement.find(NEWSMLG2_NS+'team-metadata-baseball')
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'team-metadata-baseball')
             )
             self.team_metadata_golf = TeamMetadataGolf(
-                xmlelement.find(NEWSMLG2_NS+'team-metadata-golf')
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'team-metadata-golf')
             )
             self.team_metadata_motor_racing = TeamMetadataMotorRacing(
-                xmlelement.find(NEWSMLG2_NS+'team-metadata-motor-racing')
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'team-metadata-motor-racing')
             )
 
     def as_dict(self):
@@ -256,46 +218,32 @@ class TeamMetadataBaseball(CommonAttributes):
     """
     Metadata about the team.
     Specific to the sport of baseball.
+    (from sportsml-specific-baseball.xsd)
     """
-    # ID of the pitcher who will probably start the game.
-    probable_starting_pitcher_idref = None
-
-    def __init__(self,  **kwargs):
-        super(TeamMetadataBaseball, self).__init__(xmlelement, **kwargs)
-        xmlelement = kwargs.get('xmlelement')
-        if type(xmlelement) == etree.Element:
-            self.probable_starting_pitcher_idref = xmlelement.get(
-                'probable-starting-pitcher-idref'
-            )
-    # TODO
+    attributes = {
+        # ID of the pitcher who will probably start the game.
+        'probable_starting_pitcher_idref': 'probableStartingPitcherIdref'
+    }
 
 
 class BaseGolfMetadata(CommonAttributes):
     """
-    Holds metadata about a golf player. | Currently only holds the rank of the player.
+    Holds metadata about a golf player.
+    Currently only holds the rank of the player.
+    (from sportsml-specific-golf.xsd)
     """
-    # How this player ranks among the other competing players.
-    rank = None
-
-    def __init__(self, **kwargs):
-        super(BaseGolfMetadata, self).__init__(**kwargs)
-        xmlelement = kwargs.get('xmlelement')
-        if type(xmlelement) == etree.Element:
-            self.rank = xmlelement.get("rank")
-
-    def as_dict(self):
-        super(BaseGolfMetadata, self).as_dict()
-        if self.rank:
-            self.dict.update({ 'rank': self.rank })
-        return self.dict
+    attributes = {
+        # How this player ranks among the other competing players.
+        'rank': 'rank'
+    }
 
 
 class TeamMetadataGolf(BaseGolfMetadata):
     """
     Holds metadata about a team (foursome perhaps) playing in the match.
     Currently only holds the rank of the team.
+    (from sportsml-specific-golf.xsd)
     """
-    # TODO
     pass
 
 
@@ -303,6 +251,7 @@ class TeamMetadataMotorRacing(CommonAttributes):
     """
     Metadata about the team.
     Specific to the sport of motor racing.
+    (from sportsml-specific-motor-racing.xsd)
     """
     motor_racing_vehicles = None
     
@@ -318,6 +267,9 @@ class TeamMetadataMotorRacing(CommonAttributes):
 
 
 class MotorRacingVehicle(BaseObject):
+    """
+    (from sportsml-specific-motor-racing.xsd)
+    """
     pass
 
     def as_dict(self):
@@ -328,6 +280,7 @@ class MotorRacingVehicle(BaseObject):
 class MotorRacingVehicles(GenericArray):
     """
     Array of MotorRacingVehicle objects.
+    (from sportsml-specific-motor-racing.xsd)
     """
     element_class = MotorRacingVehicle
 
@@ -337,11 +290,8 @@ class Player(CommonAttributes):
     A competitor.
     Their athletic talents help them decide who wins a sports-event.
     """
-    dict = {}
 
-    # def __init__(self, xmlelement=None, **kwargs):
     def __init__(self, **kwargs):
-        self.dict = {}
         super(Player, self).__init__(**kwargs)
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
@@ -388,114 +338,57 @@ class BasePersonMetadata(BaseEntityMetadata):
     Metadata that describes a person.
     Generally does not change over the course of a sports-events. Extends the baseEntityMetadata type
     """
-    # The day on which a person was born, normalized to ISO 8601
-    # extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time
-    # is available. Can also be YYYY-MM or just YYYY if year and/or month not available.
-    date_of_birth = None
-    # The day on which a person died, normalized to ISO 8601
-    # extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available.
-    date_of_death = None
-    # Height of the person. Generally in cm.
-    height = None
-    # Weight of a person. Generally in kg.
-    weight = None
-    # The code for the typical position of the person.
-    position_regular = None
-    # The code for the position held by the person at this  particular sports-event.
-    position_event = None
-    # A ranking amongst players on the team who share the same position.
-    position_depth = None
-    # An indication of the health of the person.
-    health = None
-    # Male or female.
-    gender = None
+    attributes = {
+        # The day on which a person was born, normalized to ISO 8601
+        # extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time
+        # is available. Can also be YYYY-MM or just YYYY if year and/or month not available.
+        'date-of-birth': 'dateOfDeath',
+        # The day on which a person died, normalized to ISO 8601
+        # extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available.
+        'date-of-death': 'dateOfDeath',
+        # Height of the person. Generally in cm.
+        'height': 'height',
+        # Weight of a person. Generally in kg.
+        'weight': 'weight',
+        # The code for the typical position of the person.
+        'position-regular': 'positionRegular',
+        # The code for the position held by the person at this  particular sports-event.
+        'position-event': 'positionEvent',
+        # A ranking amongst players on the team who share the same position.
+        'position-depth': 'positionDepth',
+        # An indication of the health of the person.
+        'health': 'health',
+        # Male or female.
+        'gender': 'gender'
+    }
     
-    def __init__(self, **kwargs):
-        super(BasePersonMetadata, self).__init__(**kwargs)
-        xmlelement = kwargs.get('xmlelement')
-        if type(xmlelement) == etree.Element:
-            self.date_of_birth = xmlelement.get('date-of-birth')
-            self.date_of_death = xmlelement.get('date-of-death')
-            self.height = xmlelement.get('height')
-            self.weight = xmlelement.get('weight')
-            self.position_regular = xmlelement.get('position-regular')
-            self.position_event = xmlelement.get('position-event')
-            self.position_depth = xmlelement.get('position-depth')
-            self.health = xmlelement.get('health')
-            self.gender = xmlelement.get('gender')
-
-    def as_dict(self):
-        super(BasePersonMetadata, self).as_dict()
-        if self.date_of_birth:
-            self.dict.update({ 'dateOfBirth': self.date_of_birth })
-        if self.date_of_death:
-            self.dict.update({ 'dateOfDeath': self.date_of_death})
-        if self.height:
-            self.dict.update({ 'height': self.height })
-        if self.weight:
-            self.dict.update({ 'weight': self.weight })
-        if self.position_regular:
-            self.dict.update({ 'positionRegular': self.position_regular })
-        if self.position_event:
-            self.dict.update({ 'positionEvent': self.position_event })
-        if self.position_depth:
-            self.dict.update({ 'positionDepth': self.position_depth })
-        if self.health:
-            self.dict.update({ 'health': self.health })
-        if self.gender:
-            self.dict.update({ 'gender': self.gender })
-        return dict
-
-
-class CareerPhaseMetadata(BaseObject):
-    # TODO
-
-    def __init__(self, **kwargs):
-        xmlelement = kwargs.get('xmlelement')
-        if type(xmlelement) == etree.Element:
-            # TODO
-            pass
-
-    def as_dict(self):
-        return {}
-
-
-class InjuryPhaseMetadata(BaseObject):
-    # TODO
-
-    def __init__(self, **kwargs):
-        xmlelement = kwargs.get('xmlelement')
-        if type(xmlelement) == etree.Element:
-            # TODO
-            pass
-
-    def as_dict(self):
-        return {}
-
 
 class BasePlayerMetadata(BasePersonMetadata):
     """
     Metadata that describes a person. | Generally does not change over the course of a sports-events.
     """
 
-    career_phase = None
-    injury_phase = None
-    # A reference to the team for which this player competes.
-    team_idref = None
-    # Whether a player starts playing at the beginning of a sports-event, joins mid-game, or is not available to participate.
-    status = None
-    # The order in which a player participated in an event.
-    lineup_slot = None
-    # For baseball, cricket, relay races if they substituted for a player in the original lineup, the order in which they served at the above lineup-slot value. Defaults to 1.
-    lineup_slot_sequence = None
-    # An indication as to why this player did not play in an event.
-    scratch_reason = None
-    # The number currently displayed on the uniform or jersey of the player.
-    uniform_number = None
-    # The fully-qualified URL for the official home page of the team.
-    home_page_url = None
-    # The seed or position in this particular round for which this player started. Useful for bracketed tournaments, such as tennis.
-    round_position = None
+    career_phase_metadata = None
+    injury_phase_metadata = None
+
+    attributes = {
+        # A reference to the team for which this player competes.
+        'team_idref': 'teamIdref',
+        # Whether a player starts playing at the beginning of a sports-event, joins mid-game, or is not available to participate.
+        'status': 'status',
+        # The order in which a player participated in an event.
+        'lineup_slot': 'lineupSlot',
+        # For baseball, cricket, relay races if they substituted for a player in the original lineup, the order in which they served at the above lineup-slot value. Defaults to 1.
+        'lineup_slot_sequence': 'lineupSlotSequence',
+        # An indication as to why this player did not play in an event.
+        'scratch_reason': 'scratchReason',
+        # The number currently displayed on the uniform or jersey of the player.
+        'uniform_number': 'uniformNumber',
+        # The fully-qualified URL for the official home page of the team.
+        'home_page_url': 'homePageURL',
+        # The seed or position in this particular round for which this player started. Useful for bracketed tournaments, such as tennis.
+        'round_position': 'roundPosition',
+    }
 
     def __init__(self, **kwargs):
         super(BasePlayerMetadata, self).__init__(**kwargs)
@@ -507,14 +400,6 @@ class BasePlayerMetadata(BasePersonMetadata):
             self.injury_phase_metadata = InjuryPhaseMetadata(
                 xmlelement = xmlelement.find(NEWSMLG2_NS+'injury-phase')
             )
-            self.team_idref = xmlelement.get('team-idref')
-            self.status = xmlelement.get('status')
-            self.lineup_slot = xmlelement.get('lineup-slot')
-            self.lineup_slot_sequence = xmlelement.get('lineup-slot-sequence')
-            self.scratch_reason = xmlelement.get('scratch-reason')
-            self.uniform_number = xmlelement.get('uniform-number')
-            self.home_page_url = xmlelement.get('home-page-url')
-            self.round_position = xmlelement.get('round-position')
 
     def as_dict(self):
         super(BasePlayerMetadata, self).as_dict()
@@ -522,30 +407,12 @@ class BasePlayerMetadata(BasePersonMetadata):
             self.dict.update({ 'careerPhaseMetadata': self.career_phase_metadata.as_dict() })
         if self.injury_phase_metadata:
             self.dict.update({ 'injuryPhaseMetadata': self.injury_phase_metadata.as_dict() })
-        if self.team_idref:
-            self.dict.update({ 'teamIdRef': self.injury_phase })
-        if self.status:
-            self.dict.update({ 'status': self.status })
-        if self.lineup_slot:
-            self.dict.update({ 'lineupSlot': self.lineup_slot })
-        if self.lineup_slot_sequence:
-            self.dict.update({ 'lineupSlotSequence': self.lineup_slot_sequence })
-        if self.scratch_reason:
-            self.dict.update({ 'scratchReason': self.scratch_reason })
-        if self.uniform_number:
-            self.dict.update({ 'uniformNumber': self.uniform_number })
-        if self.home_page_url:
-            self.dict.update({ 'homePageURL': self.home_page_url })
-        if self.round_position:
-            self.dict.update({ 'roundPosition': self.round_position })
         return self.dict
 
 
 class PlayerMetadata(BasePlayerMetadata):
-    dict = {}
 
     def __init__(self, **kwargs):
-        self.dict = {}
         super(PlayerMetadata, self).__init__(**kwargs)
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
@@ -576,6 +443,83 @@ class PlayerMetadata(BasePlayerMetadata):
         super(PlayerMetadata, self).as_dict()
         # TODO
         return self.dict
+
+
+class CareerPhaseMetadata(BasePlayerMetadata):
+    """
+    A description of where a player is playing, or has previously played.
+    Can be used to state where the player went to college.
+    Can also list previous teams of the player.
+    """
+    attributes = {
+        # Value can be college or professional, etc.
+        'phase-type': 'phaseType',
+        # When the player started this phase in the career,
+        # normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM.
+        # Use YYYY-MM-DD when no time is available.
+        'start-date': 'startDate',
+        # When the player ended this phase in the career,
+        # normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM.
+        # Use YYYY-MM-DD when no time is available.
+        'end-date': 'endDate',
+        # In lieu of a start-date and end-date. Generally in years.
+        # Could hold the number of years that a player was a pro.
+        # Use temporal-unit vocabulary.
+        'duration': 'duration',
+        # A subcategory of the phase-type, for example could be sophomore or rookie.
+        'subphase-type': 'subphaseType',
+        # Player's status within a particular phase.
+        # For example, active, injured, etc.
+        'phase-status': 'phaseStatus',
+        # A controlled vocabulary for the name attribute.
+        # States organization this player was in, for the duration of the phase.
+        # For example, league or team.
+        'phase-caliber': 'phaseCaliber',
+        # The metadata key within the phase-caliber.
+        # For example, l.nfl.com if phase-caliber is league.
+        # Or l.nfl.com-t.2 if phase-caliber is team.
+        'phase-caliber-key': 'phaseCaliberKey',
+        # The reason why the player entered this phase. For example, draft or trade.
+        'entry-reason': 'entryReason',
+        # The level within which the player was selected to enter this phase. For example, 1, if drafted in 1st round.
+        'selection-level': 'selectionLevel',
+        # The sublevel of the selection-level. For example, 27, if picked as 27th selection in 1st round.
+        'selection-sublevel': 'selectionSublevel',
+        # The total ranking amongst all levels in a draft.
+        'selection-overall': 'selectionOverall',
+        # The reason why the player exitted this phase. For example, retired or waived.
+        'exit-reason': 'exitReason'
+    }
+
+
+class InjuryPhaseMetadata(BasePlayerMetadata):
+    """ 
+    A description of where a player is playing, or has previously played.
+    Can be used to state where the player went to college.
+    Can also list previous teams of the player.
+    """
+    attributes = {
+        # Value can be college or professional, etc.
+        'phase-type': 'phaseType',
+        # When the player started this phase in the career, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available.
+        'start-date': 'startDate',
+        # When the player ended this phase in the career, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available.
+        'end-date': 'endDate',
+        # Player's status within a particular phase. For example, active, injured, etc.
+        'phase-status': 'phaseStatus',
+        # A controlled vocabulary for the injury. For example, thigh or hand or lower-back.
+        'injury-type': 'injuryType',
+        # A controlled vocabulary for the body side of the injury. For example, left or right.
+        'injury-side': 'injurySide',
+        # Generally, the date on which this player has a non-injured status, and has some probability of playing again.
+        'upcoming-event-date': 'upcomingEventDate',
+        # The key for the forthcoming event taking place on upcoming-event-date.
+        'upcoming-event-key': 'upcomingEventKey',
+        # A measurement of the status of the player for that upcoming event. For example, probable or likely.
+        'upcoming-event-status': 'upcomingEventStatus',
+        # A textual description for the injury phase.
+        'comment': 'comment'
+    }
 
 
 class Associate(BaseObject):
@@ -695,8 +639,9 @@ class Affiliation(CommonAttributes, CoverageAttributes):
     # The name associated with the organizational structure in which this item is a member.
     membership_name = None
  
-    def __init__(self, xmlelement=None, **kwargs):
-        super(Affiliation, self).__init__(xmlelement, **kwargs)
+    def __init__(self, **kwargs):
+        super(Affiliation, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.membership_idref = xmlelement.findtext(NEWSMLG2_NS+'membership-idref')
             self.membership_type = xmlelement.findtext(NEWSMLG2_NS+'membership-type')
@@ -727,84 +672,64 @@ class SiteMetadata(BaseEntityMetadata):
     """
     Metadata about the site.
     """
-    dict = {}
     sports_content_codes = None
-    # How many spectators can fill the site.
-    capacity = None
-    # Whether it is an indoor or outdoor site.
-    site_style = None
-    # Describes the surface upon which events are played.
-    # For example, in tennis, could be hard-court or grass or clay.
-    surface = None
-    # A controlled vocabulary for the site's shape. Example for motor-racing: oval.
-    shape = None
-    # The pitch or embankment of the field of play.
-    # Generally in degrees. Example for motor-racing: 13.
-    incline = None
-    # The length of the arena or field of play.
-    length = None
-    # The units used for the length attribute.
-    length_units = None
-    # A controlled vocabulary for the type or class of arena.
-    # Example for motor-racing: super-speedway.
-    type = None
-    # The website for the venue or arena.
-    home_page_url = None
-    # Date (and time) when a place was built, opened or so.
-    created = None
-    # Date (and time) when a place ceased to exist.
-    # (note camel case, this is to match XML Schema attribute definition)
-    ceasedToExist = None
-
-    def __init__(self, **kwargs):
-        self.dict = {}
-        super(SiteMetadata, self).__init__(**kwargs)
-        xmlelement = kwargs.get('xmlelement')
-        if type(xmlelement) == etree.Element:
-            self.sports_content_codes = SportsContentCodes(
-                xmlarray = xmlelement.find(NEWSMLG2_NS+'sports-content-codes')
-            )
-            self.capacity = xmlelement.get('capacity')
-            self.site_style= xmlelement.get('site-style')
-            self.surface = xmlelement.get('surface')
-            self.incline = xmlelement.get('incline')
-            self.length = xmlelement.get('length')
-            self.length_units = xmlelement.get('length-units')
-            self.type = xmlelement.get('type')
-            self.home_page_url = xmlelement.get('home-page-url')
-            self.created = xmlelement.get('created')
-            self.ceasedToExist = xmlelement.get('ceasedToExist')
-
-    def as_dict(self):
-        super(SiteMetadata, self).as_dict()
-        if self.sports_content_codes:
-            self.dict.update({'sportsContentCodes': self.sports_content_codes.as_dict() })
-        if self.capacity:
-            self.dict.update({'capacity': self.capacity })
-        if self.site_style:
-            self.dict.update({'siteStyle': self.site_style })
-        if self.surface:
-            self.dict.update({'surface': self.surface })
-        if self.incline:
-            self.dict.update({'incline': self.incline })
-        if self.length:
-            self.dict.update({'length': self.length })
-        if self.length_units:
-            self.dict.update({'lengthUnits': self.length_units })
-        if self.type:
-            self.dict.update({'type': self.type })
-        if self.home_page_url:
-            self.dict.update({'homePageURL': self.home_page_url })
-        if self.created:
-            self.dict.update({'created': self.created })
-        if self.ceasedToExist:
-            self.dict.update({'ceasedToExist': self.ceasedToExist })
-        return self.dict
+    attributes = {
+        # How many spectators can fill the site.
+        'capacity': 'capacity',
+        # Whether it is an indoor or outdoor site.
+        'site-style': 'siteStyle',
+        # Describes the surface upon which events are played.
+        # For example, in tennis, could be hard-court or grass or clay.
+        'surface': 'surface',
+        # A controlled vocabulary for the site's shape. Example for motor-racing: oval.
+        'shape': 'shape',
+        # The pitch or embankment of the field of play.
+        # Generally in degrees. Example for motor-racing: 13.
+        'incline': 'incline',
+        # The length of the arena or field of play.
+        'length': 'length',
+        # The units used for the length attribute.
+        'length-units': 'lengthUnits',
+        # A controlled vocabulary for the type or class of arena.
+        # Example for motor-racing: super-speedway.
+        'type': 'type',
+        # The website for the venue or arena.
+        'home-page-url': 'homePageURL',
+        # Date (and time) when a place was built, opened or so.
+        'created': 'created',
+        # Date (and time) when a place ceased to exist.
+        # (note camel case, it's written this way in the XML Schema attribute definition)
+        'ceasedToExist': 'ceasedToExist'
+    }
 
 
-class SiteStats(BaseObject):
-    # TODO
-    pass
+class SiteStats(CommonAttributes, CoverageAttributes):
+    """
+    Holder for statistics about the site.
+    """
+    attributes = {
+        # Statistics about the site, accurate for a particular occasion. home means the site is home for one of the teams or players. neutral that it is neutral to all participants in the event.</xs:documentation>
+        # enum: home or neutral
+        'alignment': 'alignment',
+        # How many spectators attended during the event.</xs:documentation>
+        'attendance': 'attendance',
+        # Average number of spectators that have attended.</xs:documentation>
+        'attendance-average': 'attendanceAverage',
+        # Temperature of the event recorded during the competition.</xs:documentation>
+        'temperature': 'temperature',
+        # Units of the temperature value.</xs:documentation>
+        'temperature-units': 'temperatureUnits',
+        # A controlled-vocabulary description of the weather, such as sunny, partly-cloudy, etc.</xs:documentation>
+        'weather-code': 'weatherCode',
+        # Additional comment about the weather.</xs:documentation>
+        'weather-label': 'weatherLabel',
+        # Wind reading of the event recorded during the competition.</xs:documentation>
+        'weather-wind': 'weatherWind',
+        # Predicted weather conditions for the event.</xs:documentation>
+        'weather-prediction': 'weatherPrediction',
+        # Percentage likelihood of precipitation.</xs:documentation>
+        'probability-of-precipitation': 'probabilityOfPrecipitation'
+    }
 
 
 class SiteStatsSet(GenericArray):
@@ -848,6 +773,3 @@ class Sites(GenericArray):
     Array of Site objects.
     """
     element_class = Site
-
-
-

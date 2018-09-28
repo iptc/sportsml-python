@@ -72,7 +72,6 @@ class GenericArray(BaseObject):
                     self.element_class_name
                 )
             for xmlelement in xmlarray:
-                # array_elem = self.element_class_name(xmlelement)
                 array_elem = self.element_class(xmlelement = xmlelement)
                 self.array_contents.append(array_elem)
 

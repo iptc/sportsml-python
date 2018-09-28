@@ -14,7 +14,9 @@ class SportsMLParser(object):
         if type(filename) == str:
             tree = etree.parse(filename)
             self._root_element = tree.getroot()
-            self.sports_content = SportsContent(self._root_element)
+            self.sports_content = SportsContent(
+                xmlelement = self._root_element
+            )
         else:
             raise Exception("filename should be a string")
 
