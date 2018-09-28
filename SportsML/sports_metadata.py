@@ -17,7 +17,7 @@ class CatalogRefs(GenericArray):
 class SportsTitles(GenericArray):
     """
     A short textual description of the document.
-    Can  show up in search results.
+    Can show up in search results.
     """
     element_class = ConceptNameType
 
@@ -45,7 +45,7 @@ class AdvisorySet(GenericArray):
     element_class = Advisory
 
 
-class FeatureNames(BaseObject):
+class FeatureNames(GenericArray):
     """
     A displayable name for the resource identified by the fixture-key.
     """
