@@ -148,8 +148,33 @@ class Base2Metadata(BaseMetadata):
         return self.dict
 
 
-class SportsContentQualifier(BaseObject):
-    pass
+class SportsContentQualifier(CommonAttributes):
+    """
+    Further refinement/elaboration of a sports-content-code.
+    If the document covers more than one of these, additional
+    sports-content-qualifier elements may be used.
+    """
+    attributes = {
+        # One specific gender or mixed.
+        # enum: 'male', 'female', 'mixed'
+        'gender': 'gender',
+        # Number of participants playing on a team or side in the events covered.
+        # SportsML vocabulary uri: http://cv.iptc.org/newscodes/spparticipantcount/
+        'participant-count': 'participantCount',
+        # The professional-status of the events covered.
+        # SportsML vocabulary uri: http://cv.iptc.org/newscodes/spprofessionalstatus/
+        'professional-status': 'professionalStatus',
+        # If the events covered are for special groups.
+        # Can be school-oriented, age-oriented, or group names, like Firefighters.
+        'special-group': 'specialGroup',
+        # Lowest age for participants, in years. Examples: 0, 14, 21.5.
+        'minimum-age': 'minimumAge',
+        # Highest age for participants, in years. Examples: 8, 65, 120.
+        'maximum-age': 'maximumAge',
+        # Events for persons with special-needs.
+        'special-needs': 'specialNeeds'
+    }
+ 
 
 class SportsContentQualifiers(GenericArray):
     """
