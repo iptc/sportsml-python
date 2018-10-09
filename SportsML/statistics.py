@@ -83,14 +83,12 @@ class GenericStat(GenericStatAttributes, CoverageAttributes):
     specifically set.
     TODO implement this logic ^^ for nested stats
     """
-    # dict = {}
     # The name of the stat.
     # SportsML names are same as attribute names of stats in the sport-specific plugins.
     names = None
     stats = None
 
     def __init__(self, **kwargs):
-        # self.dict = {}
         super(GenericStat, self).__init__(**kwargs)
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
@@ -168,6 +166,9 @@ class Base2Stats(BaseStats):
         # Points accumulated by this associate.
         # For example, points earned by a NASCAR owner.
         'points': 'points'
+    }
+    attribute_types = {
+        'points': 'integer'
     }
 
     def __init__(self, **kwargs):

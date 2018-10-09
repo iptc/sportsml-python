@@ -196,6 +196,9 @@ class ActionAttributes(CommonAttributes, BaseEventStateAttributeGroup):
         'substitution-reason': 'substitutionReason'
     }
 
+    attribute_types = {
+        'points': 'integer'
+    }
     """
         TODO:
         <xs:attributeGroup ref="americanFootballActionAttributes"/>

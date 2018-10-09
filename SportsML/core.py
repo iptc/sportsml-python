@@ -9,27 +9,21 @@ NITF_NS = '{http://iptc.org/std/NITF/2006-10-18/}'
 VERSION = 0.1
 
 class BaseObject():
-    # required for multiple inheritance to work propertly.
-    # probably helpful in the future for other objects too.
-    #def __init__(self, **kwargs):
-    #    pass
-
-    #def as_dict(self):
-    #    return
-
     attr_values = {}
+    attribute_types = {}
     dict = {}
 
+    # Load all 'attributes' from any class in the MRO inheritance chain
     @classmethod
     def get_attributes(cls):
         all_attrs = {}
-        for X in reversed(cls.__mro__):
-            attrs = vars(X).get('attributes', {})
+        for otherclass in reversed(cls.__mro__):
+            attrs = vars(otherclass).get('attributes', {})
             all_attrs.update(attrs)
         return all_attrs
 
     def __init__(self, **kwargs):
-        # super(BaseObject, self).__init__(**kwargs)
+        # this is our base object, we don't call super() from here
         self.dict = {}
         self.attr_values = {}
         xmlelement = kwargs.get('xmlelement')
@@ -40,13 +34,38 @@ class BaseObject():
                     self.attr_values[xml_attribute] = xmlelement.get(xml_attribute)
 
     def as_dict(self):
-        # super(BaseObject, self).as_dict()
+        # this is our base object, we don't call super() from here
         attrs = self.get_attributes()
         if attrs:
             for xml_attribute, json_property in attrs.items():
                 if xml_attribute in self.attr_values and self.attr_values[xml_attribute]:
-                    self.dict.update({ json_property: self.attr_values[xml_attribute] })
+                    property_value =  self.attr_values[xml_attribute]
+                    property_type = getattr(self, 'attribute_types', None).get(json_property, None)
+                    if property_type == "integer":
+                        property_value = int(property_value)
+                    self.dict.update({ json_property: property_value })
         return self.dict
+
+    def __bool__(self):
+        dict = self.as_dict()
+        if dict != {}:
+            return True
+        else:
+            return False
+
+#    def __bool__(self):
+#        # this is our base object, we don't call super() from here
+#        print ("__bool__ in "+str(type(self)))
+#        print ("\tchecking attrvalues:")
+#        if any([attr is not None for attr in self.attr_values]):
+#            return True
+#        print ("\tchecking other stuff:")
+#        self.attr_values = {}
+#        all_attrs = {}
+#        for otherclass in reversed(type(self).__mro__):
+#            print ("\tchecking "+str(otherclass))
+#        print ("\tdone - returning False\n")
+#        return False
 
 
 class GenericArray(BaseObject):
