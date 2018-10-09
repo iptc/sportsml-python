@@ -1,0 +1,56 @@
+{
+    "sportsMetadata": {
+        "docId": "xt.23209532-roster-dal",
+        "dateTime": "2015-03-03T15:46:00-05:00",
+        "language": "en-US",
+        "documentClass": "spct:dynamic-resource-file",
+        "fixtureKey": "spfixt:roster",
+        "sportsContentCodes": [
+            {
+                "codeType": "spct:publisher",
+                "codeKey": "publisher:sportsnetwork.com",
+                "codeName": "The Sports Network"
+            },
+            {
+                "codeType": "spct:distributor",
+                "codeKey": "distributor:xmlteam.com",
+                "codeName": "XML Team Solutions, Inc."
+            },
+            {
+                "codeType": "spct:sport",
+                "codeKey": "sport:15031000",
+                "codeName": "Ice Hockey"
+            },
+            {
+                "codeType": "spct:league",
+                "codeKey": "vendleague:l.nhl.com",
+                "codeName": "National Hockey League"
+            },
+            {
+                "codeType": "spct:priority",
+                "codeKey": "priority:normal"
+            },
+            {
+                "codeType": "spct:conference",
+                "codeKey": "vendconf:c.western",
+                "codeName": "Western"
+            },
+            {
+                "codeType": "spct:team",
+                "codeKey": "vendteam:l.nhl.com-t.21",
+                "codeName": "Dallas Stars"
+            }
+        ],
+        "catalogRefs": [
+            {
+                "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
+            },
+            {
+                "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+            }
+        ]
+    },
+    "statistics": [
+        {}
+    ]
+}

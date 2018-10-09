@@ -1,0 +1,210 @@
+{
+    "sportsEvents": [
+        {
+            "eventMetadata": {
+                "startDateTime": "2014-11-30T14:30:00+01:00",
+                "sites": [
+                    {
+                        "siteMetadata": {
+                            "names": [
+                                {
+                                    "name": "\u00d6stersunds skidstadion"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "teams": [
+                {
+                    "id": "BIB6",
+                    "teamStats": [
+                        {
+                            "score": "1.15.05,5"
+                        }
+                    ],
+                    "players": [
+                        {
+                            "playerMetadata": {
+                                "nationality": "France",
+                                "gender": "female",
+                                "names": [
+                                    {
+                                        "part": "nprt:first",
+                                        "name": "Anais"
+                                    },
+                                    {
+                                        "part": "nprt:last",
+                                        "name": "Bescond"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "18.20,6"
+                                }
+                            ]
+                        },
+                        {
+                            "playerMetadata": {
+                                "nationality": "France",
+                                "gender": "female",
+                                "names": [
+                                    {
+                                        "part": "nprt:first",
+                                        "name": "Anais"
+                                    },
+                                    {
+                                        "part": "nprt:last",
+                                        "name": "Chevalier"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "19.26,8"
+                                }
+                            ]
+                        },
+                        {
+                            "playerMetadata": {
+                                "nationality": "France",
+                                "gender": "male",
+                                "names": [
+                                    {
+                                        "part": "nprt:first",
+                                        "name": "Simon"
+                                    },
+                                    {
+                                        "part": "nprt:last",
+                                        "name": "Fourcade"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "19.13,2"
+                                }
+                            ]
+                        },
+                        {
+                            "playerMetadata": {
+                                "nationality": "France",
+                                "gender": "male",
+                                "names": [
+                                    {
+                                        "part": "nprt:first",
+                                        "name": "Martin"
+                                    },
+                                    {
+                                        "part": "nprt:last",
+                                        "name": "Fourcade"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "18.05,5"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "BIB2",
+                    "teamStats": [
+                        {
+                            "score": "1.15.05,7"
+                        }
+                    ],
+                    "players": [
+                        {
+                            "playerMetadata": {
+                                "nationality": "Norway",
+                                "gender": "female",
+                                "names": [
+                                    {
+                                        "part": "nprt:first",
+                                        "name": "Synnoeve"
+                                    },
+                                    {
+                                        "part": "nprt:last",
+                                        "name": "Solemdal"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "19.39,0"
+                                }
+                            ]
+                        },
+                        {
+                            "playerMetadata": {
+                                "nationality": "Norway",
+                                "gender": "female",
+                                "names": [
+                                    {
+                                        "part": "nprt:first",
+                                        "name": "Tiril"
+                                    },
+                                    {
+                                        "part": "nprt:last",
+                                        "name": "Eckhoff"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "18.27,2"
+                                }
+                            ]
+                        },
+                        {
+                            "playerMetadata": {
+                                "nationality": "Norway",
+                                "gender": "male",
+                                "names": [
+                                    {
+                                        "part": "nprt:first",
+                                        "name": "Vetle Sjastad"
+                                    },
+                                    {
+                                        "part": "nprt:last",
+                                        "name": "Christiansen"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "18.46,3"
+                                }
+                            ]
+                        },
+                        {
+                            "playerMetadata": {
+                                "nationality": "Norway",
+                                "gender": "male",
+                                "names": [
+                                    {
+                                        "part": "nprt:first",
+                                        "name": "Lars Helge"
+                                    },
+                                    {
+                                        "part": "nprt:last",
+                                        "name": "Birkeland"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "18.57,2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

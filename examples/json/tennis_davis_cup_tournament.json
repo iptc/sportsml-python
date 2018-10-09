@@ -1,0 +1,547 @@
+{
+    "tournaments": [
+        {
+            "tournamentDivisions": [
+                {
+                    "tournamentDivisionMetadata": {
+                        "sportsContentCodes": [
+                            {
+                                "codeType": "subj:qual",
+                                "sportsContentQualifiers": [
+                                    {
+                                        "gender": "male",
+                                        "participantCount": "spparticipantcount:individual"
+                                    }
+                                ]
+                            }
+                        ],
+                        "names": [
+                            {
+                                "name": "World group"
+                            }
+                        ]
+                    },
+                    "tournamentParts": [
+                        {
+                            "tournamentPartMetadata": {
+                                "type": "sptournamentphase:final",
+                                "names": [
+                                    {
+                                        "name": "Final"
+                                    }
+                                ]
+                            },
+                            "sportsEvents": [
+                                {
+                                    "eventMetadata": {
+                                        "startDateTime": "2011-12-02T10:00:00+02:00",
+                                        "eventStatus": "speventstatus:mid-event",
+                                        "sites": [
+                                            {
+                                                "siteMetadata": {
+                                                    "siteStyle": "spsitestyle:indoor",
+                                                    "surface": "spsitesurface:clay",
+                                                    "names": [
+                                                        {
+                                                            "name": "Olympic stadium"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tournamentPartMetadata": {
+                                "status": "speventstatus:post-event",
+                                "startDateTime": "2011-09-16",
+                                "endDateTime": "2011-09-18",
+                                "type": "sptournamentphase:semi-final",
+                                "names": [
+                                    {
+                                        "name": "Semi-final"
+                                    }
+                                ]
+                            },
+                            "sportsEvents": [
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event",
+                                        "sportsProperties": [
+                                            null
+                                        ],
+                                        "sites": [
+                                            {
+                                                "siteMetadata": {
+                                                    "style": "indoor",
+                                                    "surface": "spsitesurface:hard-court",
+                                                    "names": [
+                                                        {
+                                                            "name": "Belgrade Arena"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "teams": [
+                                        {
+                                            "id": "DC_Seribia",
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "2"
+                                                }
+                                            ],
+                                            "players": [
+                                                {}
+                                            ]
+                                        },
+                                        {
+                                            "id": "DC_Argentina",
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tournamentPartMetadata": {
+                                "status": "speventstatus:post-event",
+                                "startDateTime": "2011-07-08",
+                                "endDateTime": "2011-07-10",
+                                "type": "sptournamentphase:quarter-final",
+                                "names": [
+                                    {
+                                        "name": "Quarterfinals"
+                                    }
+                                ]
+                            },
+                            "sportsEvents": [
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "5"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tournamentPartMetadata": {
+                                "status": "speventstatus:post-event",
+                                "number": "1",
+                                "startDateTime": "2011-03-04",
+                                "endDateTime": "2011-03-06",
+                                "type": "sptournamentphase:round",
+                                "names": [
+                                    {
+                                        "name": "First round"
+                                    }
+                                ]
+                            },
+                            "sportsEvents": [
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "2"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "3"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "2"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "2"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded"
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -61,6 +61,18 @@ Use it from the command line as follows:
 
     $ tools/parser.py examples/xml/rugby-match-classic-generic-3.0.xml
 
+We have also included an extremely simple shell script that runs the above tool over
+the included SportsML XML files
+([examples taken from the SportsML repository](https://github.com/iptc/sportsml-3/tree/develop/3.0/examples) saved in `examples/xml`)
+and generates the corresponding SportsJS JSON files.
+
+    $ tools/convert-all-xml-to-json.sh
+
+The converted files are available in the `examples/json` folder. They should all validate against the
+[SportsJS JSON Schema](https://github.com/iptc/sportsjs-dev/tree/develop/specification)
+(but they don't right now - that's probably due to bugs in the SportsJS JSON Schema which is
+currently under development).
+
 ## Release notes
 
 * 0.1 - First release, pinned to Python 3 only (use pip >9.0 to ensure pip's

@@ -1,0 +1,505 @@
+{
+    "sportsMetadata": {
+        "docId": "xt.sdi.20151012022705-standings_NHL",
+        "dateTime": "2015-10-12T02:27:05-04:00",
+        "language": "en-US",
+        "documentClass": "spct:standings",
+        "fixtureKey": "spfixt:standings",
+        "sportsContentCodes": [
+            {
+                "codeType": "spct:publisher",
+                "codeKey": "publisher:sportsdirectinc.com",
+                "codeName": "Sports Direct, Inc."
+            },
+            {
+                "codeType": "spct:distributor",
+                "codeKey": "distributor:xmlteam.com",
+                "codeName": "XML Team Solutions, Inc."
+            },
+            {
+                "codeType": "spct:sport",
+                "codeKey": "sport:15031000",
+                "codeName": "Ice Hockey"
+            },
+            {
+                "codeType": "spct:league",
+                "codeKey": "vendleague:l.nhl.com",
+                "codeName": "National Hockey League"
+            },
+            {
+                "codeType": "spct:season",
+                "codeKey": "season:2015"
+            }
+        ],
+        "catalogRefs": [
+            {
+                "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
+            },
+            {
+                "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+            }
+        ]
+    },
+    "standings": [
+        {
+            "teams": [
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        }
+    ]
+}

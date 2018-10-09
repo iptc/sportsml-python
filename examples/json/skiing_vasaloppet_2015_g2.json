@@ -1,0 +1,315 @@
+{
+    "tournaments": [
+        {
+            "tournamentMetadata": {
+                "status": "speventstatus:post-event",
+                "startDateTime": "2015-03-08",
+                "venueType": "spsitestyle:outdoor",
+                "surfaceType": "vendst:snow",
+                "names": [
+                    {
+                        "name": "Vasaloppet 2015"
+                    }
+                ],
+                "sites": [
+                    {}
+                ]
+            },
+            "tournamentDivisions": [
+                {
+                    "tournamentDivisionMetadata": {
+                        "sportsContentCodes": [
+                            {
+                                "codeType": "subj:qual",
+                                "sportsContentQualifiers": [
+                                    {
+                                        "gender": "male",
+                                        "participantCount": "spparticipantcount:individual"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "sportsEvents": [
+                        {
+                            "players": [
+                                {
+                                    "playerMetadata": {
+                                        "nationality": "Norge",
+                                        "dateOfDeath": "1985",
+                                        "gender": "male",
+                                        "names": [
+                                            {
+                                                "part": "nprt:first",
+                                                "name": "Petter"
+                                            },
+                                            {
+                                                "part": "nprt:last",
+                                                "name": "Eliassen"
+                                            }
+                                        ]
+                                    },
+                                    "playerStats": [
+                                        {
+                                            "score": "4.01.48",
+                                            "class": "M\u00e4n"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "playerMetadata": {
+                                        "nationality": "Norge",
+                                        "dateOfDeath": "1972",
+                                        "gender": "male",
+                                        "names": [
+                                            {
+                                                "part": "nprt:first",
+                                                "name": "Anders"
+                                            },
+                                            {
+                                                "part": "nprt:last",
+                                                "name": "Aukland"
+                                            }
+                                        ]
+                                    },
+                                    "playerStats": [
+                                        {
+                                            "score": "4.01.53",
+                                            "class": "M\u00e4n"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "playerMetadata": {
+                                        "nationality": "Tjeckien",
+                                        "dateOfDeath": "1973",
+                                        "gender": "male",
+                                        "names": [
+                                            {
+                                                "part": "nprt:first",
+                                                "name": "Stanislav"
+                                            },
+                                            {
+                                                "part": "nprt:last",
+                                                "name": "Rezac"
+                                            }
+                                        ]
+                                    },
+                                    "playerStats": [
+                                        {
+                                            "score": "4.02.12",
+                                            "class": "M\u00e4n"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "playerMetadata": {
+                                        "nationality": "Norge",
+                                        "dateOfDeath": "1983",
+                                        "gender": "male",
+                                        "names": [
+                                            {
+                                                "part": "nprt:first",
+                                                "name": "\u00d6ystein"
+                                            },
+                                            {
+                                                "part": "nprt:last",
+                                                "name": "Pettersen"
+                                            }
+                                        ]
+                                    },
+                                    "playerStats": [
+                                        {
+                                            "score": "4.04.43",
+                                            "class": "M\u00e4n"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "playerMetadata": {
+                                        "nationality": "Norge",
+                                        "dateOfDeath": "1981",
+                                        "gender": "male",
+                                        "names": [
+                                            {
+                                                "part": "nprt:first",
+                                                "name": "Kristian"
+                                            },
+                                            {
+                                                "part": "nprt:last",
+                                                "name": "Dahl"
+                                            }
+                                        ]
+                                    },
+                                    "playerStats": [
+                                        {
+                                            "score": "4.05.01",
+                                            "class": "M\u00e4n"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "playerMetadata": {
+                                        "nationality": "Norge",
+                                        "dateOfDeath": "1983",
+                                        "gender": "male",
+                                        "names": [
+                                            {
+                                                "part": "nprt:first",
+                                                "name": "Tord Asle"
+                                            },
+                                            {
+                                                "part": "nprt:last",
+                                                "name": "Gjerdalen"
+                                            }
+                                        ]
+                                    },
+                                    "playerStats": [
+                                        {
+                                            "score": "4.07.01",
+                                            "class": "M\u00e4n"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "playerMetadata": {
+                                        "nationality": "Norge",
+                                        "dateOfDeath": "1984",
+                                        "gender": "male",
+                                        "names": [
+                                            {
+                                                "part": "nprt:first"
+                                            },
+                                            {
+                                                "part": "nprt:last"
+                                            }
+                                        ]
+                                    },
+                                    "playerStats": [
+                                        {
+                                            "score": "4.07.23",
+                                            "class": "M\u00e4n"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "playerMetadata": {
+                                        "nationality": "Sverige",
+                                        "dateOfDeath": "1978",
+                                        "gender": "male",
+                                        "names": [
+                                            {
+                                                "part": "nprt:first",
+                                                "name": "Jerry"
+                                            },
+                                            {
+                                                "part": "nprt:last",
+                                                "name": "Ahrlin"
+                                            }
+                                        ]
+                                    },
+                                    "playerStats": [
+                                        {
+                                            "score": "4.07.30",
+                                            "class": "M\u00e4n"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tournamentDivisionMetadata": {
+                        "sportsContentCodes": [
+                            {
+                                "codeType": "subj:qual",
+                                "sportsContentQualifiers": [
+                                    {
+                                        "gender": "female",
+                                        "participantCount": "spparticipantcount:individual"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "sportsEvents": [
+                        {
+                            "players": [
+                                {
+                                    "playerMetadata": {
+                                        "nationality": "Polen",
+                                        "dateOfDeath": "1983",
+                                        "gender": "female",
+                                        "names": [
+                                            {
+                                                "part": "nprt:first",
+                                                "name": "Justyna"
+                                            },
+                                            {
+                                                "part": "nprt:last",
+                                                "name": "Kowalczyk"
+                                            }
+                                        ]
+                                    },
+                                    "playerStats": [
+                                        {
+                                            "score": "4.41.02",
+                                            "class": "Damer"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "playerMetadata": {
+                                        "nationality": "Sverige",
+                                        "dateOfDeath": "1983",
+                                        "gender": "female",
+                                        "names": [
+                                            {
+                                                "part": "nprt:first",
+                                                "name": "Britta"
+                                            },
+                                            {
+                                                "part": "nprt:last",
+                                                "name": "Johansson Norgren"
+                                            }
+                                        ]
+                                    },
+                                    "playerStats": [
+                                        {
+                                            "score": "4.45.18",
+                                            "class": "Damer"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "playerMetadata": {
+                                        "nationality": "Schweiz",
+                                        "dateOfDeath": "1982",
+                                        "gender": "female",
+                                        "names": [
+                                            {
+                                                "part": "nprt:first",
+                                                "name": "Seraina"
+                                            },
+                                            {
+                                                "part": "nprt:last",
+                                                "name": "Boner"
+                                            }
+                                        ]
+                                    },
+                                    "playerStats": [
+                                        {
+                                            "score": "4.49.16",
+                                            "class": "Damer"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
