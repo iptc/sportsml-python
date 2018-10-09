@@ -10,10 +10,14 @@ class SportsMLParser(object):
     header = None
     order = None
 
-    def __init__(self, filename):
-        if type(filename) == str:
-            tree = etree.parse(filename)
-            self._root_element = tree.getroot()
+    def __init__(self, param):
+        if type(param) == str:
+            tree = None
+            try:
+                tree = etree.parse(param)
+                self._root_element = tree.getroot()
+            except IOError:
+                self._root_element = etree.fromstring(param)
             if self._root_element.tag == NEWSMLG2_NS+'newsItem':
                 # it's a NewsML-G2 item, look for SportsContent inside of it
                 sportsml_top_element = self._root_element.find(
