@@ -185,7 +185,8 @@ class BaseTeamMetadata(BaseObject):
 
 class TeamMetadata(BaseTeamMetadata):
     team_metadata_baseball = None
-    # Holds metadata about a team (foursome perhaps) playing in the match. | Currently only holds the rank of the team.
+    # Holds metadata about a team (foursome perhaps) playing in the match.
+    # Currently only holds the rank of the team.
     team_metadata_golf = None
     team_metadata_motor_racing = None
 
@@ -408,6 +409,10 @@ class BasePlayerMetadata(BasePersonMetadata):
         if self.injury_phase_metadata:
             self.dict.update({ 'injuryPhaseMetadata': self.injury_phase_metadata.as_dict() })
         return self.dict
+
+    # FIXME
+    # def __bool__(self):
+    #    return self.career_phase_metadata or self.injury_phase_metadata or self.attr_values
 
 
 class PlayerMetadata(BasePlayerMetadata):
