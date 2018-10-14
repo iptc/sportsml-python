@@ -68,10 +68,9 @@ and generates the corresponding SportsJS JSON files.
 
     $ tools/convert-all-xml-to-json.sh
 
-The converted files are available in the `examples/json` folder. They should all validate against the
-[SportsJS JSON Schema](https://github.com/iptc/sportsjs-dev/tree/develop/specification)
-(but they don't right now - that's probably due to bugs in the SportsJS JSON Schema which is
-currently under development).
+The converted files are available in the `examples/json` folder. They now all validate
+against the work-in-progress 
+[SportsJS JSON Schema](https://github.com/iptc/sportsjs-dev/tree/develop/specification).
 
 ## Release notes
 
