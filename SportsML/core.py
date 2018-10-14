@@ -40,7 +40,7 @@ class BaseObject():
             for xml_attribute, json_property in attrs.items():
                 if xml_attribute in self.attr_values and self.attr_values[xml_attribute]:
                     property_value =  self.attr_values[xml_attribute]
-                    property_type = getattr(self, 'attribute_types', None).get(json_property, None)
+                    property_type = getattr(self, 'attribute_types', None).get(xml_attribute, None)
                     if property_type == "integer":
                         property_value = int(property_value)
                     self.dict.update({ json_property: property_value })
