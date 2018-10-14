@@ -74,6 +74,9 @@ class BaseEventMetadata(Base2Metadata, BaseEventStateAttributes):
         # (Added after decision at meeting 2017-06-13.)
         'round-number': 'roundNumber'
     }
+    attribute_types = {
+        'event-number': 'integer',
+    }
 
     def __init__(self, **kwargs):
         super(BaseEventMetadata, self).__init__(**kwargs)

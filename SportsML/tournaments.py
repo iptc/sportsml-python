@@ -25,6 +25,11 @@ class TournamentAttributes(BaseObject):
         # The number of the particular tournament part eg. 2 for second round or second leg
         'number': 'number',
     }
+    attribute_types = {
+        'minimum-subparts': 'integer',
+        'maximum-subparts': 'integer',
+        'number': 'integer',
+    }
 
 
 class BaseTournamentMetadata(Base2Metadata, TournamentAttributes):

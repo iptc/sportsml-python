@@ -5,6 +5,7 @@ import json
 
 from .core import NEWSMLG2_NS, BaseObject, GenericArray
 from .base_metadata import CommonAttributes, CoverageAttributes
+from .newsmlg2 import Names
 
 
 class Statistic(BaseObject):
@@ -92,7 +93,6 @@ class GenericStat(GenericStatAttributes, CoverageAttributes):
         super(GenericStat, self).__init__(**kwargs)
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
-            from .entities import Names
             self.names = Names(
                 xmlarray = xmlelement.findall(NEWSMLG2_NS+'name')
             )
@@ -204,7 +204,10 @@ class PenaltyStats(CommonAttributes):
         # Amount penalized. Eg. total minutes (ice-hockey, lacrosse, etc.) or yards (american-football).
         'value': 'value'
     }
-    
+    attribute_types = {
+        'count': 'integer'
+    }
+
 
 class PenaltyStatsSet(GenericArray):
     """
@@ -340,6 +343,9 @@ class BaseGenericEntityStats(Base3Stats):
         # course of a particular time-span, such as a season.
         'time-played-total': 'timePlayedTotal'
     }
+    attribute_types = {
+        'events-played': 'integer'
+    }
     
     def __init__(self, **kwargs):
         super(BaseGenericEntityStats, self).__init__(**kwargs)
@@ -401,7 +407,7 @@ class BasePlayerStats(BaseGenericEntityStats):
         # Value for the average amount of time played per-event by the player over the course of a particular time-span, such as a season.
         'time-played-event-average': 'timePlayedEventAverage',
         # Number of sports-events the player has played in since the start of the event.
-        'events-started': 'eventsStandard',
+        'events-started': 'eventsStarted',
         # Exact universal time player entered event. For example, the time a downhill skiier began a run.
         'date-time-entered': 'dateTimeEntered',
         # Exact universal time player exited event. For example, the time a downhill skiier finished a run.
@@ -410,6 +416,9 @@ class BasePlayerStats(BaseGenericEntityStats):
         'event-time-entered': 'eventTimeEntered',
         # Time player exited event expressed as conventional game-clock time. For example, the game minute a soccer player was subbed off the field.
         'event-time-exited': 'eventTimeExited'
+    }
+    attribute_types = {
+        'events-started': 'integer'
     }
 
 

@@ -197,7 +197,8 @@ class ActionAttributes(CommonAttributes, BaseEventStateAttributeGroup):
     }
 
     attribute_types = {
-        'points': 'integer'
+        'points': 'integer',
+        'shot-distance': 'integer',
     }
     """
         TODO:
