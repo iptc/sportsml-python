@@ -22,6 +22,7 @@ class IntlStringType(BaseObject):
     # TODO
     pass
 
+
 class ConceptNameType(TimeValidityAttributes, IntlStringType):
     """
     The type of a natural language name for the concept (Type defined in this XML Schema only)
@@ -53,6 +54,13 @@ class ConceptNameType(TimeValidityAttributes, IntlStringType):
         elif self.name:
             self.dict.update({'name': self.name})
         return self.dict
+
+
+class Names(GenericArray):
+    """
+    Array of ConceptNameType objects.
+    """
+    element_class = ConceptNameType
 
 
 class FlexAttributes(BaseObject):
@@ -290,6 +298,11 @@ class Locality(BaseObject):
     """
     pass
 
+
+class Areas(BaseObject):
+    pass
+
+
 class Address(CommonPowerAttributes):
     attributes = {
         # A refinement of the semantics of the postal address - expressed by a QCode
@@ -393,7 +406,41 @@ class POIDetails(CommonPowerAttributes):
 
 
 
-class FlexLocationPropType(FlexAttributes, CommonPowerAttributes, I18NAttributes):
+class ConceptDefinitionGroup(BaseObject):
+    """
+    A group of properites required to define the concept
+    """
+    def __init__(self, **kwargs):
+        super(ConceptDefinitionGroup, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
+        if type(xmlelement) == etree.Element:
+            self.names = Names(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'name')
+            )
+            self.definition = xmlelement.findtext(NEWSMLG2_NS+'definition')
+            self.note = xmlelement.findtext(NEWSMLG2_NS+'note')
+            self.facet = xmlelement.findtext(NEWSMLG2_NS+'facet')
+            self.remote_info= xmlelement.findtext(NEWSMLG2_NS+'remoteInfo')
+            self.hierarchy_info = xmlelement.findtext(NEWSMLG2_NS+'hierarchyInfo')
+
+    def as_dict(self):
+        super(ConceptDefinitionGroup, self).as_dict()
+        if self.names:
+            self.dict.update({'names': self.names.as_dict() })
+        if self.definition:
+            self.dict.update({'definition': self.definition })
+        if self.note:
+            self.dict.update({'note': self.note })
+        if self.facet:
+            self.dict.update({'facet': self.facet })
+        if self.remote_info:
+            self.dict.update({'remoteInfo': self.remote_info })
+        if self.hierarchy_info:
+            self.dict.update({'hierarchyInfo': self.hierarchy_info })
+        return self.dict
+
+
+class FlexLocationPropType(ConceptDefinitionGroup, FlexAttributes, CommonPowerAttributes, I18NAttributes):
     """
     Flexible location (geopolitical area of point-of-interest)
     data type for both controlled and uncontrolled values
@@ -406,16 +453,15 @@ class FlexLocationPropType(FlexAttributes, CommonPowerAttributes, I18NAttributes
         super(FlexLocationPropType, self).__init__(**kwargs)
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
-            #self.geo_area_details = GeoAreaDetails(
-            #    # note camelCase element name, this is correct
-            #    xmlelement = xmlelement.find(NEWSMLG2_NS+'geoAreaDetails')
-            #)
-            #self.poi_details = POIDetails(
-            #    # note case of element name, this is correct
-            #    xmlelement = xmlelement.find(NEWSMLG2_NS+'POIDetails')
-            #)
+            self.geo_area_details = GeoAreaDetails(
+                # note camelCase element name, this is correct
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'geoAreaDetails')
+            )
+            self.poi_details = POIDetails(
+                # note case of element name, this is correct
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'POIDetails')
+            )
             """
-            # TODO <xs:group ref="ConceptDefinitionGroup" minOccurs="0" />
             # TODO <xs:group ref="ConceptRelationshipsGroup" minOccurs="0" />
             """
 
@@ -459,3 +505,10 @@ class CatalogRef(BaseObject):
         'href': 'href'
     }
 
+
+class CatalogRefs(GenericArray):
+    """
+    A reference to document(s) listing externally-supplied controlled vocabularies.
+    The catalog file can be in NewsML 1.
+    """
+    element_class = CatalogRef

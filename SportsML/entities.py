@@ -9,8 +9,8 @@ from .base_metadata import (
     CommonAttributes, CoverageAttributes,
     SportsContentCodes, SportsProperties
 )
-from .newsmlg2 import ConceptNameType, FlexLocationPropType
-from .statistics import TeamStatsSet, PlayerStatsSet, WageringStatsSet, OfficialStats
+from .newsmlg2 import Names, FlexLocationPropType
+from .statistics import TeamStatsSet, PlayerStatsSet, WageringStatsSet, OfficialStats, Base2Stats
 
 
 
@@ -527,13 +527,51 @@ class InjuryPhaseMetadata(BasePlayerMetadata):
     }
 
 
-class Associate(BaseObject):
-    # TODO
+class BaseAssociateMetadata(BasePersonMetadata):
+    """
+    Metadata that describes an associate
+    Generally does not change over the course of a sports-events.
+    """
     pass
 
+
+class AssociateMetadata(BaseAssociateMetadata):
+    pass
+    # TODO: <xs:element name="associate-metadata-motor-racing"  type="motorRacingAssociateMetadataComplexType"/>
+
+
+class AssociateStats(Base2Stats):
+    pass
+
+
+class Associate(CommonAttributes):
+    """
+    Manager or coach or jockey, etc.
+    An individual or a group that assists a team or player, and functions in a supporting capacity.
+    """
+    def __init__(self,  **kwargs):
+        super(Associate, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
+        if type(xmlelement) == etree.Element:
+            self.associate_metadata = AssociateMetadata(
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'associate-metadata')
+            )
+            self.associate_stats = AssociateStats(
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'associate-stats')
+            )
+            self.affiliations = Affiliations(
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'affiliation')
+            )
+
     def as_dict(self):
-        # TODO
-        return None
+        super(Associate, self).as_dict()
+        if self.associate_metadata:
+            self.dict.update({ 'associateMetadata': self.associate_metadata.as_dict() })
+        if self.associate_stats:
+            self.dict.update({ 'associateStats': self.associate_stats.as_dict() })
+        if self.affiliations:
+            self.dict.update({ 'affiliations': self.affiliations.as_dict() })
+        return self.dict
 
 
 class Associates(GenericArray):
@@ -664,13 +702,6 @@ class Affiliation(CommonAttributes, CoverageAttributes):
         if self.membership_name:
             self.dict.update({'membership_name': self.membership_name})
         return self.dict
-
-
-class Names(GenericArray):
-    """
-    Array of ConceptNameType objects.
-    """
-    element_class = ConceptNameType
 
 
 class SiteMetadata(BaseEntityMetadata):
