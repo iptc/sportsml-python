@@ -10,7 +10,14 @@
                                 {
                                     "name": "\u00d6stersunds skidstadion"
                                 }
-                            ]
+                            ],
+                            "homeLocation": {
+                                "names": [
+                                    {
+                                        "name": "\u00d6stersund"
+                                    }
+                                ]
+                            }
                         }
                     }
                 ]

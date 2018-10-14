@@ -1,55 +1,57 @@
 {
-    "sportsMetadata": {
-        "docId": "xt.opta.20141004192343-755363-post-event",
-        "dateTime": "2014-10-04T19:23:43+01:00",
-        "language": "en-US",
-        "documentClass": "spct:event-summary",
-        "fixtureKey": "spfixt:event-stats",
-        "sportsContentCodes": [
-            {
-                "codeType": "spct:publisher",
-                "codeKey": "publisher:optasports.com",
-                "codeName": "Opta"
-            },
-            {
-                "codeType": "spct:distributor",
-                "codeKey": "distributor:xmlteam.com",
-                "codeName": "XML Team Solutions, Inc."
-            },
-            {
-                "codeType": "spct:sport",
-                "codeKey": "sport:15054000",
-                "codeName": "Soccer"
-            },
-            {
-                "codeType": "spct:league",
-                "codeKey": "vendleague:l.premierleague.com",
-                "codeName": "English Barclays Premier League"
-            },
-            {
-                "codeType": "spct:season",
-                "codeKey": "season:2014"
-            },
-            {
-                "codeType": "spct:team",
-                "codeKey": "vendteam:o.thefa.com-t.12",
-                "codeName": "Manchester City The Blues"
-            },
-            {
-                "codeType": "spct:team",
-                "codeKey": "vendteam:o.thefa.com-t.2",
-                "codeName": "Aston Villa Villans"
-            }
-        ],
-        "catalogRefs": [
-            {
-                "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
-            },
-            {
-                "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
-            }
-        ]
-    },
+    "sportsMetadata": [
+        {
+            "docId": "xt.opta.20141004192343-755363-post-event",
+            "dateTime": "2014-10-04T19:23:43+01:00",
+            "language": "en-US",
+            "documentClass": "spct:event-summary",
+            "fixtureKey": "spfixt:event-stats",
+            "sportsContentCodes": [
+                {
+                    "codeType": "spct:publisher",
+                    "codeKey": "publisher:optasports.com",
+                    "codeName": "Opta"
+                },
+                {
+                    "codeType": "spct:distributor",
+                    "codeKey": "distributor:xmlteam.com",
+                    "codeName": "XML Team Solutions, Inc."
+                },
+                {
+                    "codeType": "spct:sport",
+                    "codeKey": "sport:15054000",
+                    "codeName": "Soccer"
+                },
+                {
+                    "codeType": "spct:league",
+                    "codeKey": "vendleague:l.premierleague.com",
+                    "codeName": "English Barclays Premier League"
+                },
+                {
+                    "codeType": "spct:season",
+                    "codeKey": "season:2014"
+                },
+                {
+                    "codeType": "spct:team",
+                    "codeKey": "vendteam:o.thefa.com-t.12",
+                    "codeName": "Manchester City The Blues"
+                },
+                {
+                    "codeType": "spct:team",
+                    "codeKey": "vendteam:o.thefa.com-t.2",
+                    "codeName": "Aston Villa Villans"
+                }
+            ],
+            "catalogRefs": [
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
+                },
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+                }
+            ]
+        }
+    ],
     "sportsEvents": [
         {
             "eventMetadata": {
@@ -72,7 +74,8 @@
                                     "part": "nprt:common",
                                     "name": "Villa Park"
                                 }
-                            ]
+                            ],
+                            "homeLocation": {}
                         },
                         "siteStats": [
                             {
@@ -1490,7 +1493,18 @@
                         }
                     ],
                     "associates": [
-                        null
+                        {
+                            "id": "man37630",
+                            "associateMetadata": {
+                                "key": "vendperson:man37630",
+                                "positionEvent": "vendascpos:Manager",
+                                "names": [
+                                    {
+                                        "full": "Paul Lambert"
+                                    }
+                                ]
+                            }
+                        }
                     ]
                 },
                 {
@@ -3011,7 +3025,18 @@
                         }
                     ],
                     "associates": [
-                        null
+                        {
+                            "id": "man257",
+                            "associateMetadata": {
+                                "key": "vendperson:man257",
+                                "positionEvent": "vendascpos:Manager",
+                                "names": [
+                                    {
+                                        "full": "Manuel Pellegrini"
+                                    }
+                                ]
+                            }
+                        }
                     ]
                 }
             ],

@@ -21,15 +21,15 @@
                             "penaltyStats": [
                                 {
                                     "type": "team technical fouls",
-                                    "count": "0"
+                                    "count": 0
                                 },
                                 {
                                     "type": "technical fouls",
-                                    "count": "2"
+                                    "count": 2
                                 },
                                 {
                                     "type": "personal fouls",
-                                    "count": "24"
+                                    "count": 24
                                 }
                             ]
                         }
@@ -52,11 +52,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "5"
+                                            "count": 5
                                         }
                                     ]
                                 }
@@ -79,11 +79,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "3"
+                                            "count": 3
                                         }
                                     ]
                                 }
@@ -106,11 +106,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "1"
+                                            "count": 1
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "2"
+                                            "count": 2
                                         }
                                     ]
                                 }
@@ -133,11 +133,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "1"
+                                            "count": 1
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "3"
+                                            "count": 3
                                         }
                                     ]
                                 }
@@ -160,11 +160,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "3"
+                                            "count": 3
                                         }
                                     ]
                                 }
@@ -187,11 +187,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "1"
+                                            "count": 1
                                         }
                                     ]
                                 }
@@ -214,11 +214,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "2"
+                                            "count": 2
                                         }
                                     ]
                                 }
@@ -241,11 +241,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "1"
+                                            "count": 1
                                         }
                                     ]
                                 }
@@ -268,11 +268,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "2"
+                                            "count": 2
                                         }
                                     ]
                                 }
@@ -295,11 +295,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "2"
+                                            "count": 2
                                         }
                                     ]
                                 }
@@ -318,15 +318,15 @@
                             "penaltyStats": [
                                 {
                                     "type": "team technical fouls",
-                                    "count": "2"
+                                    "count": 2
                                 },
                                 {
                                     "type": "technical fouls",
-                                    "count": "3"
+                                    "count": 3
                                 },
                                 {
                                     "type": "personal fouls",
-                                    "count": "23"
+                                    "count": 23
                                 }
                             ]
                         }
@@ -349,11 +349,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "3"
+                                            "count": 3
                                         }
                                     ]
                                 }
@@ -376,11 +376,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "4"
+                                            "count": 4
                                         }
                                     ]
                                 }
@@ -403,11 +403,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "1"
+                                            "count": 1
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "0"
+                                            "count": 0
                                         }
                                     ]
                                 }
@@ -430,11 +430,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "3"
+                                            "count": 3
                                         }
                                     ]
                                 }
@@ -457,11 +457,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "2"
+                                            "count": 2
                                         }
                                     ]
                                 }
@@ -484,11 +484,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "1"
+                                            "count": 1
                                         }
                                     ]
                                 }
@@ -511,11 +511,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "2"
+                                            "count": 2
                                         }
                                     ]
                                 }
@@ -538,11 +538,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "4"
+                                            "count": 4
                                         }
                                     ]
                                 }
@@ -565,11 +565,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "2"
+                                            "count": 2
                                         }
                                     ]
                                 }
@@ -592,11 +592,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "1"
+                                            "count": 1
                                         }
                                     ]
                                 }
@@ -619,11 +619,11 @@
                                     "penaltyStats": [
                                         {
                                             "type": "technical fouls",
-                                            "count": "0"
+                                            "count": 0
                                         },
                                         {
                                             "type": "personal fouls",
-                                            "count": "1"
+                                            "count": 1
                                         }
                                     ]
                                 }

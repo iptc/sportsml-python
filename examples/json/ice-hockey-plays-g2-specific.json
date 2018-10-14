@@ -1369,7 +1369,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Tip-In",
-                    "shotDistance": "16",
+                    "shotDistance": 16,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "75,-6",
                     "participants": [
@@ -1767,7 +1767,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "22",
+                    "shotDistance": 22,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "87,-22",
                     "participants": [
@@ -2064,7 +2064,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "16",
+                    "shotDistance": 16,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "82,14",
                     "participants": [
@@ -2324,7 +2324,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "16",
+                    "shotDistance": 16,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-84,-15",
                     "participants": [
@@ -2626,7 +2626,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Backhand",
-                    "shotDistance": "22",
+                    "shotDistance": 22,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "72,-13",
                     "participants": [
@@ -2800,7 +2800,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "83",
+                    "shotDistance": 83,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-10,-23",
                     "participants": [
@@ -2936,7 +2936,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "17",
+                    "shotDistance": 17,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "76,10",
                     "participants": [
@@ -2965,7 +2965,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "11",
+                    "shotDistance": 11,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "79,-3",
                     "participants": [
@@ -3524,7 +3524,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "32",
+                    "shotDistance": 32,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-63,-18",
                     "participants": [
@@ -3549,7 +3549,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "55",
+                    "shotDistance": 55,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-41,26",
                     "participants": [
@@ -3659,7 +3659,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "13",
+                    "shotDistance": 13,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "82,-11",
                     "participants": [
@@ -4217,7 +4217,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "45",
+                    "shotDistance": 45,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "46,-10",
                     "participants": [
@@ -4319,7 +4319,7 @@
                     "periodValue": "1",
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
-                    "shotDistance": "0",
+                    "shotDistance": 0,
                     "fieldLocation": "72,9",
                     "participants": [
                         {
@@ -4373,7 +4373,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "28",
+                    "shotDistance": 28,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "65,14",
                     "participants": [
@@ -5275,7 +5275,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "24",
+                    "shotDistance": 24,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-87,-24",
                     "participants": [
@@ -5304,7 +5304,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "56",
+                    "shotDistance": 56,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-39,25",
                     "participants": [
@@ -5519,7 +5519,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "20",
+                    "shotDistance": 20,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-87,20",
                     "participants": [
@@ -5767,7 +5767,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "53",
+                    "shotDistance": 53,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-40,19",
                     "participants": [
@@ -6084,7 +6084,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "48",
+                    "shotDistance": 48,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "42,1",
                     "participants": [
@@ -6192,7 +6192,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "47",
+                    "shotDistance": 47,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "53,29",
                     "participants": [
@@ -6342,7 +6342,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Snap",
-                    "shotDistance": "15",
+                    "shotDistance": 15,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "goalZone": "vendgoalzone:2",
                     "fieldLocation": "75,-2",
@@ -7403,7 +7403,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "13",
+                    "shotDistance": 13,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-78,5",
                     "participants": [
@@ -7597,7 +7597,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "16",
+                    "shotDistance": 16,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-87,-16",
                     "participants": [
@@ -8030,7 +8030,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Tip-In",
-                    "shotDistance": "11",
+                    "shotDistance": 11,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "79,1",
                     "participants": [
@@ -8235,7 +8235,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "38",
+                    "shotDistance": 38,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "52,-4",
                     "participants": [
@@ -8264,7 +8264,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Backhand",
-                    "shotDistance": "11",
+                    "shotDistance": 11,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-79,3",
                     "participants": [
@@ -8451,7 +8451,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "16",
+                    "shotDistance": 16,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "80,-13",
                     "participants": [
@@ -8475,7 +8475,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Tip-In",
-                    "shotDistance": "10",
+                    "shotDistance": 10,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "80,-3",
                     "participants": [
@@ -8902,7 +8902,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Backhand",
-                    "shotDistance": "18",
+                    "shotDistance": 18,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "81,-16",
                     "participants": [
@@ -8931,7 +8931,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "56",
+                    "shotDistance": 56,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "35,-11",
                     "participants": [
@@ -9082,7 +9082,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "0",
                     "shotType": "vendshot:Wrap-around",
-                    "shotDistance": "5",
+                    "shotDistance": 5,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "87,4",
                     "participants": [
@@ -9363,7 +9363,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "23",
+                    "shotDistance": 23,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-73,-16",
                     "participants": [
@@ -9681,7 +9681,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "23",
+                    "shotDistance": 23,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "67,-2",
                     "participants": [
@@ -9711,7 +9711,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "25",
+                    "shotDistance": 25,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "66,7",
                     "participants": [
@@ -10217,7 +10217,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "56",
+                    "shotDistance": 56,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "34,8",
                     "participants": [
@@ -10283,7 +10283,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "42",
+                    "shotDistance": 42,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "49,12",
                     "participants": [
@@ -11213,7 +11213,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Snap",
-                    "shotDistance": "22",
+                    "shotDistance": 22,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "68,2",
                     "participants": [
@@ -11321,7 +11321,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "43",
+                    "shotDistance": 43,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "60,-32",
                     "participants": [
@@ -11462,7 +11462,7 @@
                     "scoreTeam": "0",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "23",
+                    "shotDistance": 23,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "77,20",
                     "participants": [
@@ -11490,7 +11490,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Tip-In",
-                    "shotDistance": "11",
+                    "shotDistance": 11,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "81,7",
                     "participants": [
@@ -11809,7 +11809,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "10",
+                    "shotDistance": 10,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "87,-10",
                     "participants": [
@@ -11945,7 +11945,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "32",
+                    "shotDistance": 32,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-63,18",
                     "participants": [
@@ -12104,7 +12104,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Backhand",
-                    "shotDistance": "14",
+                    "shotDistance": 14,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-79,10",
                     "participants": [
@@ -12171,7 +12171,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "16",
+                    "shotDistance": 16,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "82,-14",
                     "participants": [
@@ -12200,7 +12200,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "12",
+                    "shotDistance": 12,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "79,6",
                     "participants": [
@@ -12229,7 +12229,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Snap",
-                    "shotDistance": "15",
+                    "shotDistance": 15,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "81,12",
                     "participants": [
@@ -12431,7 +12431,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Tip-In",
-                    "shotDistance": "11",
+                    "shotDistance": 11,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "79,-4",
                     "participants": [
@@ -12499,7 +12499,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "34",
+                    "shotDistance": 34,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-58,-14",
                     "participants": [
@@ -12610,7 +12610,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Tip-In",
-                    "shotDistance": "12",
+                    "shotDistance": 12,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-78,-4",
                     "participants": [
@@ -12912,7 +12912,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "52",
+                    "shotDistance": 52,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "43,-24",
                     "participants": [
@@ -12936,7 +12936,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Snap",
-                    "shotDistance": "14",
+                    "shotDistance": 14,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "80,-10",
                     "participants": [
@@ -13268,7 +13268,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "55",
+                    "shotDistance": 55,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-35,1",
                     "participants": [
@@ -13498,7 +13498,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Tip-In",
-                    "shotDistance": "12",
+                    "shotDistance": 12,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "78,3",
                     "participants": [
@@ -13527,7 +13527,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Snap",
-                    "shotDistance": "22",
+                    "shotDistance": 22,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-70,10",
                     "participants": [
@@ -14207,7 +14207,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Backhand",
-                    "shotDistance": "11",
+                    "shotDistance": 11,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "85,-10",
                     "participants": [
@@ -14343,7 +14343,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "36",
+                    "shotDistance": 36,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-57,-16",
                     "participants": [
@@ -14990,7 +14990,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "11",
+                    "shotDistance": 11,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-84,-10",
                     "participants": [
@@ -15141,7 +15141,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "42",
+                    "shotDistance": 42,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "56,25",
                     "participants": [
@@ -15206,7 +15206,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Snap",
-                    "shotDistance": "50",
+                    "shotDistance": 50,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-49,30",
                     "participants": [
@@ -15357,7 +15357,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "15",
+                    "shotDistance": 15,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "79,-11",
                     "participants": [
@@ -15691,7 +15691,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "18",
+                    "shotDistance": 18,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-88,-18",
                     "participants": [
@@ -15721,7 +15721,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Tip-In",
-                    "shotDistance": "12",
+                    "shotDistance": 12,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-78,-1",
                     "participants": [
@@ -15746,7 +15746,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "14",
+                    "shotDistance": 14,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-77,-6",
                     "participants": [
@@ -15968,7 +15968,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "57",
+                    "shotDistance": 57,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "42,-32",
                     "participants": [
@@ -16391,7 +16391,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "63",
+                    "shotDistance": 63,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-34,29",
                     "participants": [
@@ -16458,7 +16458,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "16",
+                    "shotDistance": 16,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "84,15",
                     "participants": [
@@ -16721,7 +16721,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "52",
+                    "shotDistance": 52,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "38,2",
                     "participants": [
@@ -17830,7 +17830,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Tip-In",
-                    "shotDistance": "12",
+                    "shotDistance": 12,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-78,0",
                     "participants": [
@@ -17855,7 +17855,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Backhand",
-                    "shotDistance": "11",
+                    "shotDistance": 11,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "79,-2",
                     "participants": [
@@ -18268,7 +18268,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "56",
+                    "shotDistance": 56,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-40,27",
                     "participants": [
@@ -19226,7 +19226,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "57",
+                    "shotDistance": 57,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "37,23",
                     "participants": [
@@ -19793,7 +19793,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "22",
+                    "shotDistance": 22,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-74,-16",
                     "participants": [
@@ -20245,7 +20245,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "58",
+                    "shotDistance": 58,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-32,-10",
                     "participants": [
@@ -20269,7 +20269,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "64",
+                    "shotDistance": 64,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-28,-19",
                     "participants": [
@@ -20506,7 +20506,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "63",
+                    "shotDistance": 63,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-32,27",
                     "participants": [
@@ -20802,7 +20802,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "53",
+                    "shotDistance": 53,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-40,-18",
                     "participants": [
@@ -21481,7 +21481,7 @@
                     "periodValue": "3",
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
-                    "shotDistance": "12",
+                    "shotDistance": 12,
                     "fieldLocation": "81,-8",
                     "participants": [
                         {
@@ -21883,7 +21883,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "36",
+                    "shotDistance": 36,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-65,-26",
                     "participants": [
@@ -22380,7 +22380,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "46",
+                    "shotDistance": 46,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-60,-35",
                     "participants": [
@@ -22915,7 +22915,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "30",
+                    "shotDistance": 30,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-60,1",
                     "participants": [
@@ -23264,7 +23264,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Snap",
-                    "shotDistance": "37",
+                    "shotDistance": 37,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "57,18",
                     "participants": [
@@ -23577,7 +23577,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "46",
+                    "shotDistance": 46,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-53,-28",
                     "participants": [
@@ -23685,7 +23685,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "43",
+                    "shotDistance": 43,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-52,-22",
                     "participants": [
@@ -24001,7 +24001,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "39",
+                    "shotDistance": 39,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "56,-21",
                     "participants": [
@@ -24100,7 +24100,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Backhand",
-                    "shotDistance": "18",
+                    "shotDistance": 18,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-77,13",
                     "participants": [
@@ -24246,7 +24246,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Backhand",
-                    "shotDistance": "39",
+                    "shotDistance": 39,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "69,33",
                     "participants": [
@@ -24442,7 +24442,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Tip-In",
-                    "shotDistance": "22",
+                    "shotDistance": 22,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "73,-14",
                     "participants": [
@@ -24614,7 +24614,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "18",
+                    "shotDistance": 18,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-85,18",
                     "participants": [
@@ -25275,7 +25275,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "11",
+                    "shotDistance": 11,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-85,10",
                     "participants": [
@@ -25347,7 +25347,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "43",
+                    "shotDistance": 43,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-65,-35",
                     "participants": [
@@ -25377,7 +25377,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Tip-In",
-                    "shotDistance": "14",
+                    "shotDistance": 14,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-76,1",
                     "participants": [
@@ -25465,7 +25465,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "22",
+                    "shotDistance": 22,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-73,15",
                     "participants": [
@@ -25564,7 +25564,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "55",
+                    "shotDistance": 55,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-35,-2",
                     "participants": [
@@ -25674,7 +25674,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "25",
+                    "shotDistance": 25,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "75,20",
                     "participants": [
@@ -25808,7 +25808,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "22",
+                    "shotDistance": 22,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "68,5",
                     "participants": [
@@ -25975,7 +25975,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Backhand",
-                    "shotDistance": "18",
+                    "shotDistance": 18,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-77,13",
                     "participants": [
@@ -26245,7 +26245,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "35",
+                    "shotDistance": 35,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-70,-29",
                     "participants": [
@@ -27064,7 +27064,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "35",
+                    "shotDistance": 35,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-64,-24",
                     "participants": [
@@ -27413,7 +27413,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "49",
+                    "shotDistance": 49,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "46,22",
                     "participants": [
@@ -27662,7 +27662,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "50",
+                    "shotDistance": 50,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-40,5",
                     "participants": [
@@ -27712,7 +27712,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "17",
+                    "shotDistance": 17,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-82,16",
                     "participants": [
@@ -28329,7 +28329,7 @@
                     "scoreTeam": "1",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "15",
+                    "shotDistance": 15,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "80,12",
                     "participants": [
@@ -28924,7 +28924,7 @@
                     "scoreTeam": "2",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Slap",
-                    "shotDistance": "46",
+                    "shotDistance": 46,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "46,-14",
                     "participants": [
@@ -28952,7 +28952,7 @@
                     "scoreTeam": "2",
                     "scoreTeamOpposing": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "19",
+                    "shotDistance": 19,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "goalZone": "vendgoalzone:6",
                     "fieldLocation": "75,12",

@@ -1,171 +1,173 @@
 {
-    "sportsMetadata": {
-        "docId": "xt.opta.standings-20151003170755-2015",
-        "dateTime": "2015-10-03T17:07:55+01:00",
-        "language": "en-US",
-        "documentClass": "spct:standings",
-        "fixtureKey": "spfixt:standings",
-        "sportsContentCodes": [
-            {
-                "codeType": "spct:publisher",
-                "codeKey": "publisher:optasports.com",
-                "codeName": "Opta"
-            },
-            {
-                "codeType": "spct:distributor",
-                "codeKey": "distributor:xmlteam.com",
-                "codeName": "XML Team Solutions, Inc."
-            },
-            {
-                "codeType": "spct:sport",
-                "codeKey": "sport:15054000",
-                "codeName": "Soccer"
-            },
-            {
-                "codeType": "spct:league",
-                "codeKey": "vendleague:l.bundesliga.de",
-                "codeName": "German Bundesliga"
-            },
-            {
-                "codeType": "spct:season",
-                "codeKey": "season:2015"
-            }
-        ],
-        "catalogRefs": [
-            {
-                "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
-            },
-            {
-                "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
-            }
-        ]
-    },
+    "sportsMetadata": [
+        {
+            "docId": "xt.opta.standings-20151003170755-2015",
+            "dateTime": "2015-10-03T17:07:55+01:00",
+            "language": "en-US",
+            "documentClass": "spct:standings",
+            "fixtureKey": "spfixt:standings",
+            "sportsContentCodes": [
+                {
+                    "codeType": "spct:publisher",
+                    "codeKey": "publisher:optasports.com",
+                    "codeName": "Opta"
+                },
+                {
+                    "codeType": "spct:distributor",
+                    "codeKey": "distributor:xmlteam.com",
+                    "codeName": "XML Team Solutions, Inc."
+                },
+                {
+                    "codeType": "spct:sport",
+                    "codeKey": "sport:15054000",
+                    "codeName": "Soccer"
+                },
+                {
+                    "codeType": "spct:league",
+                    "codeKey": "vendleague:l.bundesliga.de",
+                    "codeName": "German Bundesliga"
+                },
+                {
+                    "codeType": "spct:season",
+                    "codeKey": "season:2015"
+                }
+            ],
+            "catalogRefs": [
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
+                },
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+                }
+            ]
+        }
+    ],
     "standings": [
         {
             "teams": [
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "7"
+                            "eventsPlayed": 7
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "7"
+                            "eventsPlayed": 7
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "7"
+                            "eventsPlayed": 7
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "8"
+                            "eventsPlayed": 8
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "8"
+                            "eventsPlayed": 8
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "8"
+                            "eventsPlayed": 8
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "8"
+                            "eventsPlayed": 8
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "7"
+                            "eventsPlayed": 7
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "7"
+                            "eventsPlayed": 7
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "8"
+                            "eventsPlayed": 8
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "8"
+                            "eventsPlayed": 8
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "8"
+                            "eventsPlayed": 8
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "8"
+                            "eventsPlayed": 8
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "8"
+                            "eventsPlayed": 8
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "8"
+                            "eventsPlayed": 8
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "8"
+                            "eventsPlayed": 8
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "7"
+                            "eventsPlayed": 7
                         }
                     ]
                 },
                 {
                     "teamStats": [
                         {
-                            "eventsPlayed": "8"
+                            "eventsPlayed": 8
                         }
                     ]
                 }

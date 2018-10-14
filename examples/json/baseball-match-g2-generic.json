@@ -1669,7 +1669,10 @@
                                     }
                                 ],
                                 "sportsProperties": [
-                                    null
+                                    {
+                                        "formalName": "pitching-order",
+                                        "value": "1"
+                                    }
                                 ]
                             },
                             "playerStats": [
@@ -2172,7 +2175,10 @@
                                     }
                                 ],
                                 "sportsProperties": [
-                                    null
+                                    {
+                                        "formalName": "pitching-order",
+                                        "value": "2"
+                                    }
                                 ]
                             },
                             "playerStats": [
@@ -4489,7 +4495,10 @@
                                     }
                                 ],
                                 "sportsProperties": [
-                                    null
+                                    {
+                                        "formalName": "pitching-order",
+                                        "value": "1"
+                                    }
                                 ]
                             },
                             "playerStats": [
@@ -4825,7 +4834,10 @@
                                     }
                                 ],
                                 "sportsProperties": [
-                                    null
+                                    {
+                                        "formalName": "pitching-order",
+                                        "value": "2"
+                                    }
                                 ]
                             },
                             "playerStats": [
@@ -5329,7 +5341,10 @@
                                     }
                                 ],
                                 "sportsProperties": [
-                                    null
+                                    {
+                                        "formalName": "pitching-order",
+                                        "value": "3"
+                                    }
                                 ]
                             },
                             "playerStats": [
@@ -5832,7 +5847,10 @@
                                     }
                                 ],
                                 "sportsProperties": [
-                                    null
+                                    {
+                                        "formalName": "pitching-order",
+                                        "value": "4"
+                                    }
                                 ]
                             },
                             "playerStats": [

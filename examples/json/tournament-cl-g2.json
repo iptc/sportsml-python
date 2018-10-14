@@ -1,37 +1,39 @@
 {
-    "sportsMetadata": {
-        "docId": "xt.opta.sched-20150531090046-results",
-        "dateTime": "2015-05-31T09:00:46+01:00",
-        "language": "en-US",
-        "documentClass": "spct:schedules",
-        "fixtureKey": "spfixt:schedule",
-        "sportsContentCodes": [
-            {
-                "codeType": "spct:publisher",
-                "codeKey": "publisher:optasports.com",
-                "codeName": "Opta"
-            },
-            {
-                "codeType": "spct:distributor",
-                "codeKey": "distributor:xmlteam.com",
-                "codeName": "XML Team Solutions, Inc."
-            },
-            {
-                "codeType": "spct:sport",
-                "codeKey": "sport:15054000",
-                "codeName": "Soccer"
-            },
-            {
-                "codeType": "spct:league",
-                "codeKey": "vendleague:l.uefa.org.champions",
-                "codeName": "Champions League"
-            },
-            {
-                "codeType": "spct:season",
-                "codeKey": "season:2014"
-            }
-        ]
-    },
+    "sportsMetadata": [
+        {
+            "docId": "xt.opta.sched-20150531090046-results",
+            "dateTime": "2015-05-31T09:00:46+01:00",
+            "language": "en-US",
+            "documentClass": "spct:schedules",
+            "fixtureKey": "spfixt:schedule",
+            "sportsContentCodes": [
+                {
+                    "codeType": "spct:publisher",
+                    "codeKey": "publisher:optasports.com",
+                    "codeName": "Opta"
+                },
+                {
+                    "codeType": "spct:distributor",
+                    "codeKey": "distributor:xmlteam.com",
+                    "codeName": "XML Team Solutions, Inc."
+                },
+                {
+                    "codeType": "spct:sport",
+                    "codeKey": "sport:15054000",
+                    "codeName": "Soccer"
+                },
+                {
+                    "codeType": "spct:league",
+                    "codeKey": "vendleague:l.uefa.org.champions",
+                    "codeName": "Champions League"
+                },
+                {
+                    "codeType": "spct:season",
+                    "codeKey": "season:2014"
+                }
+            ]
+        }
+    ],
     "tournaments": [
         {
             "tournamentMetadata": {
@@ -51,9 +53,9 @@
             "tournamentParts": [
                 {
                     "tournamentPartMetadata": {
-                        "minimumSubparts": "8",
-                        "maximumSubparts": "8",
-                        "number": "1",
+                        "minimumSubparts": 8,
+                        "maximumSubparts": 8,
+                        "number": 1,
                         "key": "vendkey:CFBB52014S1",
                         "type": "sptournamentphase:group",
                         "names": [
@@ -69,9 +71,9 @@
                     "tournamentParts": [
                         {
                             "tournamentPartMetadata": {
-                                "minimumSubparts": "12",
-                                "maximumSubparts": "12",
-                                "number": "3",
+                                "minimumSubparts": 12,
+                                "maximumSubparts": 12,
+                                "number": 3,
                                 "key": "vendkey:CFBB52014S1R3",
                                 "formatType": "sptournamentform:single-group",
                                 "names": [
@@ -104,7 +106,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Est\u00e1dio da Luz"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -200,7 +203,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Stade Louis II"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -277,7 +281,8 @@
                                                             "part": "nprt:common",
                                                             "name": "BayArena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -413,7 +418,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Petrovski Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -467,7 +473,8 @@
                                                             "part": "nprt:common",
                                                             "name": "BayArena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -563,7 +570,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Stade Louis II"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -617,7 +625,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Est\u00e1dio da Luz"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -694,7 +703,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Petrovski Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -805,7 +815,8 @@
                                                             "part": "nprt:common",
                                                             "name": "BayArena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -882,7 +893,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Petrovski Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -959,7 +971,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Est\u00e1dio da Luz"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -1013,7 +1026,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Stade Louis II"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -1094,9 +1108,9 @@
                         },
                         {
                             "tournamentPartMetadata": {
-                                "minimumSubparts": "12",
-                                "maximumSubparts": "12",
-                                "number": "4",
+                                "minimumSubparts": 12,
+                                "maximumSubparts": 12,
+                                "number": 4,
                                 "key": "vendkey:CFBB52014S1R4",
                                 "formatType": "sptournamentform:single-group",
                                 "names": [
@@ -1129,7 +1143,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Signal Iduna Park"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -1225,7 +1240,8 @@
                                                             "part": "nprt:common",
                                                             "name": "T\u00fcrk Telekom Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -1323,7 +1339,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Emirates Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -1466,7 +1483,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Constant Vanden Stockstadion"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -1575,7 +1593,8 @@
                                                             "part": "nprt:common",
                                                             "name": "T\u00fcrk Telekom Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -1703,7 +1722,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Constant Vanden Stockstadion"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -1820,7 +1840,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Emirates Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -1988,7 +2009,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Signal Iduna Park"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -2143,7 +2165,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Emirates Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -2239,7 +2262,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Constant Vanden Stockstadion"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -2329,7 +2353,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Signal Iduna Park"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -2427,7 +2452,8 @@
                                                             "part": "nprt:common",
                                                             "name": "T\u00fcrk Telekom Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -2555,9 +2581,9 @@
                         },
                         {
                             "tournamentPartMetadata": {
-                                "minimumSubparts": "12",
-                                "maximumSubparts": "12",
-                                "number": "1",
+                                "minimumSubparts": 12,
+                                "maximumSubparts": 12,
+                                "number": 1,
                                 "key": "vendkey:CFBB52014S1R1",
                                 "formatType": "sptournamentform:single-group",
                                 "names": [
@@ -2590,7 +2616,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Juventus Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -2680,7 +2707,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Georgios Karaiskakis Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -2835,7 +2863,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Vicente Calder\u00f3n"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -2912,7 +2941,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Swedbank Stadion"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -3002,7 +3032,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Vicente Calder\u00f3n"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -3155,7 +3186,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Georgios Karaiskakis Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -3232,7 +3264,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Juventus Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -3387,7 +3420,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Swedbank Stadion"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -3483,7 +3517,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Vicente Calder\u00f3n"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -3605,7 +3640,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Swedbank Stadion"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -3701,7 +3737,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Juventus Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -3755,7 +3792,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Georgios Karaiskakis Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -3914,9 +3952,9 @@
                         },
                         {
                             "tournamentPartMetadata": {
-                                "minimumSubparts": "12",
-                                "maximumSubparts": "12",
-                                "number": "2",
+                                "minimumSubparts": 12,
+                                "maximumSubparts": 12,
+                                "number": 2,
                                 "key": "vendkey:CFBB52014S1R2",
                                 "formatType": "sptournamentform:single-group",
                                 "names": [
@@ -3949,7 +3987,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Anfield"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -4066,7 +4105,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Santiago Bernab\u00e9u"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -4240,7 +4280,8 @@
                                                             "part": "nprt:common",
                                                             "name": "St Jakob-Park"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -4317,7 +4358,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Vasil Levski National Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -4434,7 +4476,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Anfield"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -4543,7 +4586,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Vasil Levski National Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -4620,7 +4664,8 @@
                                                             "part": "nprt:common",
                                                             "name": "St Jakob-Park"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -4754,7 +4799,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Santiago Bernab\u00e9u"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -4831,7 +4877,8 @@
                                                             "part": "nprt:common",
                                                             "name": "St Jakob-Park"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -4908,7 +4955,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Vasil Levski National Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -5044,7 +5092,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Anfield"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -5142,7 +5191,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Santiago Bernab\u00e9u"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -5261,9 +5311,9 @@
                         },
                         {
                             "tournamentPartMetadata": {
-                                "minimumSubparts": "12",
-                                "maximumSubparts": "12",
-                                "number": "6",
+                                "minimumSubparts": 12,
+                                "maximumSubparts": 12,
+                                "number": 6,
                                 "key": "vendkey:CFBB52014S1R6",
                                 "formatType": "sptournamentform:single-group",
                                 "names": [
@@ -5296,7 +5346,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Amsterdam ArenA"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -5394,7 +5445,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Camp Nou"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -5471,7 +5523,8 @@
                                                             "part": "nprt:common",
                                                             "name": "GSP Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -5569,7 +5622,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Parc des Princes"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -5724,7 +5778,8 @@
                                                             "part": "nprt:common",
                                                             "name": "GSP Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -5801,7 +5856,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Camp Nou"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -5937,7 +5993,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Amsterdam ArenA"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -6027,7 +6084,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Parc des Princes"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -6104,7 +6162,8 @@
                                                             "part": "nprt:common",
                                                             "name": "GSP Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -6226,7 +6285,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Parc des Princes"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -6356,7 +6416,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Amsterdam ArenA"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -6484,7 +6545,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Camp Nou"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -6605,9 +6667,9 @@
                         },
                         {
                             "tournamentPartMetadata": {
-                                "minimumSubparts": "12",
-                                "maximumSubparts": "12",
-                                "number": "8",
+                                "minimumSubparts": 12,
+                                "maximumSubparts": 12,
+                                "number": 8,
                                 "key": "vendkey:CFBB52014S1R8",
                                 "formatType": "sptournamentform:single-group",
                                 "names": [
@@ -6640,7 +6702,8 @@
                                                             "part": "nprt:common",
                                                             "name": "San Mam\u00e9s"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -6694,7 +6757,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Estadio do Drag\u00e3o"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -6854,7 +6918,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Borisov Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -6971,7 +7036,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Arena Lviv"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -7101,7 +7167,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Borisov Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -7268,7 +7335,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Estadio do Drag\u00e3o"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -7385,7 +7453,8 @@
                                                             "part": "nprt:common",
                                                             "name": "San Mam\u00e9s"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -7481,7 +7550,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Arena Lviv"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -7622,7 +7692,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Borisov Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -7737,7 +7808,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Arena Lviv"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -7814,7 +7886,8 @@
                                                             "part": "nprt:common",
                                                             "name": "San Mam\u00e9s"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -7910,7 +7983,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Estadio do Drag\u00e3o"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -7993,9 +8067,9 @@
                         },
                         {
                             "tournamentPartMetadata": {
-                                "minimumSubparts": "12",
-                                "maximumSubparts": "12",
-                                "number": "7",
+                                "minimumSubparts": 12,
+                                "maximumSubparts": 12,
+                                "number": 7,
                                 "key": "vendkey:CFBB52014S1R7",
                                 "formatType": "sptournamentform:single-group",
                                 "names": [
@@ -8028,7 +8102,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Stamford Bridge"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -8126,7 +8201,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Ljudski vrt"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -8224,7 +8300,8 @@
                                                             "part": "nprt:common",
                                                             "name": "VELTINS-Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -8322,7 +8399,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Estadio Jos\u00e9 Alvalade"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -8399,7 +8477,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Stamford Bridge"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -8565,7 +8644,8 @@
                                                             "part": "nprt:common",
                                                             "name": "VELTINS-Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -8752,7 +8832,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Ljudski vrt"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -8850,7 +8931,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Estadio Jos\u00e9 Alvalade"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -9018,7 +9100,8 @@
                                                             "part": "nprt:common",
                                                             "name": "VELTINS-Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -9171,7 +9254,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Estadio Jos\u00e9 Alvalade"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -9307,7 +9391,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Stamford Bridge"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -9443,7 +9528,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Ljudski vrt"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -9505,9 +9591,9 @@
                         },
                         {
                             "tournamentPartMetadata": {
-                                "minimumSubparts": "12",
-                                "maximumSubparts": "12",
-                                "number": "5",
+                                "minimumSubparts": 12,
+                                "maximumSubparts": 12,
+                                "number": 5,
                                 "key": "vendkey:CFBB52014S1R5",
                                 "formatType": "sptournamentform:single-group",
                                 "names": [
@@ -9540,7 +9626,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Allianz Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -9617,7 +9704,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Olimpico"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -9785,7 +9873,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Arena Khimki"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -9862,7 +9951,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Etihad Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -9960,7 +10050,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Arena Khimki"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -10096,7 +10187,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Olimpico"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -10302,7 +10394,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Allianz Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -10398,7 +10491,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Etihad Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -10509,7 +10603,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Arena Khimki"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -10607,7 +10702,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Etihad Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -10750,7 +10846,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Allianz Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -10865,7 +10962,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Olimpico"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -10948,9 +11046,9 @@
                 },
                 {
                     "tournamentPartMetadata": {
-                        "minimumSubparts": "4",
-                        "maximumSubparts": "4",
-                        "number": "2",
+                        "minimumSubparts": 4,
+                        "maximumSubparts": 4,
+                        "number": 2,
                         "key": "vendkey:CFBB52014S2",
                         "type": "sptournamentphase:elimination",
                         "names": [
@@ -10966,9 +11064,9 @@
                     "tournamentParts": [
                         {
                             "tournamentPartMetadata": {
-                                "minimumSubparts": "16",
-                                "maximumSubparts": "16",
-                                "number": "1",
+                                "minimumSubparts": 16,
+                                "maximumSubparts": 16,
+                                "number": 1,
                                 "key": "vendkey:CFBB52014S2R1",
                                 "formatType": "sptournamentform:home-and-home",
                                 "names": [
@@ -10986,7 +11084,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-02-17T19:45:00+00:00",
                                         "key": "vendevent:EFBO788097",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -11009,7 +11107,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Parc des Princes"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -11092,7 +11191,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-02-17T19:45:00+00:00",
                                         "key": "vendevent:EFBO788103",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -11115,7 +11214,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Arena Lviv"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -11154,7 +11254,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-02-18T19:45:00+00:00",
                                         "key": "vendevent:EFBO788105",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -11177,7 +11277,8 @@
                                                             "part": "nprt:common",
                                                             "name": "St Jakob-Park"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -11260,7 +11361,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-02-18T19:45:00+00:00",
                                         "key": "vendevent:EFBO788102",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -11283,7 +11384,8 @@
                                                             "part": "nprt:common",
                                                             "name": "VELTINS-Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -11364,7 +11466,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-02-24T19:45:00+00:00",
                                         "key": "vendevent:EFBO788101",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -11387,7 +11489,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Juventus Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -11489,7 +11592,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-02-24T19:45:00+00:00",
                                         "key": "vendevent:EFBO788099",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -11512,7 +11615,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Etihad Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -11608,7 +11712,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-02-25T19:45:00+00:00",
                                         "key": "vendevent:EFBO788104",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -11631,7 +11735,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Emirates Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -11752,7 +11857,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-02-25T19:45:00+00:00",
                                         "key": "vendevent:EFBO788100",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -11775,7 +11880,8 @@
                                                             "part": "nprt:common",
                                                             "name": "BayArena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -11837,7 +11943,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-03-10T19:45:00+00:00",
                                         "key": "vendevent:EFBO788113",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -11865,7 +11971,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Estadio do Drag\u00e3o"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -11984,7 +12091,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-03-10T19:45:00+00:00",
                                         "key": "vendevent:EFBO788110",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -12012,7 +12119,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Santiago Bernab\u00e9u"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -12178,7 +12286,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-03-11T19:45:00+00:00",
                                         "key": "vendevent:EFBO788106",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:extra-time",
@@ -12201,7 +12309,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Stamford Bridge"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -12322,7 +12431,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-03-11T19:45:00+00:00",
                                         "key": "vendevent:EFBO788111",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -12350,7 +12459,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Allianz Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -12520,7 +12630,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-03-17T19:45:00+00:00",
                                         "key": "vendevent:EFBO788108",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:shootout",
@@ -12548,7 +12658,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Vicente Calder\u00f3n"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -12701,7 +12812,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-03-17T19:45:00+00:00",
                                         "key": "vendevent:EFBO788112",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -12729,7 +12840,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Stade Louis II"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -12810,7 +12922,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-03-18T19:45:00+00:00",
                                         "key": "vendevent:EFBO788107",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -12838,7 +12950,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Camp Nou"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -12900,7 +13013,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-03-18T19:45:00+00:00",
                                         "key": "vendevent:EFBO788109",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -12928,7 +13041,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Signal Iduna Park"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -13022,9 +13136,9 @@
                         },
                         {
                             "tournamentPartMetadata": {
-                                "minimumSubparts": "8",
-                                "maximumSubparts": "8",
-                                "number": "2",
+                                "minimumSubparts": 8,
+                                "maximumSubparts": 8,
+                                "number": 2,
                                 "key": "vendkey:CFBB52014S2R2",
                                 "formatType": "sptournamentform:home-and-home",
                                 "names": [
@@ -13042,7 +13156,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-04-14T19:45:00+01:00",
                                         "key": "vendevent:EFBO799715",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -13065,7 +13179,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Vicente Calder\u00f3n"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -13104,7 +13219,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-04-14T19:45:00+01:00",
                                         "key": "vendevent:EFBO799713",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -13127,7 +13242,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Juventus Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -13189,7 +13305,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-04-15T19:45:00+01:00",
                                         "key": "vendevent:EFBO799720",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -13212,7 +13328,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Estadio do Drag\u00e3o"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -13327,7 +13444,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-04-15T19:45:00+01:00",
                                         "key": "vendevent:EFBO799717",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -13350,7 +13467,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Parc des Princes"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -13465,7 +13583,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-04-21T19:45:00+01:00",
                                         "key": "vendevent:EFBO799718",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -13493,7 +13611,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Camp Nou"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -13568,7 +13687,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-04-21T19:45:00+01:00",
                                         "key": "vendevent:EFBO799723",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -13596,7 +13715,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Allianz Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -13768,7 +13888,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-04-22T19:45:00+01:00",
                                         "key": "vendevent:EFBO799714",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -13796,7 +13916,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Stade Louis II"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -13835,7 +13956,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-04-22T19:45:00+01:00",
                                         "key": "vendevent:EFBO799716",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -13863,7 +13984,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Santiago Bernab\u00e9u"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -13925,9 +14047,9 @@
                         },
                         {
                             "tournamentPartMetadata": {
-                                "minimumSubparts": "4",
-                                "maximumSubparts": "4",
-                                "number": "3",
+                                "minimumSubparts": 4,
+                                "maximumSubparts": 4,
+                                "number": 3,
                                 "key": "vendkey:CFBB52014S2R3",
                                 "formatType": "sptournamentform:home-and-home",
                                 "names": [
@@ -13945,7 +14067,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-05-05T19:45:00+01:00",
                                         "key": "vendevent:EFBO800858",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -13968,7 +14090,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Juventus Stadium"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -14070,7 +14193,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-05-06T19:45:00+01:00",
                                         "key": "vendevent:EFBO800857",
-                                        "eventNumber": "1",
+                                        "eventNumber": 1,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -14093,7 +14216,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Camp Nou"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -14187,7 +14311,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-05-12T19:45:00+01:00",
                                         "key": "vendevent:EFBO800859",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -14215,7 +14339,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Allianz Arena"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -14349,7 +14474,7 @@
                                     "eventMetadata": {
                                         "startDateTime": "2015-05-13T19:45:00+01:00",
                                         "key": "vendevent:EFBO800860",
-                                        "eventNumber": "2",
+                                        "eventNumber": 2,
                                         "eventStatus": "speventstatus:post-event",
                                         "eventStatusNote": "Result",
                                         "eventOutcomeType": "speventoutcometype:regular",
@@ -14377,7 +14502,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Santiago Bernab\u00e9u"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {
@@ -14460,9 +14586,9 @@
                         },
                         {
                             "tournamentPartMetadata": {
-                                "minimumSubparts": "1",
-                                "maximumSubparts": "1",
-                                "number": "4",
+                                "minimumSubparts": 1,
+                                "maximumSubparts": 1,
+                                "number": 4,
                                 "key": "vendkey:CFBB52014S2R4",
                                 "formatType": "sptournamentform:single-elimination",
                                 "names": [
@@ -14494,7 +14620,8 @@
                                                             "part": "nprt:common",
                                                             "name": "Olympiastadion"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "homeLocation": {}
                                                 },
                                                 "siteStats": [
                                                     {

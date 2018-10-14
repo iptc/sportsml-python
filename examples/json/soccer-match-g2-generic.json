@@ -21,7 +21,8 @@
                                     "part": "nprt:common",
                                     "name": "Villa Park"
                                 }
-                            ]
+                            ],
+                            "homeLocation": {}
                         },
                         "siteStats": [
                             {
@@ -1439,7 +1440,18 @@
                         }
                     ],
                     "associates": [
-                        null
+                        {
+                            "id": "man37630",
+                            "associateMetadata": {
+                                "key": "vendperson:man37630",
+                                "positionEvent": "vendascpos:Manager",
+                                "names": [
+                                    {
+                                        "full": "Paul Lambert"
+                                    }
+                                ]
+                            }
+                        }
                     ]
                 },
                 {
@@ -2960,7 +2972,18 @@
                         }
                     ],
                     "associates": [
-                        null
+                        {
+                            "id": "man257",
+                            "associateMetadata": {
+                                "key": "vendperson:man257",
+                                "positionEvent": "vendascpos:Manager",
+                                "names": [
+                                    {
+                                        "full": "Manuel Pellegrini"
+                                    }
+                                ]
+                            }
+                        }
                     ]
                 }
             ],

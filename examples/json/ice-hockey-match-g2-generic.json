@@ -7378,7 +7378,7 @@
                     "strength": "spichstrength:even-strength",
                     "periodValue": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "38",
+                    "shotDistance": 38,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "63,-27",
                     "participants": [
@@ -7402,7 +7402,7 @@
                     "strength": "spichstrength:power-play",
                     "periodValue": "2",
                     "shotType": "vendshot:Deflected",
-                    "shotDistance": "163",
+                    "shotDistance": 163,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-73,-1",
                     "participants": [
@@ -7431,7 +7431,7 @@
                     "strength": "spichstrength:even-strength",
                     "periodValue": "3",
                     "shotType": "vendshot:Snap",
-                    "shotDistance": "23",
+                    "shotDistance": 23,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "67,0",
                     "participants": [
@@ -7460,7 +7460,7 @@
                     "strength": "spichstrength:even-strength",
                     "periodValue": "3",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "38",
+                    "shotDistance": 38,
                     "scoreAttemptType": "spichscoreattempt:empty-net",
                     "fieldLocation": "52,4",
                     "participants": [

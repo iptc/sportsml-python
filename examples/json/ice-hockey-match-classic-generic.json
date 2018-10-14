@@ -1,59 +1,61 @@
 {
-    "sportsMetadata": {
-        "docId": "xt.nhl.20001-BXG-20151007T221450-0400-FIN-FC0",
-        "dateTime": "2015-10-07T22:14:50-04:00",
-        "language": "en-US",
-        "documentClass": "spct:event-summary",
-        "fixtureKey": "spfixt:event-stats-progressive",
-        "sportsContentCodes": [
-            {
-                "codeType": "spct:publisher",
-                "codeKey": "publisher:nhl.com",
-                "codeName": "National Hockey League"
-            },
-            {
-                "codeType": "spct:distributor",
-                "codeKey": "distributor:xmlteam.com",
-                "codeName": "XML Team Solutions, Inc."
-            },
-            {
-                "codeType": "spct:sport",
-                "codeKey": "sport:15031000",
-                "codeName": "Ice Hockey"
-            },
-            {
-                "codeType": "spct:league",
-                "codeKey": "vendleague:l.nhl.com",
-                "codeName": "National Hockey League"
-            },
-            {
-                "codeType": "spct:season",
-                "codeKey": "season:2015"
-            },
-            {
-                "codeType": "spct:season-type",
-                "codeKey": "season-type:season-regular"
-            },
-            {
-                "codeType": "spct:team",
-                "codeKey": "vendteam:l.nhl.com-t.8",
-                "codeName": "Montreal Canadiens"
-            },
-            {
-                "codeType": "spct:team",
-                "codeKey": "vendteam:l.nhl.com-t.10",
-                "codeName": "Toronto Maple Leafs"
-            }
-        ],
-        "catalogRefs": [
-            {
-                "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
-            },
-            {
-                "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
-            }
-        ]
-    },
+    "sportsMetadata": [
+        {
+            "docId": "xt.nhl.20001-BXG-20151007T221450-0400-FIN-FC0",
+            "dateTime": "2015-10-07T22:14:50-04:00",
+            "language": "en-US",
+            "documentClass": "spct:event-summary",
+            "fixtureKey": "spfixt:event-stats-progressive",
+            "sportsContentCodes": [
+                {
+                    "codeType": "spct:publisher",
+                    "codeKey": "publisher:nhl.com",
+                    "codeName": "National Hockey League"
+                },
+                {
+                    "codeType": "spct:distributor",
+                    "codeKey": "distributor:xmlteam.com",
+                    "codeName": "XML Team Solutions, Inc."
+                },
+                {
+                    "codeType": "spct:sport",
+                    "codeKey": "sport:15031000",
+                    "codeName": "Ice Hockey"
+                },
+                {
+                    "codeType": "spct:league",
+                    "codeKey": "vendleague:l.nhl.com",
+                    "codeName": "National Hockey League"
+                },
+                {
+                    "codeType": "spct:season",
+                    "codeKey": "season:2015"
+                },
+                {
+                    "codeType": "spct:season-type",
+                    "codeKey": "season-type:season-regular"
+                },
+                {
+                    "codeType": "spct:team",
+                    "codeKey": "vendteam:l.nhl.com-t.8",
+                    "codeName": "Montreal Canadiens"
+                },
+                {
+                    "codeType": "spct:team",
+                    "codeKey": "vendteam:l.nhl.com-t.10",
+                    "codeName": "Toronto Maple Leafs"
+                }
+            ],
+            "catalogRefs": [
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
+                },
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+                }
+            ]
+        }
+    ],
     "sportsEvents": [
         {
             "eventMetadata": {
@@ -7433,7 +7435,7 @@
                     "strength": "spichstrength:even-strength",
                     "periodValue": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "38",
+                    "shotDistance": 38,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "63,-27",
                     "participants": [
@@ -7457,7 +7459,7 @@
                     "strength": "spichstrength:power-play",
                     "periodValue": "2",
                     "shotType": "vendshot:Deflected",
-                    "shotDistance": "163",
+                    "shotDistance": 163,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-73,-1",
                     "participants": [
@@ -7486,7 +7488,7 @@
                     "strength": "spichstrength:even-strength",
                     "periodValue": "3",
                     "shotType": "vendshot:Snap",
-                    "shotDistance": "23",
+                    "shotDistance": 23,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "67,0",
                     "participants": [
@@ -7515,7 +7517,7 @@
                     "strength": "spichstrength:even-strength",
                     "periodValue": "3",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "38",
+                    "shotDistance": 38,
                     "scoreAttemptType": "spichscoreattempt:empty-net",
                     "fieldLocation": "52,4",
                     "participants": [

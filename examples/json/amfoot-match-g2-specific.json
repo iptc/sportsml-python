@@ -9,6 +9,9 @@
                 "duration": "PT3H36M",
                 "sites": [
                     {
+                        "siteMetadata": {
+                            "homeLocation": {}
+                        },
                         "siteStats": [
                             {
                                 "attendance": "70288"

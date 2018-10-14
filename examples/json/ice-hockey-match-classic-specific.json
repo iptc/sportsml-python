@@ -1,59 +1,61 @@
 {
-    "sportsMetadata": {
-        "docId": "xt.nhl.20001-BXG-20151007T221450-0400-FIN-FC0",
-        "dateTime": "2015-10-07T22:14:50-04:00",
-        "language": "en-US",
-        "documentClass": "spct:event-summary",
-        "fixtureKey": "spfixt:event-stats-progressive",
-        "sportsContentCodes": [
-            {
-                "codeType": "spct:publisher",
-                "codeKey": "publisher:nhl.com",
-                "codeName": "National Hockey League"
-            },
-            {
-                "codeType": "spct:distributor",
-                "codeKey": "distributor:xmlteam.com",
-                "codeName": "XML Team Solutions, Inc."
-            },
-            {
-                "codeType": "spct:sport",
-                "codeKey": "sport:15031000",
-                "codeName": "Ice Hockey"
-            },
-            {
-                "codeType": "spct:league",
-                "codeKey": "vendleague:l.nhl.com",
-                "codeName": "National Hockey League"
-            },
-            {
-                "codeType": "spct:season",
-                "codeKey": "season:2015"
-            },
-            {
-                "codeType": "spct:season-type",
-                "codeKey": "season-type:season-regular"
-            },
-            {
-                "codeType": "spct:team",
-                "codeKey": "vendteam:l.nhl.com-t.8",
-                "codeName": "Montreal Canadiens"
-            },
-            {
-                "codeType": "spct:team",
-                "codeKey": "vendteam:l.nhl.com-t.10",
-                "codeName": "Toronto Maple Leafs"
-            }
-        ],
-        "catalogRefs": [
-            {
-                "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
-            },
-            {
-                "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
-            }
-        ]
-    },
+    "sportsMetadata": [
+        {
+            "docId": "xt.nhl.20001-BXG-20151007T221450-0400-FIN-FC0",
+            "dateTime": "2015-10-07T22:14:50-04:00",
+            "language": "en-US",
+            "documentClass": "spct:event-summary",
+            "fixtureKey": "spfixt:event-stats-progressive",
+            "sportsContentCodes": [
+                {
+                    "codeType": "spct:publisher",
+                    "codeKey": "publisher:nhl.com",
+                    "codeName": "National Hockey League"
+                },
+                {
+                    "codeType": "spct:distributor",
+                    "codeKey": "distributor:xmlteam.com",
+                    "codeName": "XML Team Solutions, Inc."
+                },
+                {
+                    "codeType": "spct:sport",
+                    "codeKey": "sport:15031000",
+                    "codeName": "Ice Hockey"
+                },
+                {
+                    "codeType": "spct:league",
+                    "codeKey": "vendleague:l.nhl.com",
+                    "codeName": "National Hockey League"
+                },
+                {
+                    "codeType": "spct:season",
+                    "codeKey": "season:2015"
+                },
+                {
+                    "codeType": "spct:season-type",
+                    "codeKey": "season-type:season-regular"
+                },
+                {
+                    "codeType": "spct:team",
+                    "codeKey": "vendteam:l.nhl.com-t.8",
+                    "codeName": "Montreal Canadiens"
+                },
+                {
+                    "codeType": "spct:team",
+                    "codeKey": "vendteam:l.nhl.com-t.10",
+                    "codeName": "Toronto Maple Leafs"
+                }
+            ],
+            "catalogRefs": [
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
+                },
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+                }
+            ]
+        }
+    ],
     "sportsEvents": [
         {
             "eventMetadata": {
@@ -94,7 +96,7 @@
                             "timePlayedTotal": "60:00",
                             "penaltyStats": [
                                 {
-                                    "count": "2",
+                                    "count": 2,
                                     "value": "4"
                                 }
                             ]
@@ -117,10 +119,10 @@
                                 {
                                     "score": "1",
                                     "timePlayedTotal": "16:41",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -143,10 +145,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "12:15",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -182,15 +184,22 @@
                                     "temporalUnitType": "sptemporalunit:event",
                                     "temporalUnitValue": "vendor:l.nhl.com-2015-e.20001",
                                     "timePlayedTotal": "57:43",
-                                    "eventsStandard": "1",
+                                    "eventsStarted": 1,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ],
                                     "awards": [
-                                        null
+                                        {
+                                            "value": "2",
+                                            "names": [
+                                                {
+                                                    "name": "Second Star"
+                                                }
+                                            ]
+                                        }
                                     ]
                                 }
                             ]
@@ -211,10 +220,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "17:12",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -237,10 +246,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "19:03",
-                                    "eventsStandard": "1",
+                                    "eventsStarted": 1,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -276,10 +285,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "21:28",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -315,10 +324,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "16:36",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -341,10 +350,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "14:26",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -367,10 +376,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "20:28",
-                                    "eventsStandard": "1",
+                                    "eventsStarted": 1,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -393,10 +402,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "17:17",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "1",
+                                            "count": 1,
                                             "value": "2"
                                         }
                                     ]
@@ -419,10 +428,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "09:07",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "1",
+                                            "count": 1,
                                             "value": "2"
                                         }
                                     ]
@@ -445,10 +454,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "17:44",
-                                    "eventsStandard": "1",
+                                    "eventsStarted": 1,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -471,10 +480,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "15:57",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -497,10 +506,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "13:24",
-                                    "eventsStandard": "1",
+                                    "eventsStarted": 1,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -523,10 +532,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "14:56",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -549,10 +558,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "20:56",
-                                    "eventsStandard": "1",
+                                    "eventsStarted": 1,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -601,10 +610,10 @@
                                     "temporalUnitType": "sptemporalunit:event",
                                     "temporalUnitValue": "vendor:l.nhl.com-2015-e.20001",
                                     "timePlayedTotal": "00:00",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -627,10 +636,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "20:38",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -653,10 +662,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "15:02",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -679,10 +688,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "15:07",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -704,7 +713,7 @@
                             "timePlayedTotal": "60:00",
                             "penaltyStats": [
                                 {
-                                    "count": "4",
+                                    "count": 4,
                                     "value": "8"
                                 }
                             ]
@@ -727,10 +736,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "14:27",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -779,10 +788,10 @@
                                     "temporalUnitType": "sptemporalunit:event",
                                     "temporalUnitValue": "vendor:l.nhl.com-2015-e.20001",
                                     "timePlayedTotal": "00:00",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -805,10 +814,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "16:51",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -831,10 +840,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "14:21",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "1",
+                                            "count": 1,
                                             "value": "2"
                                         }
                                     ]
@@ -857,10 +866,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "22:03",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -883,10 +892,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "17:27",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -909,10 +918,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "09:56",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -935,15 +944,22 @@
                                 {
                                     "score": "1",
                                     "timePlayedTotal": "14:35",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ],
                                     "awards": [
-                                        null
+                                        {
+                                            "value": "3",
+                                            "names": [
+                                                {
+                                                    "name": "Third Star"
+                                                }
+                                            ]
+                                        }
                                     ]
                                 }
                             ]
@@ -964,10 +980,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "13:56",
-                                    "eventsStandard": "1",
+                                    "eventsStarted": 1,
                                     "penaltyStats": [
                                         {
-                                            "count": "1",
+                                            "count": 1,
                                             "value": "2"
                                         }
                                     ]
@@ -990,10 +1006,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "14:19",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -1016,10 +1032,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "21:44",
-                                    "eventsStandard": "1",
+                                    "eventsStarted": 1,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -1042,10 +1058,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "08:54",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "1",
+                                            "count": 1,
                                             "value": "2"
                                         }
                                     ]
@@ -1068,10 +1084,10 @@
                                 {
                                     "score": "2",
                                     "timePlayedTotal": "18:07",
-                                    "eventsStandard": "1",
+                                    "eventsStarted": 1,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -1107,10 +1123,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "22:52",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -1133,10 +1149,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "18:29",
-                                    "eventsStandard": "1",
+                                    "eventsStarted": 1,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -1172,15 +1188,22 @@
                                     "temporalUnitType": "sptemporalunit:event",
                                     "temporalUnitValue": "vendor:l.nhl.com-2015-e.20001",
                                     "timePlayedTotal": "60:00",
-                                    "eventsStandard": "1",
+                                    "eventsStarted": 1,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ],
                                     "awards": [
-                                        null
+                                        {
+                                            "value": "1",
+                                            "names": [
+                                                {
+                                                    "name": "First Star"
+                                                }
+                                            ]
+                                        }
                                     ]
                                 }
                             ]
@@ -1201,10 +1224,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "16:05",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -1227,10 +1250,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "10:00",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "1",
+                                            "count": 1,
                                             "value": "2"
                                         }
                                     ]
@@ -1253,10 +1276,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "24:35",
-                                    "eventsStandard": "1",
+                                    "eventsStarted": 1,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -1292,10 +1315,10 @@
                                 {
                                     "score": "0",
                                     "timePlayedTotal": "15:13",
-                                    "eventsStandard": "0",
+                                    "eventsStarted": 0,
                                     "penaltyStats": [
                                         {
-                                            "count": "0",
+                                            "count": 0,
                                             "value": "0"
                                         }
                                     ]
@@ -1360,7 +1383,7 @@
                     "strength": "spichstrength:even-strength",
                     "periodValue": "1",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "38",
+                    "shotDistance": 38,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "63,-27",
                     "participants": [
@@ -1384,7 +1407,7 @@
                     "strength": "spichstrength:power-play",
                     "periodValue": "2",
                     "shotType": "vendshot:Deflected",
-                    "shotDistance": "163",
+                    "shotDistance": 163,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "-73,-1",
                     "participants": [
@@ -1413,7 +1436,7 @@
                     "strength": "spichstrength:even-strength",
                     "periodValue": "3",
                     "shotType": "vendshot:Snap",
-                    "shotDistance": "23",
+                    "shotDistance": 23,
                     "scoreAttemptType": "spichscoreattempt:regular",
                     "fieldLocation": "67,0",
                     "participants": [
@@ -1442,7 +1465,7 @@
                     "strength": "spichstrength:even-strength",
                     "periodValue": "3",
                     "shotType": "vendshot:Wrist",
-                    "shotDistance": "38",
+                    "shotDistance": 38,
                     "scoreAttemptType": "spichscoreattempt:empty-net",
                     "fieldLocation": "52,4",
                     "participants": [

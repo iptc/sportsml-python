@@ -12,7 +12,11 @@
                     }
                 ],
                 "sites": [
-                    {}
+                    {
+                        "siteMetadata": {
+                            "homeLocation": {}
+                        }
+                    }
                 ]
             },
             "tournamentDivisions": [
@@ -47,7 +51,8 @@
                                                 "part": "nprt:last",
                                                 "name": "Eliassen"
                                             }
-                                        ]
+                                        ],
+                                        "homeLocation": {}
                                     },
                                     "playerStats": [
                                         {
@@ -70,7 +75,8 @@
                                                 "part": "nprt:last",
                                                 "name": "Aukland"
                                             }
-                                        ]
+                                        ],
+                                        "homeLocation": {}
                                     },
                                     "playerStats": [
                                         {
@@ -93,7 +99,8 @@
                                                 "part": "nprt:last",
                                                 "name": "Rezac"
                                             }
-                                        ]
+                                        ],
+                                        "homeLocation": {}
                                     },
                                     "playerStats": [
                                         {
@@ -116,7 +123,8 @@
                                                 "part": "nprt:last",
                                                 "name": "Pettersen"
                                             }
-                                        ]
+                                        ],
+                                        "homeLocation": {}
                                     },
                                     "playerStats": [
                                         {
@@ -139,7 +147,8 @@
                                                 "part": "nprt:last",
                                                 "name": "Dahl"
                                             }
-                                        ]
+                                        ],
+                                        "homeLocation": {}
                                     },
                                     "playerStats": [
                                         {
@@ -162,7 +171,8 @@
                                                 "part": "nprt:last",
                                                 "name": "Gjerdalen"
                                             }
-                                        ]
+                                        ],
+                                        "homeLocation": {}
                                     },
                                     "playerStats": [
                                         {
@@ -183,7 +193,8 @@
                                             {
                                                 "part": "nprt:last"
                                             }
-                                        ]
+                                        ],
+                                        "homeLocation": {}
                                     },
                                     "playerStats": [
                                         {
@@ -206,7 +217,8 @@
                                                 "part": "nprt:last",
                                                 "name": "Ahrlin"
                                             }
-                                        ]
+                                        ],
+                                        "homeLocation": {}
                                     },
                                     "playerStats": [
                                         {
@@ -250,7 +262,8 @@
                                                 "part": "nprt:last",
                                                 "name": "Kowalczyk"
                                             }
-                                        ]
+                                        ],
+                                        "homeLocation": {}
                                     },
                                     "playerStats": [
                                         {
@@ -273,7 +286,8 @@
                                                 "part": "nprt:last",
                                                 "name": "Johansson Norgren"
                                             }
-                                        ]
+                                        ],
+                                        "homeLocation": {}
                                     },
                                     "playerStats": [
                                         {
@@ -296,7 +310,8 @@
                                                 "part": "nprt:last",
                                                 "name": "Boner"
                                             }
-                                        ]
+                                        ],
+                                        "homeLocation": {}
                                     },
                                     "playerStats": [
                                         {
