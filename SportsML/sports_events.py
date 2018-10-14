@@ -9,6 +9,7 @@ from .sports_metadata import SportsMetadata
 from .event_metadata import EventMetadata
 from .base_metadata import CommonAttributes, CoverageAttributes
 from .entities import Teams, Players, Officials
+from .newsmlg2 import Names
 from .actions import Actions
 from .statistics import WageringStatsSet
 
@@ -91,56 +92,48 @@ class SportsEvent(BaseObject):
         )
 
     def as_dict(self):
-        dict = {}
+        super(SportsEvent, self).as_dict()
         if self.event_metadata:
-            dict.update({
+            self.dict.update({
                 'eventMetadata': self.event_metadata.as_dict()
             })
         if self.event_stats_set:
-            dict.update({
+            self.dict.update({
                 'eventStats': self.event_stats_set.as_dict(),
             })
         if self.teams:
-            dict.update({
+            self.dict.update({
                 'teams': self.teams.as_dict(),
             })
         if self.players:
-            dict.update({
+            self.dict.update({
                 'players': self.players.as_dict(),
             })
         if self.wagering_stats_set:
-            dict.update({
+            self.dict.update({
                 'wageringStats': self.wagering_stats_set.as_dict(),
             })
         if self.officials:
-            dict.update({
+            self.dict.update({
                 'officials': self.officials.as_dict(),
             })
         if self.actions:
-            dict.update({
+            self.dict.update({
                 'actions': self.actions.as_dict(),
             })
         if self.highlights:
-            dict.update({
+            self.dict.update({
                 'highlights': self.highlights.as_dict(),
             })
         if self.awards:
-            dict.update({
+            self.dict.update({
                 'awards': self.awards.as_dict(),
             })
-        # FIXME we get recursion errors if this is left in... 
-        # what am I doing wrong??
-        #if self.sports_events:
-        #    dict.update({
-        #        'sportsEvents': self.sports_events.as_dict(),
-        #    })
-        return dict
-
-    def default(self):
-        return self.__dict__
-
-    def to_json(self):
-        return json.dumps(self.as_dict(), indent=4)
+        if self.sports_events:
+            self.dict.update({
+                'sportsEvents': self.sports_events.as_dict(),
+            })
+        return self.dict
 
 
 class SportsEvents(GenericArray):
@@ -191,13 +184,46 @@ class Highlights(GenericArray):
     element_class= Highlight
 
 
-class Award(BaseObject):
-    # TODO
-    pass
+class Award(CommonAttributes):
+    """
+    A medal, ribbon, placement, or other type of award.
+    Can be assigned to an event, a team, or a player.
+    """
+    attributes = {
+        # Type of award.
+        'award-type': 'awardType',
+        # Reference to the player or team that received the award.
+        'player-or-team-idref': 'playerOrTeamIdref',
+        # Total number of these such awards given to the player or team.
+        # Can be used to count medals for each country.
+        'total': 'total',
+        # The place for which this prize is offered.
+        # For example, place="1" means the first-place prize.
+        'place': 'place',
+        # The amount of money earned by the player who came in this place.
+        'value': 'value',
+        # The units of currency for the value attribute.
+        'currency': 'currency'
+    }
+    attribute_types = {
+        'total': 'integer'
+    }
 
+    def __init__(self,  **kwargs):
+        super(Award, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
+        if type(xmlelement) == etree.Element:
+            self.names = Names(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'name')
+            )
+ 
     def as_dict(self):
-        # TODO
-        return None
+        super(Award, self).as_dict()
+        if self.names:
+            self.dict.update({
+                'names': self.names.as_dict()
+            })
+        return self.dict
 
 
 class Awards(GenericArray):

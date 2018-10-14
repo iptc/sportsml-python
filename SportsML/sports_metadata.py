@@ -3,15 +3,7 @@
 import xml.etree.ElementTree as etree
 from .core import NEWSMLG2_NS, BaseObject, GenericArray
 from .base_metadata import BaseMetadata, CommonAttributes
-from .newsmlg2 import CatalogRef, ConceptNameType
-
-
-class CatalogRefs(GenericArray):
-    """
-    A reference to document(s) listing externally-supplied controlled vocabularies.
-    The catalog file can be in NewsML 1.
-    """
-    element_class = CatalogRef
+from .newsmlg2 import CatalogRefs, CatalogRef, ConceptNameType
 
 
 class SportsTitles(GenericArray):
@@ -112,3 +104,11 @@ class SportsMetadata(BaseMetadata):
         if self.feature_names:
             self.dict.update({'featureNames': self.feature_names.as_dict() })
         return self.dict
+
+
+class SportsMetadataSet(GenericArray):
+    """
+    A set of SportsMetadata objects.
+    """
+    element_class = SportsMetadata
+

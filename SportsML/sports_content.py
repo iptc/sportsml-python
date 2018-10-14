@@ -5,7 +5,7 @@ import xml.etree.ElementTree as etree
 
 from .core import NEWSMLG2_NS, BaseObject
 from .articles import Articles
-from .sports_metadata import SportsMetadata
+from .sports_metadata import SportsMetadataSet
 from .sports_events import SportsEvents
 from .schedules import Schedules
 from .standings import Standings
@@ -16,7 +16,7 @@ class SportsContent(BaseObject):
     """
     The root element of all SportsML documents.
     """
-    sports_metadata = None
+    sports_metadatas = None
     sports_events = None
     tournaments = None
     schedules = None
@@ -27,8 +27,8 @@ class SportsContent(BaseObject):
     def __init__(self,  **kwargs):
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
-            self.sports_metadata = SportsMetadata(
-                xmlelement = xmlelement.find(NEWSMLG2_NS+'sports-metadata')
+            self.sports_metadatas = SportsMetadataSet(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-metadata')
             )
             self.sports_events = SportsEvents(
                 xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-event')
@@ -92,8 +92,8 @@ class SportsContent(BaseObject):
 
     def as_dict(self):
         dict = {}
-        if self.sports_metadata:
-            dict.update({ 'sportsMetadata': self.sports_metadata.as_dict() })
+        if self.sports_metadatas:
+            dict.update({ 'sportsMetadata': self.sports_metadatas.as_dict() })
         if self.sports_events:
             dict.update({ 'sportsEvents': self.sports_events.as_dict() })
         if self.tournaments:
