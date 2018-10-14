@@ -125,7 +125,8 @@ class Base2Metadata(BaseMetadata):
         super(Base2Metadata, self).__init__(**kwargs)
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
-            from .entities import Names, Sites
+            from .newsmlg2 import Names
+            from .entities import Sites
             self.names = Names(
                 xmlarray = xmlelement.findall(NEWSMLG2_NS+'name')
             )
@@ -231,10 +232,23 @@ class SportsProperties(GenericArray):
     element_class_name = 'SportsProperty'
 
 
-class SportsProperty(BaseObject):
-    # TODO
-    pass
-
-    def as_dict(self):
-        return None
-
+class SportsProperty(CommonAttributes):
+    """
+    An extensible property, similar to structures in NewsML 1.
+    """
+    attributes = {
+        # The code or key for the property.
+        'formal-name': 'formalName',
+        # Provides a pointer to a Topic Set which is the controlled vocabulary
+        # that can be used to resolve the meaning of the formal-name.
+        'vocabulary': 'vocabulary',
+        # Distinguishes which of possibly multiple naming schemes in the
+        # controlled vocabulary is the one that governs this formal-name.
+        'scheme': 'scheme',
+        # The value of the property. For example, if formal-name equals
+        # favorite-color, then value might equal blue.
+        'value': 'value',
+        # Points to a controlled vocabulary that delimits the set of
+        # allowed values for the property.
+        'allowed-values': 'allowedValues'
+    }
