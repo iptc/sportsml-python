@@ -4,6 +4,7 @@ import xml.etree.ElementTree as etree
 import json
 
 from .core import NEWSMLG2_NS, BaseObject, GenericArray
+from .base_metadata import CommonAttributes
 
 
 class TimeValidityAttributes(BaseObject):
@@ -182,6 +183,150 @@ class TruncatedDateTimePropType(CommonPowerAttributes):
             </xs:extension>
     """
 
+
+class ConceptDefinitionGroup(BaseObject):
+    """
+    A group of properites required to define the concept
+    """
+    def __init__(self, **kwargs):
+        super(ConceptDefinitionGroup, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
+        if type(xmlelement) == etree.Element:
+            self.names = Names(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'name')
+            )
+            self.definition = xmlelement.findtext(NEWSMLG2_NS+'definition')
+            self.note = xmlelement.findtext(NEWSMLG2_NS+'note')
+            self.facet = xmlelement.findtext(NEWSMLG2_NS+'facet')
+            self.remote_info= xmlelement.findtext(NEWSMLG2_NS+'remoteInfo')
+            self.hierarchy_info = xmlelement.findtext(NEWSMLG2_NS+'hierarchyInfo')
+
+    def as_dict(self):
+        super(ConceptDefinitionGroup, self).as_dict()
+        if self.names:
+            self.dict.update({'names': self.names.as_dict() })
+        if self.definition:
+            self.dict.update({'definition': self.definition })
+        if self.note:
+            self.dict.update({'note': self.note })
+        if self.facet:
+            self.dict.update({'facet': self.facet })
+        if self.remote_info:
+            self.dict.update({'remoteInfo': self.remote_info })
+        if self.hierarchy_info:
+            self.dict.update({'hierarchyInfo': self.hierarchy_info })
+        return self.dict
+
+
+class ConceptRelationshipsGroup(BaseObject):
+    """
+    A group of properites required to indicate relationships of the concept to other concepts
+    """
+
+    pass
+    """
+    TODO
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="sameAs" />
+                <xs:element ref="broader" />
+                <xs:element ref="narrower" />
+                <xs:element ref="related" />
+            </xs:choice>
+    """
+
+
+class FlexPropType(CommonAttributes, FlexAttributes, I18NAttributes):
+    """
+    Flexible generic type for both controlled and uncontrolled values
+    """
+    def __init__(self, **kwargs):
+        super(FlexPropType, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
+        if type(xmlelement) == etree.Element:
+            self.names = Names(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'name')
+            )
+            # TODO hierarchyInfo
+
+    def as_dict(self, **kwargs):
+        super(FlexPropType, self).as_dict()
+        if self.names:
+            self.dict.update({'names': self.names.as_dict() })
+        return self.dict
+
+
+class FlexLocationPropType(ConceptDefinitionGroup, FlexAttributes, CommonPowerAttributes, I18NAttributes):
+    """
+    Flexible location (geopolitical area of point-of-interest)
+    data type for both controlled and uncontrolled values
+    plus: <xs:anyAttribute namespace="##other" processContents="lax" />
+    """
+    geo_area_details = None
+    poi_details = None
+
+    def __init__(self, **kwargs):
+        super(FlexLocationPropType, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
+        if type(xmlelement) == etree.Element:
+            self.geo_area_details = GeoAreaDetails(
+                # note camelCase element name, this is correct
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'geoAreaDetails')
+            )
+            self.poi_details = POIDetails(
+                # note case of element name, this is correct
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'POIDetails')
+            )
+            """
+            # TODO <xs:group ref="ConceptRelationshipsGroup" minOccurs="0" />
+            """
+
+    def as_dict(self):
+        super(FlexLocationPropType, self).as_dict()
+        if self.geo_area_details:
+            self.dict.update({'geoAreaDetails': self.geo_area_details.as_dict() })
+        if self.poi_details:
+            self.dict.update({'POIDetails': self.poi_details.as_dict() })
+        return self.dict
+
+    def __bool__(self):
+        # TODO
+        return self.geo_area_details is not None or self.poi_details is not None
+
+    """
+    <xs:complexType name="FlexLocationPropType">
+        <xs:sequence>
+            <xs:choice minOccurs="0">
+                <xs:element ref="geoAreaDetails" />
+                <xs:element ref="POIDetails" />
+            </xs:choice>
+            <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Extension point for provider-defined properties from other namespaces</xs:documentation>
+                </xs:annotation>
+            </xs:any>
+        </xs:sequence>
+    </xs:complexType>
+    """
+
+
+class Flex1PropType(ConceptDefinitionGroup, ConceptRelationshipsGroup, CommonPowerAttributes, FlexAttributes, I18NAttributes):
+    """
+    Flexible generic PCL-type for both controlled and uncontrolled values
+    """
+    pass
+
+
+class Flex1RolePropType(ConceptDefinitionGroup, ConceptRelationshipsGroup, CommonPowerAttributes, FlexAttributes, I18NAttributes):
+    """
+    Flexible generic PCL-type for both controlled and uncontrolled values
+    """
+    attributes = {
+        # Refines the semantics of the property - expressed by a QCode
+        'role': 'role',
+        # Refines the semantics of the property - expressed by a URI
+        'roleuri': 'roleuri'
+    }
+
 class GeoAreaDetails(CommonPowerAttributes):
     """
     A group of properties specific to a geopolitical area
@@ -285,36 +430,22 @@ class Lines(BaseObject):
     """
     pass
 
-class Localities(GenericArray):
-    pass
-
-class Locality(BaseObject):
-    """
-            <xs:element name="locality" minOccurs="0" maxOccurs="unbounded" type="Flex1RolePropType">
-                <xs:annotation>
-                    <xs:documentation>A city/town/village etc. part of the address.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="area" minOccurs="0" maxOccurs="unbounded" type="Flex1RolePropType">
-                <xs:annotation>
-                    <xs:documentation>A subdivision of a country part of the address.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="country" minOccurs="0" type="Flex1PropType">
-                <xs:annotation>
-                    <xs:documentation>A country part of the address.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="postalCode" type="IntlStringType" minOccurs="0">
-                <xs:annotation>
-                    <xs:documentation>A postal code part of the address.</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-    """
-    pass
-
 
 class Areas(BaseObject):
+    pass
+
+
+class Country(Flex1PropType):
+    """
+    A country part of the address.
+    """
+    pass
+
+
+class PostalCode(IntlStringType):
+    """
+    A postal code part of the address.
+    """
     pass
 
 
@@ -342,11 +473,18 @@ class Address(CommonPowerAttributes):
             self.lines = Lines(
                 xmlarray = xmlelement.findall(NEWSMLG2_NS+'line')
             )
+            self.localities = Localities(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'locality')
+            )
             self.areas = Areas(
                 xmlarray = xmlelement.findall(NEWSMLG2_NS+'area')
             )
-            self.country = xmlelement.findtext(NEWSMLG2_NS+'country')
-            self.postal_code = xmlelement.findtext(NEWSMLG2_NS+'postal-code')
+            self.country = Country(
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'country')
+            )
+            self.postal_code = PostalCode(
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'postal-code')
+            )
 
     def as_dict(self):
         super(Address, self).as_dict()
@@ -357,9 +495,9 @@ class Address(CommonPowerAttributes):
         if self.areas:
             self.dict.update({'areas': self.areas.as_dict() })
         if self.country:
-            self.dict.update({'country': self.country })
+            self.dict.update({'country': self.country.as_dict() })
         if self.postal_code:
-            self.dict.update({'postalCode': self.postal_code })
+            self.dict.update({'postalCode': self.postal_code.as_dict() })
         return self.dict
 
 
@@ -393,11 +531,13 @@ class POIDetails(CommonPowerAttributes):
             self.address = Address(
                 xmlelement = xmlelement.find(NEWSMLG2_NS+'address')
             )
+        # TODO finish this
 
     def as_dict(self):
         super(POIDetails, self).as_dict()
         if self.address:
             self.dict.update({'address': self.address.as_dict() })
+        # TODO finish this
         return self.dict
 
     """
@@ -420,94 +560,77 @@ class POIDetails(CommonPowerAttributes):
     """
 
 
-
-class ConceptDefinitionGroup(BaseObject):
+class Locality(Flex1RolePropType):
     """
-    A group of properites required to define the concept
+    A city/town/village etc. part of the address.
     """
-    def __init__(self, **kwargs):
-        super(ConceptDefinitionGroup, self).__init__(**kwargs)
-        xmlelement = kwargs.get('xmlelement')
-        if type(xmlelement) == etree.Element:
-            self.names = Names(
-                xmlarray = xmlelement.findall(NEWSMLG2_NS+'name')
-            )
-            self.definition = xmlelement.findtext(NEWSMLG2_NS+'definition')
-            self.note = xmlelement.findtext(NEWSMLG2_NS+'note')
-            self.facet = xmlelement.findtext(NEWSMLG2_NS+'facet')
-            self.remote_info= xmlelement.findtext(NEWSMLG2_NS+'remoteInfo')
-            self.hierarchy_info = xmlelement.findtext(NEWSMLG2_NS+'hierarchyInfo')
-
-    def as_dict(self):
-        super(ConceptDefinitionGroup, self).as_dict()
-        if self.names:
-            self.dict.update({'names': self.names.as_dict() })
-        if self.definition:
-            self.dict.update({'definition': self.definition })
-        if self.note:
-            self.dict.update({'note': self.note })
-        if self.facet:
-            self.dict.update({'facet': self.facet })
-        if self.remote_info:
-            self.dict.update({'remoteInfo': self.remote_info })
-        if self.hierarchy_info:
-            self.dict.update({'hierarchyInfo': self.hierarchy_info })
-        return self.dict
-
-
-class FlexLocationPropType(ConceptDefinitionGroup, FlexAttributes, CommonPowerAttributes, I18NAttributes):
-    """
-    Flexible location (geopolitical area of point-of-interest)
-    data type for both controlled and uncontrolled values
-    plus: <xs:anyAttribute namespace="##other" processContents="lax" />
-    """
-    geo_area_details = None
-    poi_details = None
-
-    def __init__(self, **kwargs):
-        super(FlexLocationPropType, self).__init__(**kwargs)
-        xmlelement = kwargs.get('xmlelement')
-        if type(xmlelement) == etree.Element:
-            self.geo_area_details = GeoAreaDetails(
-                # note camelCase element name, this is correct
-                xmlelement = xmlelement.find(NEWSMLG2_NS+'geoAreaDetails')
-            )
-            self.poi_details = POIDetails(
-                # note case of element name, this is correct
-                xmlelement = xmlelement.find(NEWSMLG2_NS+'POIDetails')
-            )
-            """
-            # TODO <xs:group ref="ConceptRelationshipsGroup" minOccurs="0" />
-            """
-
-    def as_dict(self):
-        super(FlexLocationPropType, self).as_dict()
-        if self.geo_area_details:
-            self.dict.update({'geoAreaDetails': self.geo_area_details })
-        if self.poi_details:
-            self.dict.update({'POIDetails': self.poi_details })
-        return self.dict
-
-    def __bool__(self):
-        # TODO
-        return self.geo_area_details is not None or self.poi_details is not None
+    pass
 
     """
-    <xs:complexType name="FlexLocationPropType">
-        <xs:sequence>
-            <xs:choice minOccurs="0">
-                <xs:element ref="geoAreaDetails" />
-                <xs:element ref="POIDetails" />
-            </xs:choice>
-            <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded">
+    address:
+            <xs:element name="locality" minOccurs="0" maxOccurs="unbounded" type="Flex1RolePropType">
                 <xs:annotation>
-                    <xs:documentation>Extension point for provider-defined properties from other namespaces</xs:documentation>
+                    <xs:documentation>A city/town/village etc. part of the address.</xs:documentation>
                 </xs:annotation>
-            </xs:any>
-        </xs:sequence>
-    </xs:complexType>
+            </xs:element>
+            <xs:element name="area" minOccurs="0" maxOccurs="unbounded" type="Flex1RolePropType">
+                <xs:annotation>
+                    <xs:documentation>A subdivision of a country part of the address.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="country" minOccurs="0" type="Flex1PropType">
+                <xs:annotation>
+                    <xs:documentation>A country part of the address.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="postalCode" type="IntlStringType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A postal code part of the address.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
     """
+    pass
 
+
+class Localities(GenericArray):
+    """
+    A set of Locality objects.
+    """
+    element_class = Locality
+
+
+class SameAs(FlexPropType, TimeValidityAttributes):
+    """
+    The type for an identifier of an equivalent concept (Type defined in this XML Schema only)
+    """
+    pass
+
+
+class RelatedConceptType(BaseObject):
+    """
+    The type for an identifier of a related concept
+    """
+    pass
+
+    """
+    <xs:element name="sameAs" type="SameAsType">
+    </xs:element>
+    <xs:element name="broader" type="RelatedConceptType">
+        <xs:annotation>
+            <xs:documentation>An identifier of a more generic concept.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="narrower" type="RelatedConceptType">
+        <xs:annotation>
+            <xs:documentation>An identifier of a more specific concept.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="related" type="FlexRelatedConceptType">
+        <xs:annotation>
+            <xs:documentation>A related concept, where the relationship is different from 'sameAs', 'broader' or 'narrower'.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    """
 
 class CatalogRef(BaseObject):
     """
