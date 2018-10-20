@@ -78,7 +78,28 @@
                                                                     "name": "PGA West (Palmer Course)"
                                                                 }
                                                             ],
-                                                            "homeLocation": {}
+                                                            "homeLocation": {
+                                                                "POIDetails": {
+                                                                    "address": {
+                                                                        "localities": [
+                                                                            {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "La Quinta"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ],
+                                                                        "country": {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "USA"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                 ]
@@ -91,7 +112,26 @@
                                                                 "name": "Derek Lamely"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "USA"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -106,7 +146,26 @@
                                                                 "name": "Jhonattan Vegas"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Venezuela"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -136,7 +195,28 @@
                                                                     "name": "PGA West (Nicklaus Course)"
                                                                 }
                                                             ],
-                                                            "homeLocation": {}
+                                                            "homeLocation": {
+                                                                "POIDetails": {
+                                                                    "address": {
+                                                                        "localities": [
+                                                                            {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "La Quinta"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ],
+                                                                        "country": {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "USA"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                 ]
@@ -149,7 +229,26 @@
                                                                 "name": "Bill Lunde"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "USA"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -191,7 +290,28 @@
                                                                     "name": "PGA West (Palmer Course)"
                                                                 }
                                                             ],
-                                                            "homeLocation": {}
+                                                            "homeLocation": {
+                                                                "POIDetails": {
+                                                                    "address": {
+                                                                        "localities": [
+                                                                            {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "La Quinta"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ],
+                                                                        "country": {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "USA"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                 ]
@@ -204,7 +324,26 @@
                                                                 "name": "Jhonattan Vegas"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Venezuela"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -219,7 +358,26 @@
                                                                 "name": "Gary Woodland"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "USA"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -234,7 +392,26 @@
                                                                 "name": "Bill Haas"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "USA"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -264,7 +441,28 @@
                                                                     "name": "PGA West (Palmer Course)"
                                                                 }
                                                             ],
-                                                            "homeLocation": {}
+                                                            "homeLocation": {
+                                                                "POIDetails": {
+                                                                    "address": {
+                                                                        "localities": [
+                                                                            {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "La Quinta"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ],
+                                                                        "country": {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "USA"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                 ]
@@ -277,7 +475,26 @@
                                                                 "name": "Jhonattan Vegas"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Venezuela"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -295,7 +512,26 @@
                                                                 "name": "PGA West (Palmer Course)"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "USA"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {

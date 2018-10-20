@@ -46,7 +46,28 @@
                                                             "name": "Olympic stadium"
                                                         }
                                                     ],
-                                                    "homeLocation": {}
+                                                    "homeLocation": {
+                                                        "POIDetails": {
+                                                            "address": {
+                                                                "localities": [
+                                                                    {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Seville"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "country": {
+                                                                    "names": [
+                                                                        {
+                                                                            "name": "Spain"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    }
                                                 }
                                             }
                                         ]
@@ -104,7 +125,19 @@
                                                                 "name": "Nadal"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Spain"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -125,7 +158,19 @@
                                                                 "name": "Nalbandian"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Argentina"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -194,7 +239,28 @@
                                                             "name": "Belgrade Arena"
                                                         }
                                                     ],
-                                                    "homeLocation": {}
+                                                    "homeLocation": {
+                                                        "POIDetails": {
+                                                            "address": {
+                                                                "localities": [
+                                                                    {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Belgrade"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "country": {
+                                                                    "names": [
+                                                                        {
+                                                                            "name": "Serbia"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    }
                                                 }
                                             }
                                         ]
@@ -262,7 +328,28 @@
                                                                 "name": "Troicki"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Belgrade"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Serbia"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -303,7 +390,28 @@
                                                                 "name": "Nalbandian"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Cordoba"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Argentina"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -354,7 +462,28 @@
                                                                 "name": "Tipsarevic"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Belgrade"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Servia"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -391,7 +520,28 @@
                                                                 "name": "Del Potro"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Tandil"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Argentina"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -472,7 +622,28 @@
                                                                         "name": "Troicki"
                                                                     }
                                                                 ],
-                                                                "homeLocation": {}
+                                                                "homeLocation": {
+                                                                    "POIDetails": {
+                                                                        "address": {
+                                                                            "localities": [
+                                                                                {
+                                                                                    "names": [
+                                                                                        {
+                                                                                            "name": "Belgrade"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "country": {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "Serbia"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
                                                             },
                                                             "playerStats": [
                                                                 {}
@@ -493,7 +664,28 @@
                                                                         "name": "Zimonjic"
                                                                     }
                                                                 ],
-                                                                "homeLocation": {}
+                                                                "homeLocation": {
+                                                                    "POIDetails": {
+                                                                        "address": {
+                                                                            "localities": [
+                                                                                {
+                                                                                    "names": [
+                                                                                        {
+                                                                                            "name": "Belgrade"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "country": {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "Serbia"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
                                                             },
                                                             "playerStats": [
                                                                 {}
@@ -544,7 +736,28 @@
                                                                         "name": "Chela"
                                                                     }
                                                                 ],
-                                                                "homeLocation": {}
+                                                                "homeLocation": {
+                                                                    "POIDetails": {
+                                                                        "address": {
+                                                                            "localities": [
+                                                                                {
+                                                                                    "names": [
+                                                                                        {
+                                                                                            "name": "Buenos Aires"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "country": {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "Argentina"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
                                                             },
                                                             "playerStats": [
                                                                 {}
@@ -565,7 +778,28 @@
                                                                         "name": "Monaco"
                                                                     }
                                                                 ],
-                                                                "homeLocation": {}
+                                                                "homeLocation": {
+                                                                    "POIDetails": {
+                                                                        "address": {
+                                                                            "localities": [
+                                                                                {
+                                                                                    "names": [
+                                                                                        {
+                                                                                            "name": "Buenos Aires"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "country": {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "Argentina"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
                                                             },
                                                             "playerStats": [
                                                                 {}
@@ -598,7 +832,28 @@
                                                                 "name": "Djokovic"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Belgrade"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Serbia"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -631,7 +886,28 @@
                                                                 "name": "Del Potro"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Tandil"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Argentina"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -674,7 +950,28 @@
                                                                 "name": "Tipsarevic"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Belgrade"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Servia"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {
@@ -703,7 +1000,28 @@
                                                                 "name": "Monaco"
                                                             }
                                                         ],
-                                                        "homeLocation": {}
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Buenos Aires"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Argentina"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
                                                     },
                                                     "playerStats": [
                                                         {

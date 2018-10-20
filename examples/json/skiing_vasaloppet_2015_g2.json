@@ -14,7 +14,28 @@
                 "sites": [
                     {
                         "siteMetadata": {
-                            "homeLocation": {}
+                            "homeLocation": {
+                                "POIDetails": {
+                                    "address": {
+                                        "localities": [
+                                            {
+                                                "names": [
+                                                    {
+                                                        "name": "Mora"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "country": {
+                                            "names": [
+                                                {
+                                                    "name": "Sverige"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 ]
@@ -52,7 +73,28 @@
                                                 "name": "Eliassen"
                                             }
                                         ],
-                                        "homeLocation": {}
+                                        "homeLocation": {
+                                            "POIDetails": {
+                                                "address": {
+                                                    "localities": [
+                                                        {
+                                                            "names": [
+                                                                {
+                                                                    "name": "Nannestad"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "country": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Norge"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
                                     },
                                     "playerStats": [
                                         {
@@ -76,7 +118,28 @@
                                                 "name": "Aukland"
                                             }
                                         ],
-                                        "homeLocation": {}
+                                        "homeLocation": {
+                                            "POIDetails": {
+                                                "address": {
+                                                    "localities": [
+                                                        {
+                                                            "names": [
+                                                                {
+                                                                    "name": "Oslo"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "country": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Norge"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
                                     },
                                     "playerStats": [
                                         {
@@ -100,7 +163,28 @@
                                                 "name": "Rezac"
                                             }
                                         ],
-                                        "homeLocation": {}
+                                        "homeLocation": {
+                                            "POIDetails": {
+                                                "address": {
+                                                    "localities": [
+                                                        {
+                                                            "names": [
+                                                                {
+                                                                    "name": "Jablonec nad Nisous"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "country": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Tjeckien"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
                                     },
                                     "playerStats": [
                                         {
@@ -124,7 +208,28 @@
                                                 "name": "Pettersen"
                                             }
                                         ],
-                                        "homeLocation": {}
+                                        "homeLocation": {
+                                            "POIDetails": {
+                                                "address": {
+                                                    "localities": [
+                                                        {
+                                                            "names": [
+                                                                {
+                                                                    "name": "Oslo"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "country": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Norge"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
                                     },
                                     "playerStats": [
                                         {
@@ -148,7 +253,28 @@
                                                 "name": "Dahl"
                                             }
                                         ],
-                                        "homeLocation": {}
+                                        "homeLocation": {
+                                            "POIDetails": {
+                                                "address": {
+                                                    "localities": [
+                                                        {
+                                                            "names": [
+                                                                {
+                                                                    "name": "Trondheim"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "country": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Norge"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
                                     },
                                     "playerStats": [
                                         {
@@ -172,7 +298,28 @@
                                                 "name": "Gjerdalen"
                                             }
                                         ],
-                                        "homeLocation": {}
+                                        "homeLocation": {
+                                            "POIDetails": {
+                                                "address": {
+                                                    "localities": [
+                                                        {
+                                                            "names": [
+                                                                {
+                                                                    "name": "Oslo"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "country": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Norge"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
                                     },
                                     "playerStats": [
                                         {
@@ -194,7 +341,28 @@
                                                 "part": "nprt:last"
                                             }
                                         ],
-                                        "homeLocation": {}
+                                        "homeLocation": {
+                                            "POIDetails": {
+                                                "address": {
+                                                    "localities": [
+                                                        {
+                                                            "names": [
+                                                                {
+                                                                    "name": "Hosle"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "country": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Norge"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
                                     },
                                     "playerStats": [
                                         {
@@ -218,7 +386,28 @@
                                                 "name": "Ahrlin"
                                             }
                                         ],
-                                        "homeLocation": {}
+                                        "homeLocation": {
+                                            "POIDetails": {
+                                                "address": {
+                                                    "localities": [
+                                                        {
+                                                            "names": [
+                                                                {
+                                                                    "name": "\u00d6stersund"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "country": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Sverige"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
                                     },
                                     "playerStats": [
                                         {
@@ -263,7 +452,26 @@
                                                 "name": "Kowalczyk"
                                             }
                                         ],
-                                        "homeLocation": {}
+                                        "homeLocation": {
+                                            "POIDetails": {
+                                                "address": {
+                                                    "localities": [
+                                                        {
+                                                            "names": [
+                                                                {}
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "country": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Polen"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
                                     },
                                     "playerStats": [
                                         {
@@ -287,7 +495,28 @@
                                                 "name": "Johansson Norgren"
                                             }
                                         ],
-                                        "homeLocation": {}
+                                        "homeLocation": {
+                                            "POIDetails": {
+                                                "address": {
+                                                    "localities": [
+                                                        {
+                                                            "names": [
+                                                                {
+                                                                    "name": "\u00d6stersund"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "country": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Sverige"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
                                     },
                                     "playerStats": [
                                         {
@@ -311,7 +540,28 @@
                                                 "name": "Boner"
                                             }
                                         ],
-                                        "homeLocation": {}
+                                        "homeLocation": {
+                                            "POIDetails": {
+                                                "address": {
+                                                    "localities": [
+                                                        {
+                                                            "names": [
+                                                                {
+                                                                    "name": "Davos-Platz"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "country": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Schweiz"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
                                     },
                                     "playerStats": [
                                         {

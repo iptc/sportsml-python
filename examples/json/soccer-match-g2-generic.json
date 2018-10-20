@@ -21,7 +21,19 @@
                                     "common": "Villa Park"
                                 }
                             ],
-                            "homeLocation": {}
+                            "homeLocation": {
+                                "POIDetails": {
+                                    "address": {
+                                        "country": {
+                                            "names": [
+                                                {
+                                                    "name": "England"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
                         },
                         "siteStats": [
                             {
