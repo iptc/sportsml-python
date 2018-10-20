@@ -135,7 +135,27 @@
                                                 }
                                             ],
                                             "actions": [
-                                                {}
+                                                {
+                                                    "actions": [
+                                                        {
+                                                            "shotType": "sptenshot:volley",
+                                                            "participants": [
+                                                                {
+                                                                    "idref": "p_1",
+                                                                    "role": "vendtenrole:server"
+                                                                },
+                                                                {
+                                                                    "idref": "p_2",
+                                                                    "role": "vendtenrole:receiver"
+                                                                },
+                                                                {
+                                                                    "idref": "p_1",
+                                                                    "role": "vendtenrole:ball-winner"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
                                             ]
                                         }
                                     ]

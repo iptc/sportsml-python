@@ -6501,6 +6501,23 @@
                     "class": "spactionclass:play",
                     "comment": "Troy Tulowitzki singled to third and advanced to second on Martin Prado's throwing error. Runner on second with one out and Carlos Gonzalez due up.",
                     "type": "spbblaction:double",
+                    "actions": [
+                        {
+                            "type": "spbblaction:pitch"
+                        },
+                        {
+                            "type": "spbblaction:pitch"
+                        },
+                        {
+                            "type": "spbblaction:pitch"
+                        },
+                        {
+                            "type": "spbblaction:pitch"
+                        },
+                        {
+                            "type": "spbblaction:pitch"
+                        }
+                    ],
                     "participants": [
                         {
                             "idref": "l.mlb.com-p.23884",
