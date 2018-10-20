@@ -22,6 +22,15 @@ class BaseObject():
             all_attrs.update(attrs)
         return all_attrs
 
+    # Load all 'attribute_types' from any class in the MRO inheritance chain
+    @classmethod
+    def get_attribute_types(cls):
+        all_attr_types = {}
+        for otherclass in reversed(cls.__mro__):
+            attr_types = vars(otherclass).get('attribute_types', {})
+            all_attr_types.update(attr_types)
+        return all_attr_types
+
     def __init__(self, **kwargs):
         # this is our base object, we don't call super() from here
         self.dict = {}
@@ -36,11 +45,12 @@ class BaseObject():
     def as_dict(self):
         # this is our base object, we don't call super() from here
         attrs = self.get_attributes()
+        attr_types = self.get_attribute_types()
         if attrs:
             for xml_attribute, json_property in attrs.items():
                 if xml_attribute in self.attr_values and self.attr_values[xml_attribute]:
                     property_value =  self.attr_values[xml_attribute]
-                    property_type = getattr(self, 'attribute_types', None).get(xml_attribute, None)
+                    property_type = attr_types.get(xml_attribute, None)
                     if property_type == "integer":
                         property_value = int(property_value)
                     self.dict.update({ json_property: property_value })
