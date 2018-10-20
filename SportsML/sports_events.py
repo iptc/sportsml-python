@@ -154,10 +154,10 @@ class EventStats(CommonAttributes, CoverageAttributes):
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.sports_properties = SportsProperties(
-                xmlelement.findall(NEWSMLG2_NS+'sports-property')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-property')
             )
             self.event_stats_motor_racing = EventStatsMotorRacing(
-                xmlelement.findall(NEWSMLG2_NS+'event-stats-motor-racing')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'event-stats-motor-racing')
             )
 
 

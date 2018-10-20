@@ -234,9 +234,8 @@ class Action(ActionAttributes):
 
     def as_dict(self):
         dict = super(Action, self).as_dict()
-        # FIXME recursion error
-        #if self.sub_actions:
-        #    dict.update({ 'actions': self.sub_actions.as_dict() })
+        if self.sub_actions:
+            dict.update({ 'actions': self.sub_actions.as_dict() })
         if self.participants:
             self.dict.update({ 'participants': self.participants.as_dict() })
         return self.dict

@@ -410,10 +410,6 @@ class BasePlayerMetadata(BasePersonMetadata):
             self.dict.update({ 'injuryPhaseMetadata': self.injury_phase_metadata.as_dict() })
         return self.dict
 
-    # FIXME
-    # def __bool__(self):
-    #    return self.career_phase_metadata or self.injury_phase_metadata or self.attr_values
-
 
 class PlayerMetadata(BasePlayerMetadata):
 

@@ -53,20 +53,6 @@ class BaseObject():
         else:
             return False
 
-#    def __bool__(self):
-#        # this is our base object, we don't call super() from here
-#        print ("__bool__ in "+str(type(self)))
-#        print ("\tchecking attrvalues:")
-#        if any([attr is not None for attr in self.attr_values]):
-#            return True
-#        print ("\tchecking other stuff:")
-#        self.attr_values = {}
-#        all_attrs = {}
-#        for otherclass in reversed(type(self).__mro__):
-#            print ("\tchecking "+str(otherclass))
-#        print ("\tdone - returning False\n")
-#        return False
-
 
 class GenericArray(BaseObject):
     """

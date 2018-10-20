@@ -53,10 +53,6 @@ class BaseStats(CommonAttributes):
             self.dict.update({ 'stats': self.stats.as_dict() })
         return self.dict
         
-    def __bool__(self):
-        # FIXME return super(BaseStats, self).__bool__() or (self.ratings or self.sports_properties or self.stats) is not None
-        return (self.ratings or self.sports_properties or self.stats) is not None
-
 
 class GenericStatAttributes(BaseObject):
     """
