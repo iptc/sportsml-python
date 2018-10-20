@@ -7,7 +7,7 @@ from .core import NEWSMLG2_NS, BaseObject, GenericArray
 from .sports_metadata import SportsMetadata
 from .base_metadata import (
     CommonAttributes, CoverageAttributes,
-    SportsContentCodes, SportsProperties
+    SportsContentCodes, SportsProperties, Base2Metadata
 )
 from .newsmlg2 import Names, FlexLocationPropType
 from .statistics import TeamStatsSet, PlayerStatsSet, WageringStatsSet, OfficialStats, Base2Stats
@@ -698,6 +698,68 @@ class Affiliation(CommonAttributes, CoverageAttributes):
         if self.membership_name:
             self.dict.update({'membership_name': self.membership_name})
         return self.dict
+
+
+class GroupMetadata(Base2Metadata):
+    """
+    Metadata about the group.
+    """
+    attributes = {
+        # The type of group. For example: conference, division, etc.
+        'group-type': 'groupType',
+        # The home page URL for the group.
+        'home-page-url': 'homePageURL'
+    }
+
+
+class Group(CommonAttributes):
+    """
+    A holder for statistics about a particular bracket or division or
+    conference or league.
+    Holds metadata and stats. Also appropriate for expressing
+    general organization/league membership and structure.
+    """
+    def __init__(self, **kwargs):
+        self.dict = {}
+        super(Group, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
+        if type(xmlelement) == etree.Element:
+            self.group_metadata = GroupMetadata(
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'group-metadata')
+            )
+            self.groups = Groups(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'group')
+            )
+            self.teams = Teams(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'team')
+            )
+            self.players = Players(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'player')
+            )
+            self.affiliations = Affiliations(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'affiliation')
+            )
+
+    def as_dict(self):
+        super(Group, self).as_dict()
+        if self.group_metadata:
+            self.dict.update({'groupMetadata': self.group_metadata.as_dict() })
+        if self.groups:
+            self.dict.update({'groups': self.groups.as_dict() })
+        if self.teams:
+            self.dict.update({'teams': self.teams.as_dict() })
+        if self.players:
+            self.dict.update({'players': self.players.as_dict() })
+        if self.affiliations:
+            self.dict.update({'affiliations': self.affiliations.as_dict() })
+        return self.dict
+
+
+class Groups(GenericArray):
+    """
+    Set of Group objects.
+    """
+    element_class = Group
 
 
 class SiteMetadata(BaseEntityMetadata):

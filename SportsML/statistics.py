@@ -4,13 +4,73 @@ import xml.etree.ElementTree as etree
 import json
 
 from .core import NEWSMLG2_NS, BaseObject, GenericArray
-from .base_metadata import CommonAttributes, CoverageAttributes
+from .base_metadata import CommonAttributes, CoverageAttributes, BaseMetadata
 from .newsmlg2 import Names
 
 
-class Statistic(BaseObject):
-    # TODO
+class StatisticMetadata(BaseMetadata):
+    """
+    Identifies which teams are being covered.
+    Also indicates the date ranges for which these stats cover.
+    """
     pass
+
+
+class Statistic(CommonAttributes, CoverageAttributes):
+    """
+    A table that generally compares the performance of teams or players.
+    The fixture-key can identify which regulary-running statistics are being presented.
+    Also appropriate for rosters (squad listings).
+    """
+
+    attributes = {
+        # A code describing the class of statistic covered herein,
+        # generally part of a controlled vocabulary.
+        'type': 'type',
+        # A display label for the enclosed statistical ranking.
+        # (Should be placed as name in the metadata section.)
+        'content-label': 'contentLabel'
+    }
+
+    def __init__(self, **kwargs):
+        super(Statistic, self).__init__(**kwargs)
+        xmlelement = kwargs.get('xmlelement')
+        if type(xmlelement) == etree.Element:
+            from .entities import Groups, Teams, Players, Associates
+            self.statistic_metadata = StatisticMetadata(
+                xmlelement = xmlelement.find(NEWSMLG2_NS+'statistic-metadata')
+            )
+            self.groups = Groups(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'sports-property')
+            )
+            self.teams = Teams(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'team')
+            )
+            self.players = Players(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'player')
+            )
+            self.associates = Associates(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'associates')
+            )
+            self.status_changes = StatusChanges(
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'status-change')
+            )
+ 
+    def as_dict(self):
+        super(Statistic, self).as_dict()
+        if self.statistic_metadata:
+            self.dict.update({ 'statisticMetadata': self.statistic_metadata.as_dict() })
+        if self.groups:
+            self.dict.update({ 'groups': self.groups.as_dict() })
+        if self.teams:
+            self.dict.update({ 'teams': self.teams.as_dict() })
+        if self.players:
+            self.dict.update({ 'players': self.players.as_dict() })
+        if self.associates:
+            self.dict.update({ 'associates': self.associates.as_dict() })
+        if self.status_changes:
+            self.dict.update({ 'statusChanges': self.status_changes.as_dict() })
+        return self.dict
 
 
 class Statistics(GenericArray):
@@ -478,6 +538,38 @@ class PlayerStatsSet(GenericArray):
     Array of PlayerStats objects.
     """
     element_class = PlayerStats
+
+
+class StatusChange(CommonAttributes, CoverageAttributes):
+    """
+    Indicates status change of an entity.
+    """
+    attributes = {
+        # A pointer to the player or team that has undergone the status change.
+        'changer-idref': 'changerIdRef',
+        # What type of change was made in the status of a player or team.
+        # Examples are injury, trade, cut.
+        'status-change-type': 'statusChangeType',
+        # What the original status of the player or team was.
+        # Examples are active, inactive, disabled-list.
+        'original-status': 'originalStatus',
+        # What the new status of the player or team is.
+        # Examples are active, inactive, disabled-list.
+        'new-status': 'newStatus',
+        # Generally, a pointer to the original team that the player in
+        # changer-idref was affiliated with.
+        'original-idref': 'originalIdRef',
+        # Generally, a pointer to the new team that the player in
+        # changer-idref is now affiliated with.
+        'new-idref': 'newIdRef'
+    }
+
+
+class StatusChanges(GenericArray):
+    """
+    Set of StatusChange objects.
+    """
+    element_class = StatusChange
 
 
 class WageringStats(BaseObject):
