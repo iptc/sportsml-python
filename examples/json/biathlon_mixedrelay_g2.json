@@ -36,7 +36,29 @@
                     },
                     "teamStats": [
                         {
-                            "score": "1.15.05,5"
+                            "score": "1.15.05,5",
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "0",
+                                    "subScoreName": "Penaltyrounds"
+                                },
+                                {
+                                    "periodValue": "1",
+                                    "score": "4",
+                                    "subScoreName": "Extra shots"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "0",
+                                    "subScoreName": "Penaltyrounds"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "7",
+                                    "subScoreName": "Extra shots"
+                                }
+                            ]
                         }
                     ],
                     "players": [
@@ -57,7 +79,29 @@
                             },
                             "playerStats": [
                                 {
-                                    "score": "18.20,6"
+                                    "score": "18.20,6",
+                                    "subScores": [
+                                        {
+                                            "periodValue": "1",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "1",
+                                            "score": "0",
+                                            "subScoreName": "Extra shots"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "3",
+                                            "subScoreName": "Extra shots"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -78,7 +122,29 @@
                             },
                             "playerStats": [
                                 {
-                                    "score": "19.26,8"
+                                    "score": "19.26,8",
+                                    "subScores": [
+                                        {
+                                            "periodValue": "1",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "1",
+                                            "score": "3",
+                                            "subScoreName": "Extra shots"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "2",
+                                            "subScoreName": "Extra shots"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -99,7 +165,29 @@
                             },
                             "playerStats": [
                                 {
-                                    "score": "19.13,2"
+                                    "score": "19.13,2",
+                                    "subScores": [
+                                        {
+                                            "periodValue": "1",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "1",
+                                            "score": "1",
+                                            "subScoreName": "Extra shots"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "0",
+                                            "subScoreName": "Extra shots"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -120,7 +208,29 @@
                             },
                             "playerStats": [
                                 {
-                                    "score": "18.05,5"
+                                    "score": "18.05,5",
+                                    "subScores": [
+                                        {
+                                            "periodValue": "1",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "1",
+                                            "score": "0",
+                                            "subScoreName": "Extra shots"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "2",
+                                            "subScoreName": "Extra shots"
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -139,7 +249,29 @@
                     },
                     "teamStats": [
                         {
-                            "score": "1.15.05,7"
+                            "score": "1.15.05,7",
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "0",
+                                    "subScoreName": "Penaltyrounds"
+                                },
+                                {
+                                    "periodValue": "1",
+                                    "score": "4",
+                                    "subScoreName": "Extra shots"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "1",
+                                    "subScoreName": "Penaltyrounds"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "7",
+                                    "subScoreName": "Extra shots"
+                                }
+                            ]
                         }
                     ],
                     "players": [
@@ -160,7 +292,29 @@
                             },
                             "playerStats": [
                                 {
-                                    "score": "19.39,0"
+                                    "score": "19.39,0",
+                                    "subScores": [
+                                        {
+                                            "periodValue": "1",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "1",
+                                            "score": "3",
+                                            "subScoreName": "Extra shots"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "1",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "3",
+                                            "subScoreName": "Extra shots"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -181,7 +335,29 @@
                             },
                             "playerStats": [
                                 {
-                                    "score": "18.27,2"
+                                    "score": "18.27,2",
+                                    "subScores": [
+                                        {
+                                            "periodValue": "1",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "1",
+                                            "score": "1",
+                                            "subScoreName": "Extra shots"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "1",
+                                            "subScoreName": "Extra shots"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -202,7 +378,29 @@
                             },
                             "playerStats": [
                                 {
-                                    "score": "18.46,3"
+                                    "score": "18.46,3",
+                                    "subScores": [
+                                        {
+                                            "periodValue": "1",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "1",
+                                            "score": "0",
+                                            "subScoreName": "Extra shots"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "3",
+                                            "subScoreName": "Extra shots"
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -223,7 +421,29 @@
                             },
                             "playerStats": [
                                 {
-                                    "score": "18.57,2"
+                                    "score": "18.57,2",
+                                    "subScores": [
+                                        {
+                                            "periodValue": "1",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "1",
+                                            "score": "0",
+                                            "subScoreName": "Extra shots"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "0",
+                                            "subScoreName": "Penaltyrounds"
+                                        },
+                                        {
+                                            "periodValue": "2",
+                                            "score": "0",
+                                            "subScoreName": "Extra shots"
+                                        }
+                                    ]
                                 }
                             ]
                         }

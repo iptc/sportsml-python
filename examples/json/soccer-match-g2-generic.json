@@ -93,6 +93,16 @@
                                         }
                                     ]
                                 }
+                            ],
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "0"
+                                }
                             ]
                         }
                     ],
@@ -1522,6 +1532,16 @@
                                             "value": "6"
                                         }
                                     ]
+                                }
+                            ],
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "2"
                                 }
                             ]
                         }

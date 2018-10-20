@@ -49,7 +49,17 @@
                     },
                     "teamStats": [
                         {
-                            "score": "0"
+                            "score": "0",
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "0"
+                                }
+                            ]
                         }
                     ],
                     "players": [
@@ -428,7 +438,17 @@
                     },
                     "teamStats": [
                         {
-                            "score": "2"
+                            "score": "2",
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "2"
+                                }
+                            ]
                         }
                     ],
                     "players": [

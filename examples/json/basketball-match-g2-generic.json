@@ -121,6 +121,24 @@
                                         }
                                     ]
                                 }
+                            ],
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "29"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "22"
+                                },
+                                {
+                                    "periodValue": "3",
+                                    "score": "19"
+                                },
+                                {
+                                    "periodValue": "4",
+                                    "score": "14"
+                                }
                             ]
                         }
                     ],
@@ -1167,6 +1185,24 @@
                                             "value": "5"
                                         }
                                     ]
+                                }
+                            ],
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "29"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "26"
+                                },
+                                {
+                                    "periodValue": "3",
+                                    "score": "21"
+                                },
+                                {
+                                    "periodValue": "4",
+                                    "score": "17"
                                 }
                             ]
                         }

@@ -246,7 +246,25 @@
                                                     },
                                                     "playerStats": [
                                                         {
-                                                            "score": "1"
+                                                            "score": "1",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "4"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "3",
+                                                                    "score": "2"
+                                                                },
+                                                                {
+                                                                    "periodValue": "4",
+                                                                    "score": "3"
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 },
@@ -269,7 +287,25 @@
                                                     },
                                                     "playerStats": [
                                                         {
-                                                            "score": "3"
+                                                            "score": "3",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "4"
+                                                                },
+                                                                {
+                                                                    "periodValue": "3",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "4",
+                                                                    "score": "6"
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }
@@ -302,7 +338,21 @@
                                                     },
                                                     "playerStats": [
                                                         {
-                                                            "score": "0"
+                                                            "score": "0",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "5"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "3"
+                                                                },
+                                                                {
+                                                                    "periodValue": "3",
+                                                                    "score": "4"
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 },
@@ -325,7 +375,21 @@
                                                     },
                                                     "playerStats": [
                                                         {
-                                                            "score": "3"
+                                                            "score": "3",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "7"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "3",
+                                                                    "score": "6"
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }
@@ -355,7 +419,21 @@
                                                     },
                                                     "teamStats": [
                                                         {
-                                                            "score": "3"
+                                                            "score": "3",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "7"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "3",
+                                                                    "score": "6"
+                                                                }
+                                                            ]
                                                         }
                                                     ],
                                                     "players": [
@@ -413,7 +491,21 @@
                                                     },
                                                     "teamStats": [
                                                         {
-                                                            "score": "0"
+                                                            "score": "0",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "4"
+                                                                },
+                                                                {
+                                                                    "periodValue": "3",
+                                                                    "score": "2"
+                                                                }
+                                                            ]
                                                         }
                                                     ],
                                                     "players": [
@@ -490,7 +582,17 @@
                                                     },
                                                     "playerStats": [
                                                         {
-                                                            "score": "0"
+                                                            "score": "0",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "0"
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 },
@@ -513,7 +615,17 @@
                                                     },
                                                     "playerStats": [
                                                         {
-                                                            "score": "2"
+                                                            "score": "2",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "7"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "3"
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }
@@ -546,7 +658,13 @@
                                                     },
                                                     "playerStats": [
                                                         {
-                                                            "score": "1"
+                                                            "score": "1",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "6"
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 },
@@ -569,7 +687,13 @@
                                                     },
                                                     "playerStats": [
                                                         {
-                                                            "score": "0"
+                                                            "score": "0",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "2"
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }

@@ -121,6 +121,40 @@
                                         }
                                     ]
                                 }
+                            ],
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "2"
+                                },
+                                {
+                                    "periodValue": "3",
+                                    "score": "1"
+                                },
+                                {
+                                    "periodValue": "4",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "5",
+                                    "score": "1"
+                                },
+                                {
+                                    "periodValue": "6",
+                                    "score": "2"
+                                },
+                                {
+                                    "periodValue": "7",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "8",
+                                    "score": "0"
+                                }
                             ]
                         }
                     ],
@@ -2868,6 +2902,40 @@
                                             "value": "0"
                                         }
                                     ]
+                                }
+                            ],
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "3",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "4",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "5",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "6",
+                                    "score": "1"
+                                },
+                                {
+                                    "periodValue": "7",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "8",
+                                    "score": "0"
                                 }
                             ]
                         }
