@@ -48,7 +48,9 @@ class ConceptNameType(TimeValidityAttributes, IntlStringType):
 
     name_role_mappings = {
         'nrol:full': 'full',
-        'nprt:common': 'common',
+        'nrol:first': 'given',
+        'nrol:last': 'family',
+        'nprt:common': 'alternate',
         'nprt:nickname': 'nickname',
     }
 
