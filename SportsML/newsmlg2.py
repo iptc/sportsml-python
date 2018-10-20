@@ -188,6 +188,13 @@ class ConceptDefinitionGroup(BaseObject):
     """
     A group of properites required to define the concept
     """
+    names = None
+    definition = None
+    note = None
+    facet = None
+    remote_info = None
+    hierarchy_info = None
+
     def __init__(self, **kwargs):
         super(ConceptDefinitionGroup, self).__init__(**kwargs)
         xmlelement = kwargs.get('xmlelement')
