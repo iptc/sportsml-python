@@ -121,9 +121,34 @@ class OfficialStats(BaseStats):
     pass
 
 
-class SubScores(BaseObject):
-    # TODO
-    pass
+class SubScore(BaseObject):
+    # Statistics that detail the score for a particular period or inning.
+    # Per-sport controlled vocabularies used for period-value.
+    attributes = {
+        # Generally a natural number. Could also be quarter-1, period-2, inning-5, etc.
+        'period-value': 'periodValue',
+        # The score for that period (or scoring unit).
+        'score': 'score',
+        # The type of sub-score.
+        'sub-score-type': 'subScoreType',
+        # The symbol for the sub-score unit.
+        'sub-score-key': 'subScoreKey',
+        # The name of the sub-score unit.
+        'sub-score-name': 'subScoreName',
+        # The ranking result of the sub-score unit.
+        'rank': 'rank',
+        # The running total during the sub-score period or unit. Good for split scores.
+        'total-score': 'totalScore',
+        # The attempts to score during the period (or scoring unit).
+        'score-attempts': 'scoreAttempts'
+    }
+
+
+class SubScores(GenericArray):
+    """
+    Array of SubScore objects.
+    """
+    element_class = SubScore
 
 
 class EventRecords(BaseObject):
@@ -176,10 +201,10 @@ class Base2Stats(BaseStats):
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.outcome_totals = OutcomeTotals(
-                xmlelement = xmlelement.findall(NEWSMLG2_NS+'outcome-total')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'outcome-total')
             )
             self.outcome_results = OutcomeResults(
-                xmlelement = xmlelement.findall(NEWSMLG2_NS+'outcome-result')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'outcome-result')
             )
 
     def as_dict(self):
@@ -352,10 +377,10 @@ class BaseGenericEntityStats(Base3Stats):
         xmlelement = kwargs.get('xmlelement')
         if type(xmlelement) == etree.Element:
             self.sub_scores = SubScores(
-                xmlelement = xmlelement.findall(NEWSMLG2_NS+'sub-score')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'sub-score')
             )
             self.event_records = EventRecords(
-                xmlelement = xmlelement.findall(NEWSMLG2_NS+'event-record')
+                xmlarray = xmlelement.findall(NEWSMLG2_NS+'event-record')
             )
 
     def as_dict(self):
