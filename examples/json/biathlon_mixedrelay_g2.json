@@ -25,6 +25,15 @@
             "teams": [
                 {
                     "id": "BIB6",
+                    "teamMetadata": {
+                        "key": "vendBIB:6",
+                        "nationality": "France",
+                        "names": [
+                            {
+                                "name": "France"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "score": "1.15.05,5"
@@ -119,6 +128,15 @@
                 },
                 {
                     "id": "BIB2",
+                    "teamMetadata": {
+                        "key": "vendBIB:2",
+                        "nationality": "Norway",
+                        "names": [
+                            {
+                                "name": "Norway"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "score": "1.15.05,7"

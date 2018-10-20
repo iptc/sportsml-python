@@ -11,7 +11,21 @@
                 {
                     "id": "l.nhl.com-t.3",
                     "teamMetadata": {
-                        "alignment": "home"
+                        "key": "vendteam:l.nhl.com-t.3",
+                        "alignment": "home",
+                        "names": [
+                            {
+                                "full": "NY Rangers"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "New York"
+                            },
+                            {
+                                "part": "nprt:nickname",
+                                "name": "Rangers"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {
@@ -348,7 +362,21 @@
                 {
                     "id": "l.nhl.com-t.15",
                     "teamMetadata": {
-                        "alignment": "away"
+                        "key": "vendteam:l.nhl.com-t.15",
+                        "alignment": "away",
+                        "names": [
+                            {
+                                "full": "Washington Capitals"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Washington"
+                            },
+                            {
+                                "part": "nprt:nickname",
+                                "name": "Capitals"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {

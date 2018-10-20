@@ -80,7 +80,21 @@
                 {
                     "id": "l.nba.com-t.14",
                     "teamMetadata": {
-                        "alignment": "away"
+                        "key": "vendteam:l.nba.com-t.14",
+                        "alignment": "away",
+                        "names": [
+                            {
+                                "full": "Milwaukee Bucks"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Milwaukee"
+                            },
+                            {
+                                "part": "nprt:nickname",
+                                "name": "Bucks"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {
@@ -1115,7 +1129,21 @@
                 {
                     "id": "l.nba.com-t.17",
                     "teamMetadata": {
-                        "alignment": "home"
+                        "key": "vendteam:l.nba.com-t.17",
+                        "alignment": "home",
+                        "names": [
+                            {
+                                "full": "Denver Nuggets"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Denver"
+                            },
+                            {
+                                "part": "nprt:nickname",
+                                "name": "Nuggets"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {

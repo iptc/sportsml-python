@@ -46,6 +46,18 @@
         {
             "teams": [
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.198",
+                        "names": [
+                            {
+                                "full": "FC Bayern M\u00fcnchen"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "FC Bayern M\u00fcnchen"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 7
@@ -53,6 +65,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.286",
+                        "names": [
+                            {
+                                "full": "Borussia Dortmund"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Borussia Dortmund"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 7
@@ -60,6 +84,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.358",
+                        "names": [
+                            {
+                                "full": "FC Schalke 04"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "FC Schalke 04"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 7
@@ -67,6 +103,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.701",
+                        "names": [
+                            {
+                                "full": "Hertha BSC"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Hertha BSC"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 8
@@ -74,6 +122,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:t.2743",
+                        "names": [
+                            {
+                                "full": "FC Ingolstadt 04"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "FC Ingolstadt 04"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 8
@@ -81,6 +141,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.1445",
+                        "names": [
+                            {
+                                "full": "1. FSV Mainz 05"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "1. FSV Mainz 05"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 8
@@ -88,6 +160,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.700",
+                        "names": [
+                            {
+                                "full": "VfL Wolfsburg"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "VfL Wolfsburg"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 8
@@ -95,6 +179,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.353",
+                        "names": [
+                            {
+                                "full": "Bayer 04 Leverkusen"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Bayer 04 Leverkusen"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 7
@@ -102,6 +198,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.1457",
+                        "names": [
+                            {
+                                "full": "1. FC K\u00f6ln"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "1. FC K\u00f6ln"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 7
@@ -109,6 +217,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:t.1756",
+                        "names": [
+                            {
+                                "full": "SV Darmstadt 98"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "SV Darmstadt 98"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 8
@@ -116,6 +236,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.326",
+                        "names": [
+                            {
+                                "full": "Hamburger SV"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Hamburger SV"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 8
@@ -123,6 +255,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.926",
+                        "names": [
+                            {
+                                "full": "Eintracht Frankfurt"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Eintracht Frankfurt"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 8
@@ -130,6 +274,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.310",
+                        "names": [
+                            {
+                                "full": "Borussia M\u00f6nchengladbach"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Borussia M\u00f6nchengladbach"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 8
@@ -137,6 +293,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.293",
+                        "names": [
+                            {
+                                "full": "SV Werder Bremen"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "SV Werder Bremen"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 8
@@ -144,6 +312,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.2074",
+                        "names": [
+                            {
+                                "full": "TSG 1899 Hoffenheim"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "TSG 1899 Hoffenheim"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 8
@@ -151,6 +331,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.1452",
+                        "names": [
+                            {
+                                "full": "Hannover 96"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Hannover 96"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 8
@@ -158,6 +350,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.1000",
+                        "names": [
+                            {
+                                "full": "FC Augsburg"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "FC Augsburg"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 7
@@ -165,6 +369,18 @@
                     ]
                 },
                 {
+                    "teamMetadata": {
+                        "key": "vendteam:o.dfb.de-t.352",
+                        "names": [
+                            {
+                                "full": "VfB Stuttgart"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "VfB Stuttgart"
+                            }
+                        ]
+                    },
                     "teamStats": [
                         {
                             "eventsPlayed": 8

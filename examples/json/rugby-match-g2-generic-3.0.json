@@ -33,7 +33,17 @@
                 {
                     "id": "t.33094",
                     "teamMetadata": {
-                        "alignment": "home"
+                        "key": "vendteam:t.33094",
+                        "alignment": "home",
+                        "names": [
+                            {
+                                "full": "Bath"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Bath"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {
@@ -1161,7 +1171,17 @@
                 {
                     "id": "t.33286",
                     "teamMetadata": {
-                        "alignment": "away"
+                        "key": "vendteam:t.33286",
+                        "alignment": "away",
+                        "names": [
+                            {
+                                "full": "Northampton"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Northampton"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {

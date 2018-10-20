@@ -29,7 +29,21 @@
                 {
                     "id": "l.nhl.com-t.10",
                     "teamMetadata": {
-                        "alignment": "home"
+                        "key": "vendteam:l.nhl.com-t.10",
+                        "alignment": "home",
+                        "names": [
+                            {
+                                "full": "Toronto Maple Leafs"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Toronto"
+                            },
+                            {
+                                "part": "nprt:nickname",
+                                "name": "Maple Leafs"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {
@@ -3675,7 +3689,21 @@
                 {
                     "id": "l.nhl.com-t.8",
                     "teamMetadata": {
-                        "alignment": "away"
+                        "key": "vendteam:l.nhl.com-t.8",
+                        "alignment": "away",
+                        "names": [
+                            {
+                                "full": "Montreal Canadiens"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Montreal"
+                            },
+                            {
+                                "part": "nprt:nickname",
+                                "name": "Canadiens"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {

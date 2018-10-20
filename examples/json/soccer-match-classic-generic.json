@@ -90,7 +90,17 @@
                 {
                     "id": "e.755363-t.7",
                     "teamMetadata": {
-                        "alignment": "home"
+                        "key": "vendteam:o.thefa.com-t.2",
+                        "alignment": "home",
+                        "names": [
+                            {
+                                "full": "Aston Villa"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Aston Villa"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {
@@ -1510,7 +1520,17 @@
                 {
                     "id": "e.755363-t.43",
                     "teamMetadata": {
-                        "alignment": "away"
+                        "key": "vendteam:o.thefa.com-t.12",
+                        "alignment": "away",
+                        "names": [
+                            {
+                                "full": "Manchester City"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Manchester City"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {

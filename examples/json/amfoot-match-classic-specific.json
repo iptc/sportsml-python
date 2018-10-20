@@ -95,7 +95,21 @@
                 {
                     "id": "l.nfl.com-t.4",
                     "teamMetadata": {
-                        "alignment": "away"
+                        "key": "vendteam:l.nfl.com-t.4",
+                        "alignment": "away",
+                        "names": [
+                            {
+                                "full": "New England Patriots"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "New England"
+                            },
+                            {
+                                "part": "nprt:nickname",
+                                "name": "Patriots"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {
@@ -528,7 +542,21 @@
                 {
                     "id": "l.nfl.com-t.16",
                     "teamMetadata": {
-                        "alignment": "home"
+                        "key": "vendteam:l.nfl.com-t.16",
+                        "alignment": "home",
+                        "names": [
+                            {
+                                "full": "Seattle Seahawks"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Seattle"
+                            },
+                            {
+                                "part": "nprt:nickname",
+                                "name": "Seahawks"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {

@@ -11,7 +11,21 @@
                 {
                     "id": "l.mlb.com-t.16",
                     "teamMetadata": {
-                        "alignment": "away"
+                        "key": "vendteam:l.mlb.com-t.16",
+                        "alignment": "away",
+                        "names": [
+                            {
+                                "full": "Miami Marlins"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Miami"
+                            },
+                            {
+                                "part": "nprt:nickname",
+                                "name": "Marlins"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {
@@ -428,7 +442,21 @@
                 {
                     "id": "l.mlb.com-t.27",
                     "teamMetadata": {
-                        "alignment": "home"
+                        "key": "vendteam:l.mlb.com-t.27",
+                        "alignment": "home",
+                        "names": [
+                            {
+                                "full": "Colorado Rockies"
+                            },
+                            {
+                                "part": "nprt:common",
+                                "name": "Colorado"
+                            },
+                            {
+                                "part": "nprt:nickname",
+                                "name": "Rockies"
+                            }
+                        ]
                     },
                     "teamStats": [
                         {

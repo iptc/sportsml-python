@@ -55,7 +55,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "home",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Spain"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -66,7 +71,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "away",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Argentina"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -174,7 +184,12 @@
                                             "id": "DC_Seribia",
                                             "teamMetadata": {
                                                 "alignment": "home",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Serbia"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -189,7 +204,12 @@
                                             "id": "DC_Argentina",
                                             "teamMetadata": {
                                                 "alignment": "away",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Argentina"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -326,6 +346,13 @@
                                             },
                                             "teams": [
                                                 {
+                                                    "teamMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Serbia"
+                                                            }
+                                                        ]
+                                                    },
                                                     "teamStats": [
                                                         {
                                                             "score": "3"
@@ -377,6 +404,13 @@
                                                     ]
                                                 },
                                                 {
+                                                    "teamMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Argentina"
+                                                            }
+                                                        ]
+                                                    },
                                                     "teamStats": [
                                                         {
                                                             "score": "0"
@@ -551,7 +585,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "home",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Spain"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -562,7 +601,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "away",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "France"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -595,7 +639,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "home",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Serbia"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -605,7 +654,12 @@
                                         },
                                         {
                                             "teamMetadata": {
-                                                "alignment": "away"
+                                                "alignment": "away",
+                                                "names": [
+                                                    {
+                                                        "name": "Sweden"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -622,7 +676,12 @@
                                     "teams": [
                                         {
                                             "teamMetadata": {
-                                                "alignment": "home"
+                                                "alignment": "home",
+                                                "names": [
+                                                    {
+                                                        "name": "Kazakhstan"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -633,7 +692,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "away",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Argentina"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -651,7 +715,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "home",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "USA"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -662,7 +731,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "away",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Spain"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -679,7 +753,12 @@
                                     "teams": [
                                         {
                                             "teamMetadata": {
-                                                "alignment": "home"
+                                                "alignment": "home",
+                                                "names": [
+                                                    {
+                                                        "name": "Germany"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -690,7 +769,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "away",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "France"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -724,7 +808,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "home",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Serbia"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -734,7 +823,12 @@
                                         },
                                         {
                                             "teamMetadata": {
-                                                "alignment": "away"
+                                                "alignment": "away",
+                                                "names": [
+                                                    {
+                                                        "name": "India"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -752,7 +846,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "home",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Russia"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -762,7 +861,12 @@
                                         },
                                         {
                                             "teamMetadata": {
-                                                "alignment": "away"
+                                                "alignment": "away",
+                                                "names": [
+                                                    {
+                                                        "name": "Sweden"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -780,7 +884,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "home",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Czech Republic"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -790,7 +899,12 @@
                                         },
                                         {
                                             "teamMetadata": {
-                                                "alignment": "away"
+                                                "alignment": "away",
+                                                "names": [
+                                                    {
+                                                        "name": "Kazakhstan"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -808,7 +922,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "home",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Argentina"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -818,7 +937,12 @@
                                         },
                                         {
                                             "teamMetadata": {
-                                                "alignment": "away"
+                                                "alignment": "away",
+                                                "names": [
+                                                    {
+                                                        "name": "Romania"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -835,7 +959,12 @@
                                     "teams": [
                                         {
                                             "teamMetadata": {
-                                                "alignment": "home"
+                                                "alignment": "home",
+                                                "names": [
+                                                    {
+                                                        "name": "Chile"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -846,7 +975,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "away",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "USA"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -863,7 +997,12 @@
                                     "teams": [
                                         {
                                             "teamMetadata": {
-                                                "alignment": "home"
+                                                "alignment": "home",
+                                                "names": [
+                                                    {
+                                                        "name": "Belgium"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -874,7 +1013,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "away",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Spain"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -891,7 +1035,12 @@
                                     "teams": [
                                         {
                                             "teamMetadata": {
-                                                "alignment": "home"
+                                                "alignment": "home",
+                                                "names": [
+                                                    {
+                                                        "name": "Germany"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -902,7 +1051,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "away",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Croatia"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -919,7 +1073,12 @@
                                     "teams": [
                                         {
                                             "teamMetadata": {
-                                                "alignment": "home"
+                                                "alignment": "home",
+                                                "names": [
+                                                    {
+                                                        "name": "Austria"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
@@ -930,7 +1089,12 @@
                                         {
                                             "teamMetadata": {
                                                 "alignment": "away",
-                                                "roundPosition": "seeded"
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "France"
+                                                    }
+                                                ]
                                             },
                                             "teamStats": [
                                                 {
