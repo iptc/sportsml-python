@@ -362,6 +362,9 @@ class BasePersonMetadata(BaseEntityMetadata):
         # Male or female.
         'gender': 'gender'
     }
+    attribute_types = {
+        'weight': 'integer'
+    }
     
 
 class BasePlayerMetadata(BasePersonMetadata):
@@ -405,9 +408,9 @@ class BasePlayerMetadata(BasePersonMetadata):
     def as_dict(self):
         super(BasePlayerMetadata, self).as_dict()
         if self.career_phase_metadata:
-            self.dict.update({ 'careerPhaseMetadata': self.career_phase_metadata.as_dict() })
+            self.dict.update({ 'careerPhase': self.career_phase_metadata.as_dict() })
         if self.injury_phase_metadata:
-            self.dict.update({ 'injuryPhaseMetadata': self.injury_phase_metadata.as_dict() })
+            self.dict.update({ 'injuryPhase': self.injury_phase_metadata.as_dict() })
         return self.dict
 
 
