@@ -18,12 +18,10 @@
                                 "full": "NY Rangers"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "New York"
+                                "common": "New York"
                             },
                             {
-                                "part": "nprt:nickname",
-                                "name": "Rangers"
+                                "nickname": "Rangers"
                             }
                         ]
                     },
@@ -369,12 +367,10 @@
                                 "full": "Washington Capitals"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Washington"
+                                "common": "Washington"
                             },
                             {
-                                "part": "nprt:nickname",
-                                "name": "Capitals"
+                                "nickname": "Capitals"
                             }
                         ]
                     },

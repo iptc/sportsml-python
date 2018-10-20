@@ -45,12 +45,27 @@ class ConceptNameType(TimeValidityAttributes, IntlStringType):
         if type(xmlelement) == etree.Element:
             self.name = xmlelement.text
 
+    name_role_mappings = {
+        'nrol:full': 'full',
+        'nprt:common': 'common',
+        'nprt:nickname': 'nickname',
+    }
+
     def as_dict(self):
         super(ConceptNameType, self).as_dict()
         # the only place where we diverge from a direct match with the SportsML
-        if self.attr_values.get('role', None) == 'nrol:full':
-            self.dict.update({'full': self.name })
+        role = self.attr_values.get('role', None)
+        part = self.attr_values.get('part', None)
+        if role and role in self.name_role_mappings.keys():
+            self.dict.update({
+                self.name_role_mappings[role]: self.name
+            })
             del self.dict['role']
+        elif part and part in self.name_role_mappings.keys():
+            self.dict.update({
+                self.name_role_mappings[part]: self.name
+            })
+            del self.dict['part']
         elif self.name:
             self.dict.update({'name': self.name})
         return self.dict

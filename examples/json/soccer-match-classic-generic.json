@@ -71,8 +71,7 @@
                                     "full": "Villa Park"
                                 },
                                 {
-                                    "part": "nprt:common",
-                                    "name": "Villa Park"
+                                    "common": "Villa Park"
                                 }
                             ],
                             "homeLocation": {}
@@ -97,8 +96,7 @@
                                 "full": "Aston Villa"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Aston Villa"
+                                "common": "Aston Villa"
                             }
                         ]
                     },
@@ -1527,8 +1525,7 @@
                                 "full": "Manchester City"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Manchester City"
+                                "common": "Manchester City"
                             }
                         ]
                     },

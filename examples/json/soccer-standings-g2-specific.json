@@ -11,8 +11,7 @@
                                 "full": "FC Bayern M\u00fcnchen"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "FC Bayern M\u00fcnchen"
+                                "common": "FC Bayern M\u00fcnchen"
                             }
                         ]
                     },
@@ -31,8 +30,7 @@
                                 "full": "Borussia Dortmund"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Borussia Dortmund"
+                                "common": "Borussia Dortmund"
                             }
                         ]
                     },
@@ -51,8 +49,7 @@
                                 "full": "FC Schalke 04"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "FC Schalke 04"
+                                "common": "FC Schalke 04"
                             }
                         ]
                     },
@@ -71,8 +68,7 @@
                                 "full": "Hertha BSC"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Hertha BSC"
+                                "common": "Hertha BSC"
                             }
                         ]
                     },
@@ -91,8 +87,7 @@
                                 "full": "FC Ingolstadt 04"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "FC Ingolstadt 04"
+                                "common": "FC Ingolstadt 04"
                             }
                         ]
                     },
@@ -111,8 +106,7 @@
                                 "full": "1. FSV Mainz 05"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "1. FSV Mainz 05"
+                                "common": "1. FSV Mainz 05"
                             }
                         ]
                     },
@@ -131,8 +125,7 @@
                                 "full": "VfL Wolfsburg"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "VfL Wolfsburg"
+                                "common": "VfL Wolfsburg"
                             }
                         ]
                     },
@@ -151,8 +144,7 @@
                                 "full": "Bayer 04 Leverkusen"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Bayer 04 Leverkusen"
+                                "common": "Bayer 04 Leverkusen"
                             }
                         ]
                     },
@@ -171,8 +163,7 @@
                                 "full": "1. FC K\u00f6ln"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "1. FC K\u00f6ln"
+                                "common": "1. FC K\u00f6ln"
                             }
                         ]
                     },
@@ -191,8 +182,7 @@
                                 "full": "SV Darmstadt 98"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "SV Darmstadt 98"
+                                "common": "SV Darmstadt 98"
                             }
                         ]
                     },
@@ -211,8 +201,7 @@
                                 "full": "Hamburger SV"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Hamburger SV"
+                                "common": "Hamburger SV"
                             }
                         ]
                     },
@@ -231,8 +220,7 @@
                                 "full": "Eintracht Frankfurt"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Eintracht Frankfurt"
+                                "common": "Eintracht Frankfurt"
                             }
                         ]
                     },
@@ -251,8 +239,7 @@
                                 "full": "Borussia M\u00f6nchengladbach"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Borussia M\u00f6nchengladbach"
+                                "common": "Borussia M\u00f6nchengladbach"
                             }
                         ]
                     },
@@ -271,8 +258,7 @@
                                 "full": "SV Werder Bremen"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "SV Werder Bremen"
+                                "common": "SV Werder Bremen"
                             }
                         ]
                     },
@@ -291,8 +277,7 @@
                                 "full": "TSG 1899 Hoffenheim"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "TSG 1899 Hoffenheim"
+                                "common": "TSG 1899 Hoffenheim"
                             }
                         ]
                     },
@@ -311,8 +296,7 @@
                                 "full": "Hannover 96"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Hannover 96"
+                                "common": "Hannover 96"
                             }
                         ]
                     },
@@ -331,8 +315,7 @@
                                 "full": "FC Augsburg"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "FC Augsburg"
+                                "common": "FC Augsburg"
                             }
                         ]
                     },
@@ -351,8 +334,7 @@
                                 "full": "VfB Stuttgart"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "VfB Stuttgart"
+                                "common": "VfB Stuttgart"
                             }
                         ]
                     },

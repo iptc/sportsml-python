@@ -59,8 +59,7 @@
                                     "full": "The Recreation Ground"
                                 },
                                 {
-                                    "part": "nprt:common",
-                                    "name": "The Recreation Ground"
+                                    "common": "The Recreation Ground"
                                 }
                             ]
                         },
@@ -83,8 +82,7 @@
                                 "full": "Bath"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Bath"
+                                "common": "Bath"
                             }
                         ]
                     },
@@ -1221,8 +1219,7 @@
                                 "full": "Northampton"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Northampton"
+                                "common": "Northampton"
                             }
                         ]
                     },

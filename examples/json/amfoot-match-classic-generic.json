@@ -102,12 +102,10 @@
                                 "full": "New England Patriots"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "New England"
+                                "common": "New England"
                             },
                             {
-                                "part": "nprt:nickname",
-                                "name": "Patriots"
+                                "nickname": "Patriots"
                             }
                         ]
                     },
@@ -2891,12 +2889,10 @@
                                 "full": "Seattle Seahawks"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Seattle"
+                                "common": "Seattle"
                             },
                             {
-                                "part": "nprt:nickname",
-                                "name": "Seahawks"
+                                "nickname": "Seahawks"
                             }
                         ]
                     },

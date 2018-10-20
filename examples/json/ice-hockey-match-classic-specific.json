@@ -93,12 +93,10 @@
                                 "full": "Toronto Maple Leafs"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Toronto"
+                                "common": "Toronto"
                             },
                             {
-                                "part": "nprt:nickname",
-                                "name": "Maple Leafs"
+                                "nickname": "Maple Leafs"
                             }
                         ]
                     },
@@ -724,12 +722,10 @@
                                 "full": "Montreal Canadiens"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Montreal"
+                                "common": "Montreal"
                             },
                             {
-                                "part": "nprt:nickname",
-                                "name": "Canadiens"
+                                "nickname": "Canadiens"
                             }
                         ]
                     },

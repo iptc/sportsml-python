@@ -80,12 +80,10 @@
                                 "full": "Miami Marlins"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Miami"
+                                "common": "Miami"
                             },
                             {
-                                "part": "nprt:nickname",
-                                "name": "Marlins"
+                                "nickname": "Marlins"
                             }
                         ]
                     },
@@ -2830,12 +2828,10 @@
                                 "full": "Colorado Rockies"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Colorado"
+                                "common": "Colorado"
                             },
                             {
-                                "part": "nprt:nickname",
-                                "name": "Rockies"
+                                "nickname": "Rockies"
                             }
                         ]
                     },

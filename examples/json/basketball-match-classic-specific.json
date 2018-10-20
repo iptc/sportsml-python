@@ -87,12 +87,10 @@
                                 "full": "Milwaukee Bucks"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Milwaukee"
+                                "common": "Milwaukee"
                             },
                             {
-                                "part": "nprt:nickname",
-                                "name": "Bucks"
+                                "nickname": "Bucks"
                             }
                         ]
                     },
@@ -398,12 +396,10 @@
                                 "full": "Denver Nuggets"
                             },
                             {
-                                "part": "nprt:common",
-                                "name": "Denver"
+                                "common": "Denver"
                             },
                             {
-                                "part": "nprt:nickname",
-                                "name": "Nuggets"
+                                "nickname": "Nuggets"
                             }
                         ]
                     },
