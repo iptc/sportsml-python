@@ -133,7 +133,7 @@ class BaseEntityMetadata(CommonAttributes):
         return self.dict
 
 
-class BaseTeamMetadata(BaseObject):
+class BaseTeamMetadata(BaseEntityMetadata):
     """
     Info about the team. Properties of a team that are not based on their competitive performance.
     An included sports-content-code element can hold what division it is in, etc.
