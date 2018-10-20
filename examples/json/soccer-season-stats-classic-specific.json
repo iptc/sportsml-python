@@ -63,7 +63,7 @@
                                 "full": "Chelsea"
                             },
                             {
-                                "common": "Chelsea"
+                                "alternate": "Chelsea"
                             }
                         ]
                     },
@@ -88,7 +88,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "9",
+                                    "eventsPlayed": 9,
                                     "timePlayedTotal": "788",
                                     "eventsStarted": 9
                                 }
@@ -109,7 +109,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "1",
+                                    "eventsPlayed": 1,
                                     "timePlayedTotal": "90",
                                     "eventsStarted": 1
                                 }
@@ -130,7 +130,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "7",
+                                    "eventsPlayed": 7,
                                     "timePlayedTotal": "576",
                                     "eventsStarted": 6
                                 }
@@ -163,7 +163,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "8",
+                                    "eventsPlayed": 8,
                                     "timePlayedTotal": "483",
                                     "eventsStarted": 6
                                 }
@@ -184,7 +184,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "7",
+                                    "eventsPlayed": 7,
                                     "timePlayedTotal": "574",
                                     "eventsStarted": 6
                                 }
@@ -205,7 +205,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "3",
+                                    "eventsPlayed": 3,
                                     "timePlayedTotal": "232",
                                     "eventsStarted": 3
                                 }
@@ -226,7 +226,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "7",
+                                    "eventsPlayed": 7,
                                     "timePlayedTotal": "610",
                                     "eventsStarted": 7
                                 }
@@ -247,7 +247,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "9",
+                                    "eventsPlayed": 9,
                                     "timePlayedTotal": "779",
                                     "eventsStarted": 9
                                 }
@@ -268,7 +268,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "7",
+                                    "eventsPlayed": 7,
                                     "timePlayedTotal": "192",
                                     "eventsStarted": 1
                                 }
@@ -289,7 +289,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "9",
+                                    "eventsPlayed": 9,
                                     "timePlayedTotal": "727",
                                     "eventsStarted": 8
                                 }
@@ -310,7 +310,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "8",
+                                    "eventsPlayed": 8,
                                     "timePlayedTotal": "720",
                                     "eventsStarted": 8
                                 }
@@ -331,7 +331,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "2",
+                                    "eventsPlayed": 2,
                                     "timePlayedTotal": "62",
                                     "eventsStarted": 1
                                 }
@@ -352,7 +352,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "9",
+                                    "eventsPlayed": 9,
                                     "timePlayedTotal": "657",
                                     "eventsStarted": 7
                                 }
@@ -373,7 +373,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "3",
+                                    "eventsPlayed": 3,
                                     "timePlayedTotal": "62",
                                     "eventsStarted": 1
                                 }
@@ -394,7 +394,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "2",
+                                    "eventsPlayed": 2,
                                     "timePlayedTotal": "57"
                                 }
                             ]
@@ -414,7 +414,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "4",
+                                    "eventsPlayed": 4,
                                     "timePlayedTotal": "87",
                                     "eventsStarted": 1
                                 }
@@ -435,7 +435,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "7",
+                                    "eventsPlayed": 7,
                                     "timePlayedTotal": "533",
                                     "eventsStarted": 6
                                 }
@@ -456,7 +456,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "5",
+                                    "eventsPlayed": 5,
                                     "timePlayedTotal": "237",
                                     "eventsStarted": 3
                                 }
@@ -477,7 +477,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "6",
+                                    "eventsPlayed": 6,
                                     "timePlayedTotal": "459",
                                     "eventsStarted": 6
                                 }
@@ -510,7 +510,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "8",
+                                    "eventsPlayed": 8,
                                     "timePlayedTotal": "599",
                                     "eventsStarted": 6
                                 }
@@ -531,7 +531,7 @@
                                 {
                                     "teamCoverage": "single-team",
                                     "temporalUnitType": "spct:season",
-                                    "eventsPlayed": "4",
+                                    "eventsPlayed": 4,
                                     "timePlayedTotal": "286",
                                     "eventsStarted": 4
                                 }

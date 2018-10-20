@@ -53,7 +53,7 @@
                                 "full": "San Jose Sharks"
                             },
                             {
-                                "common": "San Jose"
+                                "alternate": "San Jose"
                             },
                             {
                                 "nickname": "Sharks"
@@ -74,7 +74,7 @@
                                 "full": "Calgary Flames"
                             },
                             {
-                                "common": "Calgary"
+                                "alternate": "Calgary"
                             },
                             {
                                 "nickname": "Flames"
@@ -95,7 +95,7 @@
                                 "full": "Arizona Coyotes"
                             },
                             {
-                                "common": "Arizona"
+                                "alternate": "Arizona"
                             },
                             {
                                 "nickname": "Coyotes"
@@ -116,7 +116,7 @@
                                 "full": "Anaheim Ducks"
                             },
                             {
-                                "common": "Anaheim"
+                                "alternate": "Anaheim"
                             },
                             {
                                 "nickname": "Ducks"
@@ -137,7 +137,7 @@
                                 "full": "Los Angeles Kings"
                             },
                             {
-                                "common": "Los Angeles"
+                                "alternate": "Los Angeles"
                             },
                             {
                                 "nickname": "Kings"
@@ -158,7 +158,7 @@
                                 "full": "Edmonton Oilers"
                             },
                             {
-                                "common": "Edmonton"
+                                "alternate": "Edmonton"
                             },
                             {
                                 "nickname": "Oilers"
@@ -179,7 +179,7 @@
                                 "full": "Vancouver Canucks"
                             },
                             {
-                                "common": "Vancouver"
+                                "alternate": "Vancouver"
                             },
                             {
                                 "nickname": "Canucks"
@@ -205,7 +205,7 @@
                                 "full": "San Jose Sharks"
                             },
                             {
-                                "common": "San Jose"
+                                "alternate": "San Jose"
                             },
                             {
                                 "nickname": "Sharks"
@@ -226,7 +226,7 @@
                                 "full": "Calgary Flames"
                             },
                             {
-                                "common": "Calgary"
+                                "alternate": "Calgary"
                             },
                             {
                                 "nickname": "Flames"
@@ -247,7 +247,7 @@
                                 "full": "Arizona Coyotes"
                             },
                             {
-                                "common": "Arizona"
+                                "alternate": "Arizona"
                             },
                             {
                                 "nickname": "Coyotes"
@@ -268,7 +268,7 @@
                                 "full": "Anaheim Ducks"
                             },
                             {
-                                "common": "Anaheim"
+                                "alternate": "Anaheim"
                             },
                             {
                                 "nickname": "Ducks"
@@ -289,7 +289,7 @@
                                 "full": "Los Angeles Kings"
                             },
                             {
-                                "common": "Los Angeles"
+                                "alternate": "Los Angeles"
                             },
                             {
                                 "nickname": "Kings"
@@ -310,7 +310,7 @@
                                 "full": "Edmonton Oilers"
                             },
                             {
-                                "common": "Edmonton"
+                                "alternate": "Edmonton"
                             },
                             {
                                 "nickname": "Oilers"
@@ -331,7 +331,7 @@
                                 "full": "Vancouver Canucks"
                             },
                             {
-                                "common": "Vancouver"
+                                "alternate": "Vancouver"
                             },
                             {
                                 "nickname": "Canucks"
@@ -357,7 +357,7 @@
                                 "full": "St. Louis Blues"
                             },
                             {
-                                "common": "St. Louis"
+                                "alternate": "St. Louis"
                             },
                             {
                                 "nickname": "Blues"
@@ -378,7 +378,7 @@
                                 "full": "Dallas Stars"
                             },
                             {
-                                "common": "Dallas"
+                                "alternate": "Dallas"
                             },
                             {
                                 "nickname": "Stars"
@@ -399,7 +399,7 @@
                                 "full": "Colorado Avalanche"
                             },
                             {
-                                "common": "Colorado"
+                                "alternate": "Colorado"
                             },
                             {
                                 "nickname": "Avalanche"
@@ -420,7 +420,7 @@
                                 "full": "Chicago Blackhawks"
                             },
                             {
-                                "common": "Chicago"
+                                "alternate": "Chicago"
                             },
                             {
                                 "nickname": "Blackhawks"
@@ -441,7 +441,7 @@
                                 "full": "Nashville Predators"
                             },
                             {
-                                "common": "Nashville"
+                                "alternate": "Nashville"
                             },
                             {
                                 "nickname": "Predators"
@@ -462,7 +462,7 @@
                                 "full": "Minnesota Wild"
                             },
                             {
-                                "common": "Minnesota"
+                                "alternate": "Minnesota"
                             },
                             {
                                 "nickname": "Wild"
@@ -483,7 +483,7 @@
                                 "full": "Winnipeg Jets"
                             },
                             {
-                                "common": "Winnipeg"
+                                "alternate": "Winnipeg"
                             },
                             {
                                 "nickname": "Jets"
@@ -509,7 +509,7 @@
                                 "full": "St. Louis Blues"
                             },
                             {
-                                "common": "St. Louis"
+                                "alternate": "St. Louis"
                             },
                             {
                                 "nickname": "Blues"
@@ -530,7 +530,7 @@
                                 "full": "Dallas Stars"
                             },
                             {
-                                "common": "Dallas"
+                                "alternate": "Dallas"
                             },
                             {
                                 "nickname": "Stars"
@@ -551,7 +551,7 @@
                                 "full": "Colorado Avalanche"
                             },
                             {
-                                "common": "Colorado"
+                                "alternate": "Colorado"
                             },
                             {
                                 "nickname": "Avalanche"
@@ -572,7 +572,7 @@
                                 "full": "Chicago Blackhawks"
                             },
                             {
-                                "common": "Chicago"
+                                "alternate": "Chicago"
                             },
                             {
                                 "nickname": "Blackhawks"
@@ -593,7 +593,7 @@
                                 "full": "Nashville Predators"
                             },
                             {
-                                "common": "Nashville"
+                                "alternate": "Nashville"
                             },
                             {
                                 "nickname": "Predators"
@@ -614,7 +614,7 @@
                                 "full": "Minnesota Wild"
                             },
                             {
-                                "common": "Minnesota"
+                                "alternate": "Minnesota"
                             },
                             {
                                 "nickname": "Wild"
@@ -635,7 +635,7 @@
                                 "full": "Winnipeg Jets"
                             },
                             {
-                                "common": "Winnipeg"
+                                "alternate": "Winnipeg"
                             },
                             {
                                 "nickname": "Jets"
@@ -661,7 +661,7 @@
                                 "full": "Columbus Blue Jackets"
                             },
                             {
-                                "common": "Columbus"
+                                "alternate": "Columbus"
                             },
                             {
                                 "nickname": "Blue Jackets"
@@ -682,7 +682,7 @@
                                 "full": "Pittsburgh Penguins"
                             },
                             {
-                                "common": "Pittsburgh"
+                                "alternate": "Pittsburgh"
                             },
                             {
                                 "nickname": "Penguins"
@@ -703,7 +703,7 @@
                                 "full": "Carolina Hurricanes"
                             },
                             {
-                                "common": "Carolina"
+                                "alternate": "Carolina"
                             },
                             {
                                 "nickname": "Hurricanes"
@@ -724,7 +724,7 @@
                                 "full": "Philadelphia Flyers"
                             },
                             {
-                                "common": "Philadelphia"
+                                "alternate": "Philadelphia"
                             },
                             {
                                 "nickname": "Flyers"
@@ -745,7 +745,7 @@
                                 "full": "New York Islanders"
                             },
                             {
-                                "common": "New York"
+                                "alternate": "New York"
                             },
                             {
                                 "nickname": "Islanders"
@@ -766,7 +766,7 @@
                                 "full": "New York Rangers"
                             },
                             {
-                                "common": "New York"
+                                "alternate": "New York"
                             },
                             {
                                 "nickname": "Rangers"
@@ -787,7 +787,7 @@
                                 "full": "New Jersey Devils"
                             },
                             {
-                                "common": "New Jersey"
+                                "alternate": "New Jersey"
                             },
                             {
                                 "nickname": "Devils"
@@ -808,7 +808,7 @@
                                 "full": "Washington Capitals"
                             },
                             {
-                                "common": "Washington"
+                                "alternate": "Washington"
                             },
                             {
                                 "nickname": "Capitals"
@@ -834,7 +834,7 @@
                                 "full": "Columbus Blue Jackets"
                             },
                             {
-                                "common": "Columbus"
+                                "alternate": "Columbus"
                             },
                             {
                                 "nickname": "Blue Jackets"
@@ -855,7 +855,7 @@
                                 "full": "Pittsburgh Penguins"
                             },
                             {
-                                "common": "Pittsburgh"
+                                "alternate": "Pittsburgh"
                             },
                             {
                                 "nickname": "Penguins"
@@ -876,7 +876,7 @@
                                 "full": "Carolina Hurricanes"
                             },
                             {
-                                "common": "Carolina"
+                                "alternate": "Carolina"
                             },
                             {
                                 "nickname": "Hurricanes"
@@ -897,7 +897,7 @@
                                 "full": "Philadelphia Flyers"
                             },
                             {
-                                "common": "Philadelphia"
+                                "alternate": "Philadelphia"
                             },
                             {
                                 "nickname": "Flyers"
@@ -918,7 +918,7 @@
                                 "full": "New York Islanders"
                             },
                             {
-                                "common": "New York"
+                                "alternate": "New York"
                             },
                             {
                                 "nickname": "Islanders"
@@ -939,7 +939,7 @@
                                 "full": "New York Rangers"
                             },
                             {
-                                "common": "New York"
+                                "alternate": "New York"
                             },
                             {
                                 "nickname": "Rangers"
@@ -960,7 +960,7 @@
                                 "full": "New Jersey Devils"
                             },
                             {
-                                "common": "New Jersey"
+                                "alternate": "New Jersey"
                             },
                             {
                                 "nickname": "Devils"
@@ -981,7 +981,7 @@
                                 "full": "Washington Capitals"
                             },
                             {
-                                "common": "Washington"
+                                "alternate": "Washington"
                             },
                             {
                                 "nickname": "Capitals"
@@ -1007,7 +1007,7 @@
                                 "full": "Tampa Bay Lightning"
                             },
                             {
-                                "common": "Tampa Bay"
+                                "alternate": "Tampa Bay"
                             },
                             {
                                 "nickname": "Lightning"
@@ -1028,7 +1028,7 @@
                                 "full": "Ottawa Senators"
                             },
                             {
-                                "common": "Ottawa"
+                                "alternate": "Ottawa"
                             },
                             {
                                 "nickname": "Senators"
@@ -1049,7 +1049,7 @@
                                 "full": "Buffalo Sabres"
                             },
                             {
-                                "common": "Buffalo"
+                                "alternate": "Buffalo"
                             },
                             {
                                 "nickname": "Sabres"
@@ -1070,7 +1070,7 @@
                                 "full": "Boston Bruins"
                             },
                             {
-                                "common": "Boston"
+                                "alternate": "Boston"
                             },
                             {
                                 "nickname": "Bruins"
@@ -1091,7 +1091,7 @@
                                 "full": "Montreal Canadiens"
                             },
                             {
-                                "common": "Montreal"
+                                "alternate": "Montreal"
                             },
                             {
                                 "nickname": "Canadiens"
@@ -1112,7 +1112,7 @@
                                 "full": "Florida Panthers"
                             },
                             {
-                                "common": "Florida"
+                                "alternate": "Florida"
                             },
                             {
                                 "nickname": "Panthers"
@@ -1133,7 +1133,7 @@
                                 "full": "Toronto Maple Leafs"
                             },
                             {
-                                "common": "Toronto"
+                                "alternate": "Toronto"
                             },
                             {
                                 "nickname": "Maple Leafs"
@@ -1154,7 +1154,7 @@
                                 "full": "Detroit Red Wings"
                             },
                             {
-                                "common": "Detroit"
+                                "alternate": "Detroit"
                             },
                             {
                                 "nickname": "Red Wings"
@@ -1180,7 +1180,7 @@
                                 "full": "Tampa Bay Lightning"
                             },
                             {
-                                "common": "Tampa Bay"
+                                "alternate": "Tampa Bay"
                             },
                             {
                                 "nickname": "Lightning"
@@ -1201,7 +1201,7 @@
                                 "full": "Ottawa Senators"
                             },
                             {
-                                "common": "Ottawa"
+                                "alternate": "Ottawa"
                             },
                             {
                                 "nickname": "Senators"
@@ -1222,7 +1222,7 @@
                                 "full": "Buffalo Sabres"
                             },
                             {
-                                "common": "Buffalo"
+                                "alternate": "Buffalo"
                             },
                             {
                                 "nickname": "Sabres"
@@ -1243,7 +1243,7 @@
                                 "full": "Boston Bruins"
                             },
                             {
-                                "common": "Boston"
+                                "alternate": "Boston"
                             },
                             {
                                 "nickname": "Bruins"
@@ -1264,7 +1264,7 @@
                                 "full": "Montreal Canadiens"
                             },
                             {
-                                "common": "Montreal"
+                                "alternate": "Montreal"
                             },
                             {
                                 "nickname": "Canadiens"
@@ -1285,7 +1285,7 @@
                                 "full": "Florida Panthers"
                             },
                             {
-                                "common": "Florida"
+                                "alternate": "Florida"
                             },
                             {
                                 "nickname": "Panthers"
@@ -1306,7 +1306,7 @@
                                 "full": "Toronto Maple Leafs"
                             },
                             {
-                                "common": "Toronto"
+                                "alternate": "Toronto"
                             },
                             {
                                 "nickname": "Maple Leafs"
@@ -1327,7 +1327,7 @@
                                 "full": "Detroit Red Wings"
                             },
                             {
-                                "common": "Detroit"
+                                "alternate": "Detroit"
                             },
                             {
                                 "nickname": "Red Wings"

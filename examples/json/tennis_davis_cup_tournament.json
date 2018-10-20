@@ -117,12 +117,10 @@
                                                     "playerMetadata": {
                                                         "names": [
                                                             {
-                                                                "role": "nrol:first",
-                                                                "name": "Rafael"
+                                                                "given": "Rafael"
                                                             },
                                                             {
-                                                                "role": "nrol:last",
-                                                                "name": "Nadal"
+                                                                "family": "Nadal"
                                                             }
                                                         ],
                                                         "homeLocation": {
@@ -150,12 +148,10 @@
                                                     "playerMetadata": {
                                                         "names": [
                                                             {
-                                                                "role": "nrol:first",
-                                                                "name": "David"
+                                                                "given": "David"
                                                             },
                                                             {
-                                                                "role": "nrol:last",
-                                                                "name": "Nalbandian"
+                                                                "family": "Nalbandian"
                                                             }
                                                         ],
                                                         "homeLocation": {
@@ -320,12 +316,10 @@
                                                         "gender": "male",
                                                         "names": [
                                                             {
-                                                                "role": "nrol:first",
-                                                                "name": "Viktor"
+                                                                "given": "Viktor"
                                                             },
                                                             {
-                                                                "role": "nrol:last",
-                                                                "name": "Troicki"
+                                                                "family": "Troicki"
                                                             }
                                                         ],
                                                         "homeLocation": {
@@ -382,12 +376,10 @@
                                                         "gender": "male",
                                                         "names": [
                                                             {
-                                                                "role": "nrol:first",
-                                                                "name": "David"
+                                                                "given": "David"
                                                             },
                                                             {
-                                                                "role": "nrol:last",
-                                                                "name": "Nalbandian"
+                                                                "family": "Nalbandian"
                                                             }
                                                         ],
                                                         "homeLocation": {
@@ -454,12 +446,10 @@
                                                         "gender": "male",
                                                         "names": [
                                                             {
-                                                                "role": "nrol:first",
-                                                                "name": "Janko"
+                                                                "given": "Janko"
                                                             },
                                                             {
-                                                                "role": "nrol:last",
-                                                                "name": "Tipsarevic"
+                                                                "family": "Tipsarevic"
                                                             }
                                                         ],
                                                         "homeLocation": {
@@ -512,12 +502,10 @@
                                                         "gender": "male",
                                                         "names": [
                                                             {
-                                                                "role": "nrol:first",
-                                                                "name": "Juan Martin"
+                                                                "given": "Juan Martin"
                                                             },
                                                             {
-                                                                "role": "nrol:last",
-                                                                "name": "Del Potro"
+                                                                "family": "Del Potro"
                                                             }
                                                         ],
                                                         "homeLocation": {
@@ -614,12 +602,10 @@
                                                                 "gender": "male",
                                                                 "names": [
                                                                     {
-                                                                        "role": "nrol:first",
-                                                                        "name": "Viktor"
+                                                                        "given": "Viktor"
                                                                     },
                                                                     {
-                                                                        "role": "nrol:last",
-                                                                        "name": "Troicki"
+                                                                        "family": "Troicki"
                                                                     }
                                                                 ],
                                                                 "homeLocation": {
@@ -656,12 +642,10 @@
                                                                 "gender": "male",
                                                                 "names": [
                                                                     {
-                                                                        "role": "nrol:first",
-                                                                        "name": "Nenad"
+                                                                        "given": "Nenad"
                                                                     },
                                                                     {
-                                                                        "role": "nrol:last",
-                                                                        "name": "Zimonjic"
+                                                                        "family": "Zimonjic"
                                                                     }
                                                                 ],
                                                                 "homeLocation": {
@@ -728,12 +712,10 @@
                                                                 "gender": "male",
                                                                 "names": [
                                                                     {
-                                                                        "role": "nrol:first",
-                                                                        "name": "Juan Ignacio"
+                                                                        "given": "Juan Ignacio"
                                                                     },
                                                                     {
-                                                                        "role": "nrol:last",
-                                                                        "name": "Chela"
+                                                                        "family": "Chela"
                                                                     }
                                                                 ],
                                                                 "homeLocation": {
@@ -770,12 +752,10 @@
                                                                 "gender": "male",
                                                                 "names": [
                                                                     {
-                                                                        "role": "nrol:first",
-                                                                        "name": "Juan"
+                                                                        "given": "Juan"
                                                                     },
                                                                     {
-                                                                        "role": "nrol:last",
-                                                                        "name": "Monaco"
+                                                                        "family": "Monaco"
                                                                     }
                                                                 ],
                                                                 "homeLocation": {
@@ -824,12 +804,10 @@
                                                         "gender": "male",
                                                         "names": [
                                                             {
-                                                                "role": "nrol:first",
-                                                                "name": "Novak"
+                                                                "given": "Novak"
                                                             },
                                                             {
-                                                                "role": "nrol:last",
-                                                                "name": "Djokovic"
+                                                                "family": "Djokovic"
                                                             }
                                                         ],
                                                         "homeLocation": {
@@ -878,12 +856,10 @@
                                                         "gender": "male",
                                                         "names": [
                                                             {
-                                                                "role": "nrol:first",
-                                                                "name": "Juan Martin"
+                                                                "given": "Juan Martin"
                                                             },
                                                             {
-                                                                "role": "nrol:last",
-                                                                "name": "Del Potro"
+                                                                "family": "Del Potro"
                                                             }
                                                         ],
                                                         "homeLocation": {
@@ -942,12 +918,10 @@
                                                         "gender": "male",
                                                         "names": [
                                                             {
-                                                                "role": "nrol:first",
-                                                                "name": "Janko"
+                                                                "given": "Janko"
                                                             },
                                                             {
-                                                                "role": "nrol:last",
-                                                                "name": "Tipsarevic"
+                                                                "family": "Tipsarevic"
                                                             }
                                                         ],
                                                         "homeLocation": {
@@ -992,12 +966,10 @@
                                                         "gender": "male",
                                                         "names": [
                                                             {
-                                                                "role": "nrol:first",
-                                                                "name": "Juan"
+                                                                "given": "Juan"
                                                             },
                                                             {
-                                                                "role": "nrol:last",
-                                                                "name": "Monaco"
+                                                                "family": "Monaco"
                                                             }
                                                         ],
                                                         "homeLocation": {

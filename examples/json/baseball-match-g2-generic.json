@@ -18,7 +18,7 @@
                                 "full": "Miami Marlins"
                             },
                             {
-                                "common": "Miami"
+                                "alternate": "Miami"
                             },
                             {
                                 "nickname": "Marlins"
@@ -2800,7 +2800,7 @@
                                 "full": "Colorado Rockies"
                             },
                             {
-                                "common": "Colorado"
+                                "alternate": "Colorado"
                             },
                             {
                                 "nickname": "Rockies"

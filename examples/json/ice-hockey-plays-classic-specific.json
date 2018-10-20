@@ -75,7 +75,7 @@
                                 "full": "NY Rangers"
                             },
                             {
-                                "common": "New York"
+                                "alternate": "New York"
                             },
                             {
                                 "nickname": "Rangers"
@@ -413,7 +413,7 @@
                                 "full": "Washington Capitals"
                             },
                             {
-                                "common": "Washington"
+                                "alternate": "Washington"
                             },
                             {
                                 "nickname": "Capitals"

@@ -31,7 +31,7 @@
                                 "full": "New England Patriots"
                             },
                             {
-                                "common": "New England"
+                                "alternate": "New England"
                             },
                             {
                                 "nickname": "Patriots"
@@ -2836,7 +2836,7 @@
                                 "full": "Seattle Seahawks"
                             },
                             {
-                                "common": "Seattle"
+                                "alternate": "Seattle"
                             },
                             {
                                 "nickname": "Seahawks"

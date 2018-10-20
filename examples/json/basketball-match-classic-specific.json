@@ -87,7 +87,7 @@
                                 "full": "Milwaukee Bucks"
                             },
                             {
-                                "common": "Milwaukee"
+                                "alternate": "Milwaukee"
                             },
                             {
                                 "nickname": "Bucks"
@@ -414,7 +414,7 @@
                                 "full": "Denver Nuggets"
                             },
                             {
-                                "common": "Denver"
+                                "alternate": "Denver"
                             },
                             {
                                 "nickname": "Nuggets"

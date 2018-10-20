@@ -93,7 +93,7 @@
                                 "full": "Toronto Maple Leafs"
                             },
                             {
-                                "common": "Toronto"
+                                "alternate": "Toronto"
                             },
                             {
                                 "nickname": "Maple Leafs"
@@ -3751,7 +3751,7 @@
                                 "full": "Montreal Canadiens"
                             },
                             {
-                                "common": "Montreal"
+                                "alternate": "Montreal"
                             },
                             {
                                 "nickname": "Canadiens"
