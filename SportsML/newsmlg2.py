@@ -50,6 +50,7 @@ class ConceptNameType(TimeValidityAttributes, IntlStringType):
         'nrol:full': 'full',
         'nrol:first': 'given',
         'nrol:last': 'family',
+        'nrol:mnemonic': 'mnemonic',
         'nprt:common': 'alternate',
         'nprt:nickname': 'nickname',
     }
